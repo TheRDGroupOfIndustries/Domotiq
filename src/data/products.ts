@@ -321,11 +321,13 @@ export const products: Product[] = [
 ];
 
 export const getProductsByCategory = (categoryId: string): Product[] => {
-  return products.filter(p => p.category === categoryId);
+  const normalizedId = categoryId.trim().toLowerCase();
+  return products.filter(p => p.category.trim().toLowerCase() === normalizedId);
 };
 
 export const getProductById = (id: string): Product | undefined => {
-  return products.find(p => p.id === id);
+  const normalizedId = id.trim().toLowerCase();
+  return products.find(p => p.id.trim().toLowerCase() === normalizedId);
 };
 
 export const getFeaturedProducts = (): Product[] => {

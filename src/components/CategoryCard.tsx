@@ -8,8 +8,8 @@ interface CategoryCardProps {
 
 const CategoryCard = ({ category }: CategoryCardProps) => {
   return (
-    <Link 
-      to={`/shop?category=${category.id}`}
+    <Link
+      to={`/category/${category.id}`}
       className="group block"
     >
       <div className="relative aspect-square bg-secondary rounded-xl overflow-hidden mb-4 transition-all duration-500 ease-smooth group-hover:shadow-hover">
@@ -23,7 +23,7 @@ const CategoryCard = ({ category }: CategoryCardProps) => {
           <ArrowUpRight size={18} />
         </div>
       </div>
-      
+
       <div className="space-y-1">
         <h3 className="heading-product group-hover:opacity-70 transition-opacity duration-200">
           {category.name}

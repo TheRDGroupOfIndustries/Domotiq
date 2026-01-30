@@ -78,10 +78,10 @@ const Shop = () => {
               {filteredProducts.length} {filteredProducts.length === 1 ? 'product' : 'products'}
             </p>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
             {filteredProducts.map((product, index) => (
-              <div 
+              <div
                 key={product.id}
                 className="animate-fade-up"
                 style={{ animationDelay: `${index * 0.05}s` }}

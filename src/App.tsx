@@ -9,7 +9,9 @@ import ProductDetail from "./pages/ProductDetail";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Support from "./pages/Support";
+import CategoryDetail from "./pages/CategoryDetail";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -19,9 +21,11 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/category/:id" element={<CategoryDetail />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

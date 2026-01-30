@@ -36,7 +36,9 @@ const Header = () => {
                   to={link.href}
                   className={cn(
                     "body-small uppercase tracking-widest transition-opacity duration-200 hover:opacity-60",
-                    location.pathname === link.href ? "font-medium" : "font-light"
+                    (location.pathname === link.href) || (link.href === '/shop' && (location.pathname.startsWith('/category/') || location.pathname.startsWith('/product/')))
+                      ? "font-medium"
+                      : "font-light"
                   )}
                 >
                   {link.label}
@@ -46,7 +48,7 @@ const Header = () => {
 
             {/* Right Actions */}
             <div className="flex items-center gap-4">
-              <button 
+              <button
                 onClick={() => setIsSearchOpen(true)}
                 className="flex items-center gap-2 body-small hover:opacity-60 transition-opacity p-2 -mr-2"
                 aria-label="Search products"
