@@ -7,7 +7,7 @@ import SearchModal from './SearchModal';
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/shop', label: 'Shop' },
+  { href: '/shop', label: 'Catalogue' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
   { href: '/support', label: 'Support' },

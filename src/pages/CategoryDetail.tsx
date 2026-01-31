@@ -14,10 +14,10 @@ const CategoryDetail = () => {
     if (!category) {
         return (
             <Layout>
-                <div className="container-wide py-20 text-center">
+                <div className="container-wide py-20 text-center animate-fade-in">
                     <h1 className="heading-section mb-4">Category Not Found</h1>
                     <Link to="/shop" className="link-underline">
-                        Return to Shop
+                        Return to Catalogue
                     </Link>
                 </div>
             </Layout>
@@ -27,20 +27,21 @@ const CategoryDetail = () => {
     return (
         <Layout>
             {/* Breadcrumb */}
-            <div className="container-wide py-6">
+            <div className="container-wide py-6 animate-fade-in">
                 <Link
                     to="/shop"
-                    className="inline-flex items-center gap-2 body-small text-muted-foreground hover:text-foreground transition-colors"
+                    className="inline-flex items-center gap-2 body-small text-muted-foreground hover:text-foreground transition-colors group"
                 >
-                    <ArrowLeft size={16} />
-                    Back to Shop
+                    <ArrowLeft size={16} className="transition-transform group-hover:-translate-x-1" />
+                    Back to Catalogue
                 </Link>
             </div>
 
             {/* Header */}
-            <section className="py-12 md:py-16 bg-secondary/10">
+            <section className="py-12 md:py-20 bg-secondary/10">
                 <div className="container-wide">
-                    <div className="max-w-2xl">
+                    <div className="max-w-2xl animate-fade-up">
+                        <p className="body-small uppercase tracking-widest text-muted-foreground mb-2">Category</p>
                         <h1 className="heading-display mb-4">{category.name}</h1>
                         <p className="body-large text-muted-foreground">
                             {category.description}
@@ -52,31 +53,33 @@ const CategoryDetail = () => {
             {/* Products Grid */}
             <section className="py-12 md:py-16">
                 <div className="container-wide">
-                    <div className="mb-8 items-center flex justify-between">
-                        <p className="body-small text-muted-foreground">
-                            Showing {categoryProducts.length} {categoryProducts.length === 1 ? 'product' : 'products'} in {category.name}
+                    <div className="mb-12 items-center flex justify-between animate-fade-in">
+                        <p className="body-small text-muted-foreground tracking-widest uppercase">
+                            {categoryProducts.length} {categoryProducts.length === 1 ? 'item' : 'items'} in {category.name}
                         </p>
                     </div>
 
                     {categoryProducts.length > 0 ? (
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-12 md:gap-x-8 md:gap-y-16">
                             {categoryProducts.map((product, index) => (
                                 <div
                                     key={product.id}
                                     className="animate-fade-up"
-                                    style={{ animationDelay: `${index * 0.05}s` }}
+                                    style={{ animationDelay: `${index * 0.08}s` }}
                                 >
-                                    <ProductCard product={product} />
+                                    <div className="group transition-all duration-500 hover:-translate-y-2">
+                                        <ProductCard product={product} />
+                                    </div>
                                 </div>
                             ))}
                         </div>
                     ) : (
-                        <div className="text-center py-20">
-                            <p className="body-large text-muted-foreground">
+                        <div className="text-center py-32 animate-fade-in">
+                            <p className="body-large text-muted-foreground mb-8">
                                 No products found in this category.
                             </p>
-                            <Link to="/shop" className="mt-4 inline-block link-underline">
-                                View all products
+                            <Link to="/shop" className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background rounded-full font-medium hover:opacity-90 transition-all duration-300">
+                                View Full Catalogue
                             </Link>
                         </div>
                     )}

@@ -11,10 +11,10 @@ const ProductDetail = () => {
   if (!product) {
     return (
       <Layout>
-        <div className="container-wide py-20 text-center">
+        <div className="container-wide py-20 text-center animate-fade-in">
           <h1 className="heading-section mb-4">Product Not Found</h1>
           <Link to="/shop" className="link-underline">
-            Return to Shop
+            Return to Catalogue
           </Link>
         </div>
       </Layout>
@@ -25,16 +25,22 @@ const ProductDetail = () => {
     .filter(p => p.category === product.category && p.id !== product.id)
     .slice(0, 4);
 
+  const handleWhatsAppEnquiry = () => {
+    const message = `Hello Domotiq, I'm interested in the ${product.name} (ID: ${product.id}) from your catalogue. Could you provide more details?`;
+    const whatsappUrl = `https://wa.me/919997690669?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <Layout>
       {/* Breadcrumb */}
-      <div className="container-wide py-6">
-        <Link 
-          to="/shop" 
-          className="inline-flex items-center gap-2 body-small text-muted-foreground hover:text-foreground transition-colors"
+      <div className="container-wide py-6 animate-fade-in">
+        <Link
+          to="/shop"
+          className="inline-flex items-center gap-2 body-small text-muted-foreground hover:text-foreground transition-colors group"
         >
-          <ArrowLeft size={16} />
-          Back to Shop
+          <ArrowLeft size={16} className="transition-transform group-hover:-translate-x-1" />
+          Back to Catalogue
         </Link>
       </div>
 
@@ -43,18 +49,18 @@ const ProductDetail = () => {
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Image Gallery */}
-            <div className="space-y-4">
-              <div className="aspect-square bg-secondary rounded-2xl overflow-hidden">
+            <div className="space-y-4 animate-fade-in">
+              <div className="aspect-square bg-secondary rounded-2xl overflow-hidden group">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
             </div>
 
             {/* Product Info */}
-            <div className="space-y-8">
+            <div className="space-y-8 animate-fade-up">
               <div className="space-y-4">
                 <p className="body-small uppercase tracking-widest text-muted-foreground">
                   {product.category}
@@ -68,7 +74,7 @@ const ProductDetail = () => {
               </div>
 
               {/* Quick Specs */}
-              <div className="p-6 bg-secondary rounded-xl">
+              <div className="p-6 bg-secondary rounded-xl hover:bg-secondary/80 transition-colors duration-300">
                 <h3 className="heading-product mb-4">Specifications</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
@@ -94,8 +100,8 @@ const ProductDetail = () => {
               <div>
                 <h3 className="heading-product mb-4">Features</h3>
                 <ul className="space-y-3">
-                  {product.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-3">
+                  {product.features.map((feature, idx) => (
+                    <li key={feature} className="flex items-center gap-3 animate-fade-up" style={{ animationDelay: `${idx * 0.1}s` }}>
                       <div className="w-5 h-5 rounded-full bg-foreground flex items-center justify-center">
                         <Check size={12} className="text-background" />
                       </div>
@@ -107,11 +113,14 @@ const ProductDetail = () => {
 
               {/* Actions */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="flex-1 px-8 py-4 bg-foreground text-background rounded-full font-medium hover:opacity-90 transition-opacity">
-                  Request Quote
+                <button
+                  onClick={handleWhatsAppEnquiry}
+                  className="flex-1 px-8 py-4 bg-foreground text-background rounded-full font-medium hover:opacity-90 transition-all duration-300 transform hover:scale-[1.02] active:scale-95"
+                >
+                  WhatsApp Enquiry
                 </button>
-                <button className="flex items-center justify-center gap-2 px-8 py-4 border border-foreground rounded-full font-medium hover:bg-foreground hover:text-background transition-all">
-                  <Download size={18} />
+                <button className="flex items-center justify-center gap-2 px-8 py-4 border border-foreground rounded-full font-medium hover:bg-foreground hover:text-background transition-all duration-300 group">
+                  <Download size={18} className="group-hover:translate-y-0.5 transition-transform" />
                   Datasheet
                 </button>
               </div>
@@ -122,7 +131,7 @@ const ProductDetail = () => {
 
       {/* Related Products */}
       {relatedProducts.length > 0 && (
-        <section className="py-20 border-t border-border">
+        <section className="py-20 border-t border-border animate-fade-up">
           <div className="container-wide">
             <h2 className="heading-section mb-8">Related Products</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">

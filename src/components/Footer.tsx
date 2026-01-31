@@ -19,12 +19,12 @@ const Footer = () => {
 
           {/* Products */}
           <div>
-            <h4 className="heading-product mb-4">Products</h4>
+            <h4 className="heading-product mb-4">Catalogue</h4>
             <ul className="space-y-3">
-              <li><Link to="/shop?category=surface" className="body-small text-muted-foreground hover:text-foreground transition-colors">Surface Lights</Link></li>
-              <li><Link to="/shop?category=spots" className="body-small text-muted-foreground hover:text-foreground transition-colors">Spotlights</Link></li>
-              <li><Link to="/shop?category=outdoor" className="body-small text-muted-foreground hover:text-foreground transition-colors">Outdoor</Link></li>
-              <li><Link to="/shop?category=bulb" className="body-small text-muted-foreground hover:text-foreground transition-colors">Smart Bulbs</Link></li>
+              <li><Link to="/shop?category=surface" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-1 inline-block">Surface Lights</Link></li>
+              <li><Link to="/shop?category=spots" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-1 inline-block">Spotlights</Link></li>
+              <li><Link to="/shop?category=outdoor" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-1 inline-block">Outdoor</Link></li>
+              <li><Link to="/shop?category=bulb" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-1 inline-block">Smart Bulbs</Link></li>
             </ul>
           </div>
 
