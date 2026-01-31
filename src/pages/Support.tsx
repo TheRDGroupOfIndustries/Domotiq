@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { ChevronDown, Mail, Phone, MapPin } from 'lucide-react';
+import { ChevronDown, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { cn } from '@/lib/utils';
 
@@ -32,80 +33,117 @@ const Support = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-20 md:py-28">
-        <div className="container-wide">
-          <div className="max-w-2xl">
-            <h1 className="heading-display mb-4">Support</h1>
-            <p className="body-large text-muted-foreground">
-              We're here to help. Find answers to common questions or get in touch with our team.
+      <section className="py-24 md:py-48 overflow-hidden bg-black text-background relative">
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-foreground/20 via-transparent to-transparent" />
+        <div className="container-wide relative z-10">
+          <div className="max-w-4xl reveal-on-scroll">
+            <p className="body-small uppercase tracking-[0.6em] text-muted-foreground mb-8">
+              Technical Center
+            </p>
+            <h1 className="text-5xl md:text-8xl font-light tracking-tighter mb-10 leading-[1.1]">
+              We're here to
+              <br />
+              <span className="italic font-serif text-accent">Assist.</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl leading-relaxed reveal-on-scroll" style={{ transitionDelay: '300ms' }}>
+              Find answers to common technical queries or get in touch with our team of precision-lighting specialists.
             </p>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-12 md:py-16 border-t border-border">
+      <section className="py-24 md:py-40 border-t border-border bg-secondary/10 relative overflow-hidden">
         <div className="container-wide">
-          <h2 className="heading-section mb-8">Frequently Asked Questions</h2>
-          
-          <div className="max-w-3xl space-y-4">
-            {faqs.map((faq, index) => (
-              <div 
-                key={index}
-                className="border border-border rounded-xl overflow-hidden"
-              >
-                <button
-                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="w-full flex items-center justify-between p-6 text-left hover:bg-secondary/50 transition-colors"
+          <div className="max-w-4xl">
+            <div className="reveal-on-scroll mb-20">
+              <p className="body-small uppercase tracking-[0.4em] text-muted-foreground mb-6">Common Inquiries</p>
+              <h2 className="text-4xl md:text-5xl font-light tracking-tight">Frequently Asked <span className="font-serif italic text-foreground/80">Questions</span></h2>
+            </div>
+
+            <div className="space-y-6">
+              {faqs.map((faq, index) => (
+                <div
+                  key={index}
+                  className="reveal-on-scroll border border-border/50 rounded-3xl overflow-hidden bg-background shadow-soft transition-all duration-700 hover:border-foreground/20"
+                  style={{ transitionDelay: `${index * 100}ms` }}
                 >
-                  <span className="heading-product pr-4">{faq.question}</span>
-                  <ChevronDown 
-                    size={20} 
+                  <button
+                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                    className="w-full flex items-center justify-between p-8 md:p-10 text-left hover:bg-secondary/20 transition-all duration-500 group"
+                  >
+                    <span className="text-xl md:text-2xl font-light tracking-tight pr-12">{faq.question}</span>
+                    <div className={cn(
+                      "w-12 h-12 rounded-full border border-border flex items-center justify-center transition-all duration-700 ease-smooth group-hover:bg-foreground group-hover:text-background group-hover:border-foreground",
+                      openFaq === index && "bg-foreground text-background rotate-180 border-foreground"
+                    )}>
+                      <ChevronDown size={24} strokeWidth={1} />
+                    </div>
+                  </button>
+                  <div
                     className={cn(
-                      "flex-shrink-0 transition-transform duration-200",
-                      openFaq === index && "rotate-180"
+                      "grid transition-all duration-700 ease-smooth",
+                      openFaq === index ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
                     )}
-                  />
-                </button>
-                {openFaq === index && (
-                  <div className="px-6 pb-6">
-                    <p className="body-regular text-muted-foreground">{faq.answer}</p>
+                  >
+                    <div className="overflow-hidden">
+                      <div className="px-8 md:px-10 pb-10">
+                        <div className="w-12 h-px bg-foreground/10 mb-8" />
+                        <p className="body-regular text-muted-foreground text-lg md:text-xl leading-relaxed max-w-3xl">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                )}
-              </div>
-            ))}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Warranty */}
-      <section id="warranty" className="py-12 md:py-16 border-t border-border">
+      {/* Warranty & Downloads */}
+      <section id="warranty" className="py-24 md:py-40">
         <div className="container-wide">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-20">
-            <div>
-              <h2 className="heading-section mb-4">Warranty Information</h2>
-              <div className="space-y-4 body-regular text-muted-foreground">
-                <p>
-                  Domotiq stands behind the quality of every product we manufacture. Our comprehensive warranty program ensures peace of mind for your lighting investment.
+          <div className="grid md:grid-cols-2 gap-24 md:gap-40 items-start">
+            <div className="reveal-on-scroll">
+              <p className="body-small uppercase tracking-[0.4em] text-muted-foreground mb-6">Assurance</p>
+              <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-10">Warranty Information</h2>
+              <div className="space-y-10 body-regular text-muted-foreground text-lg leading-relaxed">
+                <p className="reveal-on-scroll" style={{ transitionDelay: '200ms' }}>
+                  Domotiq stands behind the quality of every product we manufacture. Our comprehensive warranty program ensures absolute peace of mind for your architectural lighting investment.
                 </p>
-                <ul className="space-y-2">
-                  <li>• 5-year standard warranty on all products</li>
-                  <li>• Coverage for manufacturing defects</li>
-                  <li>• Free replacement for qualifying claims</li>
-                  <li>• Extended warranty options available</li>
+                <ul className="space-y-6">
+                  {[
+                    '5-year standard warranty on all products',
+                    'Coverage for manufacturing defects',
+                    'Free replacement for qualifying claims',
+                    'Extended warranty options available'
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-center gap-6 reveal-on-scroll" style={{ transitionDelay: `${400 + idx * 100}ms` }}>
+                      <div className="w-2 h-2 rounded-full bg-foreground border border-background shadow-soft flex-shrink-0" />
+                      <span className="text-xl font-light">{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-            <div>
-              <h2 className="heading-section mb-4">Downloads</h2>
-              <div className="space-y-3">
-                {['Product Catalogue 2024', 'Installation Guides', 'Technical Specifications', 'Warranty Terms'].map((doc) => (
+
+            <div className="reveal-on-scroll" style={{ transitionDelay: '300ms' }}>
+              <p className="body-small uppercase tracking-[0.4em] text-muted-foreground mb-6">Resources</p>
+              <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-10">Downloads</h2>
+              <div className="grid gap-6">
+                {['Product Catalogue 2024', 'Installation Guides', 'Technical Specifications', 'Warranty Terms'].map((doc, idx) => (
                   <button
                     key={doc}
-                    className="w-full flex items-center justify-between p-4 border border-border rounded-lg hover:bg-secondary/50 transition-colors"
+                    className="group w-full flex items-center justify-between p-8 border border-border rounded-[2rem] hover:bg-foreground hover:text-background transition-all duration-700 ease-smooth reveal-on-scroll"
+                    style={{ transitionDelay: `${500 + idx * 100}ms` }}
                   >
-                    <span className="body-regular">{doc}</span>
-                    <span className="body-small text-muted-foreground">PDF</span>
+                    <span className="text-xl font-light tracking-tight">{doc}</span>
+                    <div className="flex items-center gap-4 opacity-40 group-hover:opacity-100 transition-opacity">
+                      <span className="body-small font-bold text-[10px] tracking-widest uppercase">PDF</span>
+                      <ChevronDown size={20} className="-rotate-90 group-hover:translate-x-1 transition-transform" />
+                    </div>
                   </button>
                 ))}
               </div>
@@ -114,100 +152,46 @@ const Support = () => {
         </div>
       </section>
 
-      {/* Contact */}
-      <section id="contact" className="py-12 md:py-16 border-t border-border">
-        <div className="container-wide">
-          <h2 className="heading-section mb-8">Contact Us</h2>
-          
-          <div className="grid md:grid-cols-2 gap-12 md:gap-20">
-            {/* Contact Info */}
-            <div className="space-y-8">
-              <p className="body-regular text-muted-foreground">
-                Have a question about our products or need assistance with your project? Our team is ready to help.
+      {/* Support Contact */}
+      <section id="contact" className="py-32 md:py-48 bg-foreground text-background relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
+        <div className="container-wide relative z-10">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-24 reveal-on-scroll">
+              <p className="body-small uppercase tracking-[0.6em] opacity-50 mb-8">Technical Support</p>
+              <h2 className="text-4xl md:text-7xl font-light tracking-tighter mb-8">Still need <span className="font-serif italic text-accent">Help?</span></h2>
+              <p className="text-xl md:text-2xl opacity-70 max-w-2xl mx-auto leading-relaxed">
+                Our specialists are available to assist with complex integration queries and maintenance questions.
               </p>
-              
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
-                    <Mail size={18} />
-                  </div>
-                  <div>
-                    <p className="heading-product">Email</p>
-                    <p className="body-regular text-muted-foreground">support@domotiq.com</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
-                    <Phone size={18} />
-                  </div>
-                  <div>
-                    <p className="heading-product">Phone</p>
-                    <p className="body-regular text-muted-foreground">+91 (800) 555-0199</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
-                    <MapPin size={18} />
-                  </div>
-                  <div>
-                    <p className="heading-product">Headquarters</p>
-                    <p className="body-regular text-muted-foreground">
-                      Varanasi, Uttar Pradesh<br />
-                      India
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
 
-            {/* Contact Form */}
-            <form className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="body-small text-muted-foreground mb-2 block">Name</label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-3 bg-secondary border-0 rounded-lg body-regular placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-foreground transition-all"
-                    placeholder="Your name"
-                  />
+            <div className="grid md:grid-cols-3 gap-12 text-center reveal-on-scroll" style={{ transitionDelay: '300ms' }}>
+              {[
+                { icon: Mail, label: 'Email Support', value: 'support@domotiq.com' },
+                { icon: Phone, label: 'Technical Helpline', value: '+91 (800) 555-0199' },
+                { icon: MapPin, label: 'Technical Center', value: 'Varanasi, UP, India' }
+              ].map((item, idx) => (
+                <div key={item.label} className="space-y-6 group p-10 rounded-[3rem] border border-background/5 hover:border-background/20 transition-all duration-700" style={{ transitionDelay: `${400 + idx * 150}ms` }}>
+                  <div className="w-16 h-16 mx-auto rounded-3xl bg-background/5 flex items-center justify-center transition-all duration-700 group-hover:scale-110 group-hover:bg-background group-hover:text-foreground">
+                    <item.icon size={26} strokeWidth={1} />
+                  </div>
+                  <div>
+                    <p className="body-small opacity-50 uppercase tracking-[0.3em] font-bold text-[10px] mb-2">{item.label}</p>
+                    <p className="text-xl md:text-2xl font-light tracking-tight">{item.value}</p>
+                  </div>
                 </div>
-                <div>
-                  <label className="body-small text-muted-foreground mb-2 block">Email</label>
-                  <input
-                    type="email"
-                    className="w-full px-4 py-3 bg-secondary border-0 rounded-lg body-regular placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-foreground transition-all"
-                    placeholder="your@email.com"
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label className="body-small text-muted-foreground mb-2 block">Subject</label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-3 bg-secondary border-0 rounded-lg body-regular placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-foreground transition-all"
-                  placeholder="How can we help?"
-                />
-              </div>
-              
-              <div>
-                <label className="body-small text-muted-foreground mb-2 block">Message</label>
-                <textarea
-                  rows={5}
-                  className="w-full px-4 py-3 bg-secondary border-0 rounded-lg body-regular placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-foreground transition-all resize-none"
-                  placeholder="Tell us about your project or inquiry..."
-                />
-              </div>
-              
-              <button
-                type="submit"
-                className="w-full sm:w-auto px-8 py-4 bg-foreground text-background rounded-full font-medium hover:opacity-90 transition-opacity"
+              ))}
+            </div>
+
+            <div className="mt-24 text-center reveal-on-scroll" style={{ transitionDelay: '800ms' }}>
+              <Link
+                to="/contact"
+                className="group inline-flex items-center gap-6 px-16 py-6 bg-background text-foreground rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-background/90 transition-all duration-500 hover:scale-105"
               >
-                Send Message
-              </button>
-            </form>
+                Open Support Ticket
+                <ArrowRight size={20} className="transition-transform duration-500 group-hover:translate-x-2" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

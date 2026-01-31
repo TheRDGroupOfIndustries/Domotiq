@@ -3,58 +3,61 @@ import logo from '@/assets/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border">
-      <div className="container-wide py-16 md:py-20">
+    <footer className="border-t border-border bg-secondary/10">
+      <div className="container-wide py-20 md:py-24">
         {/* Main Footer */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-16">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-1">
-            <Link to="/" className="inline-block mb-4">
-              <img src={logo} alt="Domotiq" className="h-8 w-auto" />
+          <div className="col-span-2 md:col-span-1 animate-fade-up">
+            <Link to="/" className="inline-block mb-6 group">
+              <img
+                src={logo}
+                alt="Domotiq"
+                className="h-10 w-auto transition-transform duration-500 group-hover:scale-105"
+              />
             </Link>
-            <p className="body-small text-muted-foreground max-w-xs">
-              Smart lighting and automation for modern living spaces.
+            <p className="body-small text-muted-foreground max-w-xs leading-relaxed">
+              Smart lighting and automation for modern living spaces. Elevating architectural excellence through intelligent technology.
             </p>
           </div>
 
-          {/* Products */}
-          <div>
-            <h4 className="heading-product mb-4">Catalogue</h4>
-            <ul className="space-y-3">
-              <li><Link to="/shop?category=surface" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-1 inline-block">Surface Lights</Link></li>
-              <li><Link to="/shop?category=spots" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-1 inline-block">Spotlights</Link></li>
-              <li><Link to="/shop?category=outdoor" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-1 inline-block">Outdoor</Link></li>
-              <li><Link to="/shop?category=bulb" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-1 inline-block">Smart Bulbs</Link></li>
+          {/* Catalogue */}
+          <div className="animate-fade-up" style={{ animationDelay: '0.1s' }}>
+            <h4 className="heading-product mb-6 uppercase tracking-[0.2em] text-[10px] opacity-60">Catalogue</h4>
+            <ul className="space-y-4">
+              <li><Link to="/shop?category=surface" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Surface Lights</Link></li>
+              <li><Link to="/shop?category=spots" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Spotlights</Link></li>
+              <li><Link to="/shop?category=outdoor" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Outdoor</Link></li>
+              <li><Link to="/shop?category=bulb" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Smart Bulbs</Link></li>
             </ul>
           </div>
 
           {/* Company */}
-          <div>
-            <h4 className="heading-product mb-4">Company</h4>
-            <ul className="space-y-3">
-              <li><Link to="/about" className="body-small text-muted-foreground hover:text-foreground transition-colors">About Us</Link></li>
-              <li><Link to="/contact" className="body-small text-muted-foreground hover:text-foreground transition-colors">Contact</Link></li>
-              <li><Link to="/brochure" className="body-small text-muted-foreground hover:text-foreground transition-colors">Brochure</Link></li>
-              <li><Link to="/support" className="body-small text-muted-foreground hover:text-foreground transition-colors">Support</Link></li>
-              <li><Link to="/support#warranty" className="body-small text-muted-foreground hover:text-foreground transition-colors">Warranty</Link></li>
+          <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
+            <h4 className="heading-product mb-6 uppercase tracking-[0.2em] text-[10px] opacity-60">Company</h4>
+            <ul className="space-y-4">
+              <li><Link to="/about" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">About Us</Link></li>
+              <li><Link to="/contact" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Contact</Link></li>
+              <li><Link to="/brochure" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Brochure</Link></li>
+              <li><Link to="/support" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Support</Link></li>
             </ul>
           </div>
 
           {/* Newsletter */}
-          <div>
-            <h4 className="heading-product mb-4">Stay Updated</h4>
-            <p className="body-small text-muted-foreground mb-4">
-              Subscribe for new products and updates.
+          <div className="col-span-2 md:col-span-1 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+            <h4 className="heading-product mb-6 uppercase tracking-[0.2em] text-[10px] opacity-60">Stay Updated</h4>
+            <p className="body-small text-muted-foreground mb-6">
+              Subscribe for new products and architectural lighting updates.
             </p>
             <form className="flex flex-col gap-3">
               <input
                 type="email"
                 placeholder="Email address"
-                className="w-full px-4 py-3 bg-secondary border-0 rounded-lg body-small placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-foreground transition-all"
+                className="w-full px-5 py-4 bg-background border border-border rounded-xl body-small focus:ring-2 focus:ring-foreground/5 transition-all outline-none"
               />
               <button
                 type="submit"
-                className="w-full px-4 py-3 bg-foreground text-background rounded-lg body-small font-medium hover:opacity-90 transition-opacity"
+                className="w-full px-5 py-4 bg-foreground text-background rounded-full body-small font-semibold hover:opacity-90 transition-all border border-transparent hover:scale-[1.02]"
               >
                 Subscribe
               </button>
@@ -63,13 +66,13 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-20 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="body-small text-muted-foreground">
-            © 2026 Domotiq. All rights reserved.
+            © {new Date().getFullYear()} Domotiq. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-8">
             <Link to="/privacy" className="body-small text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="body-small text-muted-foreground hover:text-foreground transition-colors">Terms</Link>
+            <Link to="/terms" className="body-small text-muted-foreground hover:text-foreground transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

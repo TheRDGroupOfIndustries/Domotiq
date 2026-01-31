@@ -69,29 +69,30 @@ const Index = () => {
       </section>
 
       {/* Categories Grid */}
-      <section className="py-20 md:py-28">
+      <section className="py-24 md:py-32">
         <div className="container-wide">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-12">
-            <div>
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16 reveal-on-scroll">
+            <div className="max-w-xl">
+              <p className="body-small uppercase tracking-[0.4em] text-muted-foreground mb-4">The Collection</p>
               <h2 className="heading-section">Product Categories</h2>
-              <p className="body-regular text-muted-foreground mt-2">
-                Explore our complete lighting range
+              <p className="body-regular text-muted-foreground mt-4 leading-relaxed">
+                Discover our curated range of premium lighting solutions, from architectural surface lights to smart home integration modules.
               </p>
             </div>
             <Link
               to="/shop"
-              className="link-underline body-small uppercase tracking-widest"
+              className="link-underline body-small uppercase tracking-widest pb-1 font-semibold"
             >
               View All Products
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-10">
             {categories.map((category, index) => (
               <div
                 key={category.id}
-                className="animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="reveal-on-scroll"
+                style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <CategoryCard category={category} />
               </div>
@@ -101,29 +102,30 @@ const Index = () => {
       </section>
 
       {/* Featured Products */}
-      <section className="py-20 md:py-28 bg-secondary/30">
+      <section className="py-24 md:py-32 bg-secondary/20">
         <div className="container-wide">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-12">
-            <div>
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16 reveal-on-scroll">
+            <div className="max-w-xl">
+              <p className="body-small uppercase tracking-[0.4em] text-muted-foreground mb-4">Highlights</p>
               <h2 className="heading-section">Featured Products</h2>
-              <p className="body-regular text-muted-foreground mt-2">
-                Our most popular lighting solutions
+              <p className="body-regular text-muted-foreground mt-4 leading-relaxed">
+                Our most sought-after lighting fixtures, meticulously engineered for performance and aesthetic excellence.
               </p>
             </div>
             <Link
               to="/shop"
-              className="link-underline body-small uppercase tracking-widest"
+              className="link-underline body-small uppercase tracking-widest pb-1 font-semibold"
             >
               Catalogue Collection
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
             {featuredProducts.map((product, index) => (
               <div
                 key={product.id}
-                className="animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="reveal-on-scroll"
+                style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <ProductCard product={product} />
               </div>
@@ -133,16 +135,17 @@ const Index = () => {
       </section>
 
       {/* Why Domotiq */}
-      <section className="py-20 md:py-28">
+      <section className="py-24 md:py-32">
         <div className="container-wide">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20 reveal-on-scroll">
+            <p className="body-small uppercase tracking-[0.4em] text-muted-foreground mb-4">Excellence</p>
             <h2 className="heading-section">Why Domotiq</h2>
-            <p className="body-regular text-muted-foreground mt-2 max-w-xl mx-auto">
-              Engineering excellence meets intelligent design
+            <p className="body-regular text-muted-foreground mt-4 max-w-xl mx-auto leading-relaxed">
+              We merge architectural lighting principles with cutting-edge engineering to create environments that inspire.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-16">
             {[
               { icon: Lightbulb, title: 'Premium Quality', desc: 'Industry-leading LED technology' },
               { icon: Zap, title: 'Energy Efficient', desc: 'Up to 80% energy savings' },
@@ -151,14 +154,14 @@ const Index = () => {
             ].map((feature, index) => (
               <div
                 key={feature.title}
-                className="text-center animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="text-center reveal-on-scroll"
+                style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-secondary flex items-center justify-center">
-                  <feature.icon size={24} strokeWidth={1.5} />
+                <div className="w-16 h-16 mx-auto mb-6 rounded-3xl bg-secondary/50 flex items-center justify-center transition-transform duration-500 hover:rotate-6">
+                  <feature.icon size={28} strokeWidth={1.5} className="text-foreground/80" />
                 </div>
-                <h3 className="heading-product mb-2">{feature.title}</h3>
-                <p className="body-small text-muted-foreground">{feature.desc}</p>
+                <h3 className="heading-product mb-3 font-semibold">{feature.title}</h3>
+                <p className="body-small text-muted-foreground leading-relaxed">{feature.desc}</p>
               </div>
             ))}
           </div>
@@ -166,39 +169,42 @@ const Index = () => {
       </section>
 
       {/* Brand Philosophy */}
-      <section className="py-20 md:py-28 bg-foreground text-background">
+      <section className="py-32 md:py-48 bg-foreground text-background overflow-hidden">
         <div className="container-wide">
-          <div className="max-w-3xl mx-auto text-center space-y-8">
-            <p className="body-small uppercase tracking-[0.3em] opacity-60">
+          <div className="max-w-4xl mx-auto text-center space-y-12">
+            <p className="body-small uppercase tracking-[0.6em] opacity-50 reveal-on-scroll">
               Our Philosophy
             </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light leading-tight">
-              "Light shapes space. Smart technology
-              <br className="hidden md:block" />
-              transforms how we live within it."
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-light leading-[1.1] tracking-tight reveal-on-scroll" style={{ transitionDelay: '200ms' }}>
+              "Light shapes space. <br />
+              <span className="italic font-serif">Smart technology</span> <br />
+              transforms how we live."
             </h2>
-            <p className="body-large opacity-70">
-              At Domotiq, we believe lighting is architecture. Every product we create is designed to enhance spaces while minimizing environmental impact.
+            <div className="w-px h-24 bg-background/20 mx-auto reveal-on-scroll" style={{ transitionDelay: '400ms' }} />
+            <p className="body-large opacity-70 max-w-2xl mx-auto leading-relaxed reveal-on-scroll" style={{ transitionDelay: '600ms' }}>
+              At Domotiq, we believe lighting is the silent architect. Every product we create is designed to enhance human experience while minimizing environmental impact.
             </p>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28">
+      <section className="py-24 md:py-32">
         <div className="container-wide">
-          <div className="max-w-2xl mx-auto text-center space-y-6">
-            <h2 className="heading-section">Ready to Transform Your Space?</h2>
-            <p className="body-regular text-muted-foreground">
-              Discover our complete range of smart lighting solutions designed for modern living.
+          <div className="max-w-3xl mx-auto text-center space-y-10 reveal-on-scroll">
+            <h2 className="text-4xl md:text-5xl font-light tracking-tight">Ready to Transform Your Space?</h2>
+            <p className="body-regular text-muted-foreground text-lg max-w-xl mx-auto">
+              Discover our complete range of smart lighting solutions designed for modern architectural living.
             </p>
-            <Link
-              to="/shop"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-foreground text-background rounded-full font-medium hover:opacity-90 transition-all duration-300"
-            >
-              View Catalogue
-              <ArrowRight size={18} />
-            </Link>
+            <div className="pt-4">
+              <Link
+                to="/shop"
+                className="group relative inline-flex items-center gap-4 px-12 py-5 bg-foreground text-background rounded-full font-semibold overflow-hidden transition-all duration-500 hover:scale-105"
+              >
+                <span className="relative z-10">View Catalogue</span>
+                <ArrowRight size={20} className="relative z-10 transition-transform duration-300 group-hover:translate-x-2" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
