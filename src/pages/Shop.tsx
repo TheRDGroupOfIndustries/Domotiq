@@ -47,8 +47,8 @@ const Catalogue = () => {
               className={cn(
                 "px-6 py-2 rounded-full body-small whitespace-nowrap transition-all duration-300 transform hover:scale-105",
                 activeCategory === 'all'
-                  ? "bg-foreground text-background shadow-lg"
-                  : "border border-border hover:border-foreground bg-background"
+                  ? "bg-primary text-primary-foreground shadow-lg"
+                  : "border border-border hover:border-primary bg-background"
               )}
             >
               All Products
@@ -60,8 +60,8 @@ const Catalogue = () => {
                 className={cn(
                   "px-6 py-2 rounded-full body-small whitespace-nowrap transition-all duration-300 transform hover:scale-105",
                   activeCategory === category.id
-                    ? "bg-foreground text-background shadow-lg"
-                    : "border border-border hover:border-foreground bg-background"
+                    ? "bg-primary text-primary-foreground shadow-lg"
+                    : "border border-border hover:border-primary bg-background"
                 )}
               >
                 {category.name}

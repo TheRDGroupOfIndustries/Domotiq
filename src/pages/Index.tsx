@@ -45,11 +45,11 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8 animate-fade-up" style={{ animationDelay: '0.6s' }}>
               <Link
                 to="/shop"
-                className="group relative inline-flex items-center gap-3 px-10 py-4 bg-white text-black rounded-full font-semibold overflow-hidden transition-all duration-500 hover:pr-12"
+                className="group relative inline-flex items-center gap-3 px-10 py-4 bg-primary text-primary-foreground rounded-full font-semibold overflow-hidden transition-all duration-500 hover:pr-12"
               >
                 <span className="relative z-10 iterate-catalogue">Explore Catalogue</span>
                 <ArrowRight size={20} className="relative z-10 transition-transform duration-300 group-hover:translate-x-2" />
-                <div className="absolute inset-0 bg-white group-hover:bg-white/90 transition-colors" />
+                <div className="absolute inset-0 bg-primary group-hover:bg-primary/90 transition-colors" />
               </Link>
               <Link
                 to="/about"
@@ -157,8 +157,8 @@ const Index = () => {
                 className="text-center reveal-on-scroll"
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="w-16 h-16 mx-auto mb-6 rounded-3xl bg-secondary/50 flex items-center justify-center transition-transform duration-500 hover:rotate-6">
-                  <feature.icon size={28} strokeWidth={1.5} className="text-foreground/80" />
+                <div className="w-16 h-16 mx-auto mb-6 rounded-3xl bg-primary/10 flex items-center justify-center transition-transform duration-500 hover:rotate-6 group">
+                  <feature.icon size={28} strokeWidth={1.5} className="text-primary transition-colors" />
                 </div>
                 <h3 className="heading-product mb-3 font-semibold">{feature.title}</h3>
                 <p className="body-small text-muted-foreground leading-relaxed">{feature.desc}</p>
@@ -199,7 +199,7 @@ const Index = () => {
             <div className="pt-4">
               <Link
                 to="/shop"
-                className="group relative inline-flex items-center gap-4 px-12 py-5 bg-foreground text-background rounded-full font-semibold overflow-hidden transition-all duration-500 hover:scale-105"
+                className="group relative inline-flex items-center gap-4 px-12 py-5 bg-primary text-primary-foreground rounded-full font-semibold overflow-hidden transition-all duration-500 hover:scale-105"
               >
                 <span className="relative z-10">View Catalogue</span>
                 <ArrowRight size={20} className="relative z-10 transition-transform duration-300 group-hover:translate-x-2" />

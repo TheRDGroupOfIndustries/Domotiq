@@ -74,8 +74,8 @@ const Support = () => {
                   >
                     <span className="text-xl md:text-2xl font-light tracking-tight pr-12">{faq.question}</span>
                     <div className={cn(
-                      "w-12 h-12 rounded-full border border-border flex items-center justify-center transition-all duration-700 ease-smooth group-hover:bg-foreground group-hover:text-background group-hover:border-foreground",
-                      openFaq === index && "bg-foreground text-background rotate-180 border-foreground"
+                      "w-12 h-12 rounded-full border border-border flex items-center justify-center transition-all duration-700 ease-smooth group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary",
+                      openFaq === index && "bg-primary text-primary-foreground rotate-180 border-primary"
                     )}>
                       <ChevronDown size={24} strokeWidth={1} />
                     </div>
@@ -136,7 +136,7 @@ const Support = () => {
                 {['Product Catalogue 2024', 'Installation Guides', 'Technical Specifications', 'Warranty Terms'].map((doc, idx) => (
                   <button
                     key={doc}
-                    className="group w-full flex items-center justify-between p-8 border border-border rounded-[2rem] hover:bg-foreground hover:text-background transition-all duration-700 ease-smooth reveal-on-scroll"
+                    className="group w-full flex items-center justify-between p-8 border border-border rounded-[2rem] hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-700 ease-smooth reveal-on-scroll"
                     style={{ transitionDelay: `${500 + idx * 100}ms` }}
                   >
                     <span className="text-xl font-light tracking-tight">{doc}</span>
@@ -171,8 +171,8 @@ const Support = () => {
                 { icon: Phone, label: 'Technical Helpline', value: '+91 (800) 555-0199' },
                 { icon: MapPin, label: 'Technical Center', value: 'Varanasi, UP, India' }
               ].map((item, idx) => (
-                <div key={item.label} className="space-y-6 group p-10 rounded-[3rem] border border-background/5 hover:border-background/20 transition-all duration-700" style={{ transitionDelay: `${400 + idx * 150}ms` }}>
-                  <div className="w-16 h-16 mx-auto rounded-3xl bg-background/5 flex items-center justify-center transition-all duration-700 group-hover:scale-110 group-hover:bg-background group-hover:text-foreground">
+                <div key={item.label} className="space-y-6 group p-10 rounded-[3rem] border border-background/5 hover:border-primary/20 transition-all duration-700" style={{ transitionDelay: `${400 + idx * 150}ms` }}>
+                  <div className="w-16 h-16 mx-auto rounded-3xl bg-background/5 flex items-center justify-center transition-all duration-700 group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground">
                     <item.icon size={26} strokeWidth={1} />
                   </div>
                   <div>
@@ -186,7 +186,7 @@ const Support = () => {
             <div className="mt-24 text-center reveal-on-scroll" style={{ transitionDelay: '800ms' }}>
               <Link
                 to="/contact"
-                className="group inline-flex items-center gap-6 px-16 py-6 bg-background text-foreground rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-background/90 transition-all duration-500 hover:scale-105"
+                className="group inline-flex items-center gap-6 px-16 py-6 bg-primary text-primary-foreground rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-primary/90 transition-all duration-500 hover:scale-105"
               >
                 Open Support Ticket
                 <ArrowRight size={20} className="transition-transform duration-500 group-hover:translate-x-2" />

@@ -102,8 +102,8 @@ const ProductDetail = () => {
                 <ul className="space-y-3">
                   {product.features.map((feature, idx) => (
                     <li key={feature} className="flex items-center gap-3 animate-fade-up" style={{ animationDelay: `${idx * 0.1}s` }}>
-                      <div className="w-5 h-5 rounded-full bg-foreground flex items-center justify-center">
-                        <Check size={12} className="text-background" />
+                      <div className="w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+                        <Check size={12} className="text-primary-foreground" />
                       </div>
                       <span className="body-regular">{feature}</span>
                     </li>
@@ -115,11 +115,11 @@ const ProductDetail = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <button
                   onClick={handleWhatsAppEnquiry}
-                  className="flex-1 px-8 py-4 bg-foreground text-background rounded-full font-medium hover:opacity-90 transition-all duration-300 transform hover:scale-[1.02] active:scale-95"
+                  className="flex-1 px-8 py-4 bg-primary text-primary-foreground rounded-full font-medium hover:opacity-90 transition-all duration-300 transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-primary/20"
                 >
                   WhatsApp Enquiry
                 </button>
-                <button className="flex items-center justify-center gap-2 px-8 py-4 border border-foreground rounded-full font-medium hover:bg-foreground hover:text-background transition-all duration-300 group">
+                <button className="flex items-center justify-center gap-2 px-8 py-4 border border-primary text-primary rounded-full font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 group">
                   <Download size={18} className="group-hover:translate-y-0.5 transition-transform" />
                   Datasheet
                 </button>

@@ -165,7 +165,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-6 py-5 bg-secondary/20 border-transparent focus:bg-white focus:border-border rounded-2xl body-regular focus:outline-none focus:ring-4 focus:ring-foreground/5 transition-all"
+                      className="w-full px-6 py-5 bg-secondary/20 border-transparent focus:bg-white focus:border-primary/20 rounded-2xl body-regular focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all"
                       placeholder="Your name"
                       maxLength={100}
                     />
@@ -181,7 +181,7 @@ const Contact = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-6 py-5 bg-secondary/20 border-transparent focus:bg-white focus:border-border rounded-2xl body-regular focus:outline-none focus:ring-4 focus:ring-foreground/5 transition-all"
+                      className="w-full px-6 py-5 bg-secondary/20 border-transparent focus:bg-white focus:border-primary/20 rounded-2xl body-regular focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all"
                       placeholder="your@email.com"
                       maxLength={255}
                     />
@@ -198,7 +198,7 @@ const Contact = () => {
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      className="w-full px-6 py-5 bg-secondary/20 border-transparent focus:bg-white focus:border-border rounded-2xl body-regular focus:outline-none focus:ring-4 focus:ring-foreground/5 transition-all appearance-none"
+                      className="w-full px-6 py-5 bg-secondary/20 border-transparent focus:bg-white focus:border-primary/20 rounded-2xl body-regular focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all appearance-none"
                     >
                       <option value="">Select a subject</option>
                       <option value="Product Inquiry">Product Inquiry</option>
@@ -220,7 +220,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={6}
-                    className="w-full px-6 py-5 bg-secondary/20 border-transparent focus:bg-white focus:border-border rounded-2xl body-regular focus:outline-none focus:ring-4 focus:ring-foreground/5 transition-all resize-none"
+                    className="w-full px-6 py-5 bg-secondary/20 border-transparent focus:bg-white focus:border-primary/20 rounded-2xl body-regular focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all resize-none"
                     placeholder="Tell us about your project..."
                     maxLength={2000}
                   />
@@ -230,7 +230,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="mt-12 group relative w-full inline-flex items-center justify-center gap-4 px-12 py-5 bg-foreground text-background rounded-full font-bold uppercase tracking-[0.2em] text-xs overflow-hidden transition-all duration-500 hover:scale-[1.02] active:scale-95 disabled:opacity-50"
+                  className="mt-12 group relative w-full inline-flex items-center justify-center gap-4 px-12 py-5 bg-primary text-primary-foreground rounded-full font-bold uppercase tracking-[0.2em] text-xs overflow-hidden transition-all duration-500 hover:scale-[1.02] active:scale-95 disabled:opacity-50"
                 >
                   <span className="relative z-10">{isSubmitting ? 'Sending...' : 'Send Message'}</span>
                   <Send size={18} className="relative z-10 transition-transform duration-500 group-hover:translate-x-2 group-hover:-translate-y-2" />
@@ -256,7 +256,7 @@ const Contact = () => {
             <div className="reveal-on-scroll" style={{ transitionDelay: '300ms' }}>
               <Link
                 to="/support"
-                className="group relative inline-flex items-center gap-6 px-12 py-6 bg-background text-foreground rounded-full font-bold uppercase tracking-widest text-xs hover:bg-background/90 transition-all duration-500 hover:scale-105"
+                className="group relative inline-flex items-center gap-6 px-12 py-6 bg-primary text-primary-foreground rounded-full font-bold uppercase tracking-widest text-xs hover:scale-105 transition-all duration-500"
               >
                 Visit Support
                 <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-2" />

@@ -80,7 +80,7 @@ const About = () => {
             <div className="pt-8 reveal-on-scroll" style={{ transitionDelay: '600ms' }}>
               <Link
                 to="/shop"
-                className="group inline-flex items-center gap-4 px-12 py-5 bg-background text-foreground rounded-full font-semibold transition-all duration-500 hover:scale-105"
+                className="group inline-flex items-center gap-4 px-12 py-5 bg-primary text-primary-foreground rounded-full font-semibold transition-all duration-500 hover:scale-105"
               >
                 <span>Explore Catalogue</span>
                 <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-2" />
@@ -101,7 +101,7 @@ const About = () => {
             <div className="reveal-on-scroll" style={{ transitionDelay: '400ms' }}>
               <Link
                 to="/support#contact"
-                className="inline-flex items-center gap-6 px-12 py-5 border-2 border-foreground rounded-full font-bold uppercase tracking-widest text-xs hover:bg-foreground hover:text-background transition-all duration-500 hover:scale-105"
+                className="inline-flex items-center gap-6 px-12 py-5 border-2 border-primary text-primary rounded-full font-bold uppercase tracking-widest text-xs hover:bg-primary hover:text-primary-foreground transition-all duration-500 hover:scale-105"
               >
                 Get in Touch
               </Link>
