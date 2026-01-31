@@ -24,7 +24,7 @@ const Header = () => {
         <div className="container-wide">
           <div className="flex items-center justify-between h-20 md:h-24 transition-all duration-500">
             {/* Logo */}
-            <Link to="/" className="flex items-center group animate-fade-in">
+            <Link to="/" className="flex items-center group">
               <img
                 src={logo}
                 alt="Domotiq"
@@ -39,12 +39,11 @@ const Header = () => {
                   key={link.href}
                   to={link.href}
                   className={cn(
-                    "body-small uppercase tracking-[0.2em] transition-all duration-300 hover:opacity-100 hover:translate-y-[-1px] animate-fade-in",
+                    "body-small uppercase tracking-[0.2em] transition-all duration-300 hover:opacity-100 hover:translate-y-[-1px]",
                     (location.pathname === link.href) || (link.href === '/shop' && (location.pathname.startsWith('/category/') || location.pathname.startsWith('/product/')))
                       ? "font-medium opacity-100"
                       : "font-light opacity-60"
                   )}
-                  style={{ animationDelay: `${0.1 + idx * 0.05}s` }}
                 >
                   {link.label}
                 </Link>
@@ -55,8 +54,7 @@ const Header = () => {
             <div className="flex items-center gap-6">
               <button
                 onClick={() => setIsSearchOpen(true)}
-                className="flex items-center gap-2 body-small hover:opacity-100 transition-all duration-300 group p-2 animate-fade-in"
-                style={{ animationDelay: '0.4s' }}
+                className="flex items-center gap-2 body-small hover:opacity-100 transition-all duration-300 group p-2"
                 aria-label="Search products"
               >
                 <Search size={22} strokeWidth={1.5} className="group-hover:scale-110 transition-transform" />
@@ -102,10 +100,8 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
                 className={cn(
                   "text-3xl tracking-tighter transition-all duration-500 hover:opacity-50",
-                  location.pathname === link.href ? "font-semibold translate-x-2" : "font-light",
-                  isMenuOpen ? "animate-fade-up" : ""
+                  location.pathname === link.href ? "font-semibold translate-x-2" : "font-light"
                 )}
-                style={{ animationDelay: `${0.1 + idx * 0.1}s` }}
               >
                 {link.label}
               </Link>

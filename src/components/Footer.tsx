@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Main Footer */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-16">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-1 animate-fade-up">
+          <div className="col-span-2 md:col-span-1">
             <Link to="/" className="inline-block mb-6 group">
               <img
                 src={logo}
@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
 
           {/* Catalogue */}
-          <div className="animate-fade-up" style={{ animationDelay: '0.1s' }}>
+          <div>
             <h4 className="heading-product mb-6 uppercase tracking-[0.2em] text-[10px] opacity-60">Catalogue</h4>
             <ul className="space-y-4">
               <li><Link to="/shop?category=surface" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Surface Lights</Link></li>
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
 
           {/* Company */}
-          <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          <div>
             <h4 className="heading-product mb-6 uppercase tracking-[0.2em] text-[10px] opacity-60">Company</h4>
             <ul className="space-y-4">
               <li><Link to="/about" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">About Us</Link></li>
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="col-span-2 md:col-span-1 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+          <div className="col-span-2 md:col-span-1">
             <h4 className="heading-product mb-6 uppercase tracking-[0.2em] text-[10px] opacity-60">Stay Updated</h4>
             <p className="body-small text-muted-foreground mb-6">
               Subscribe for new products and architectural lighting updates.
