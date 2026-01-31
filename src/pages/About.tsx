@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout';
+import storyImage from '@/assets/about-story.png';
 
 const About = () => {
   return (
@@ -42,10 +43,11 @@ const About = () => {
               </div>
             </div>
             <div className="aspect-[4/5] md:aspect-square bg-secondary rounded-3xl overflow-hidden group reveal-on-scroll shadow-soft" style={{ transitionDelay: '300ms' }}>
-              <div className="w-full h-full bg-gradient-to-br from-secondary via-[#f5f5f7] to-border transition-transform duration-1000 group-hover:scale-110 flex items-center justify-center p-12">
-                <div className="w-px h-16 bg-foreground/10 absolute top-0 left-1/2 -translate-x-1/2" />
-                <p className="body-small uppercase tracking-[0.4em] text-muted-foreground/50 rotate-90 whitespace-nowrap">Architectural Excellence</p>
-              </div>
+              <img
+                src={storyImage}
+                alt="Architectural Excellence"
+                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+              />
             </div>
           </div>
         </div>
