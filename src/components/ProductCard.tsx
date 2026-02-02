@@ -12,7 +12,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
       to={`/product/${product.id}`}
       className="group block card-premium reveal-on-scroll"
     >
-      <div className="relative aspect-square bg-secondary rounded-2xl overflow-hidden mb-6 transition-all duration-700 ease-smooth">
+      <div className="relative aspect-square bg-secondary rounded-t-2xl overflow-hidden mb-6 transition-all duration-700 ease-smooth">
         <img
           src={product.image}
           alt={product.name}
@@ -21,7 +21,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500" />
       </div>
 
-      <div className="space-y-2">
+      <div className="space-y-2 p-2">
         <h3 className="heading-product transition-colors duration-300 group-hover:text-primary">
           {product.name}
         </h3>

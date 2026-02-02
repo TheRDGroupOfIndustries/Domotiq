@@ -12,7 +12,7 @@ const CategoryCard = ({ category }: CategoryCardProps) => {
       to={`/category/${category.id}`}
       className="group block card-premium reveal-on-scroll"
     >
-      <div className="relative aspect-square bg-secondary rounded-2xl overflow-hidden mb-6 transition-all duration-700 ease-smooth">
+      <div className="relative aspect-square bg-secondary rounded-t-2xl overflow-hidden mb-6 transition-all duration-700 ease-smooth">
         <img
           src={category.image}
           alt={category.name}
@@ -24,7 +24,7 @@ const CategoryCard = ({ category }: CategoryCardProps) => {
         </div>
       </div>
 
-      <div className="space-y-2">
+      <div className="space-y-2 p-2">
         <h3 className="heading-product transition-colors duration-300 group-hover:text-primary">
           {category.name}
         </h3>

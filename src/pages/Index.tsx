@@ -4,7 +4,7 @@ import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import CategoryCard from '@/components/CategoryCard';
 import { categories, getFeaturedProducts } from '@/data/products';
-import heroBg from '@/assets/hero-bg.png';
+import heroBg from '@/assets/hero.png';
 
 const Index = () => {
   const featuredProducts = getFeaturedProducts();
