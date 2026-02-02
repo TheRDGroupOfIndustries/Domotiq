@@ -3,6 +3,7 @@ import { ArrowLeft, Check, Download } from 'lucide-react';
 import Layout from '@/components/Layout';
 import { getProductById, products } from '@/data/products';
 import ProductCard from '@/components/ProductCard';
+import brochure from '@/assets/Brochure.pdf';
 
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -119,11 +120,16 @@ const ProductDetail = () => {
                 >
                   WhatsApp Enquiry
                 </button>
-                <button className="flex items-center justify-center gap-2 px-8 py-4 border border-primary text-primary rounded-full font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 group">
+                <a
+                  href={brochure}
+                  download="Brochure.pdf"
+                  className="flex items-center justify-center gap-2 px-8 py-4 border border-primary text-primary rounded-full font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 group"
+                >
                   <Download size={18} className="group-hover:translate-y-0.5 transition-transform" />
                   Datasheet
-                </button>
+                </a>
               </div>
+
             </div>
           </div>
         </div>
