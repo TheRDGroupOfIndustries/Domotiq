@@ -84,10 +84,8 @@ export const categories: Category[] = [
   { id: 'outdoor', name: 'Outdoor', description: 'Weather-resistant lights', image: outdoor1 },
   { id: 'streetlight', name: 'Street Light', description: 'Urban lighting', image: streetlight1 },
   { id: 'smart-switches', name: 'Smart Switches', description: 'Touch capacitive switches', image: smartSwitch4m },
-  { id: 'pearl-series', name: 'Pearl Series', description: 'Retrofit switches', image: pearlSeries },
-  { id: 'smart-curtains', name: 'Smart Curtains', description: 'Automated tracks & motors', image: smartCurtains },
   { id: 'smart-locks', name: 'Smart Locks', description: 'Advanced security locks', image: smartLockR1 },
-  { id: 'security', name: 'Security', description: 'Smart doorbells and cameras', image: prod20 },
+  // { id: 'security', name: 'Security', description: 'Smart doorbells and cameras', image: prod20 },
 ];
 
 export const products: Product[] = [
@@ -261,101 +259,101 @@ export const products: Product[] = [
     features: ['8 Gang Control', 'Master All Off', 'Group Control', 'Premium Build']
   },
   // Pearl Series
-  {
-    id: 'pearl-4-switch',
-    name: 'Pearl 4-Switch',
-    category: 'pearl-series',
-    shortSpec: '4 Switches | Retrofit Design',
-    description: 'Domotiq Pearl Series 4-Switch panel. Retrofit design compatible with existing switchboards. Elegant glass finish.',
-    wattage: 'N/A',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: '100,000 operations',
-    image: pearlSeries,
-    features: ['Retrofit', 'Touch Control', 'Glass Panel', 'WiFi Optional']
-  },
-  {
-    id: 'pearl-fan-regulator',
-    name: 'Pearl Fan Regulator',
-    category: 'pearl-series',
-    shortSpec: 'Fan Control | Touch Interface',
-    description: 'Touch-controlled fan regulator from the Pearl Series. Smooth speed adjustment and premium aesthetic.',
-    wattage: 'N/A',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: '100,000 operations',
-    image: pearlSeries, // Using same image as it's a series showcase
-    features: ['5-Step Speed', 'No Humming', 'Touch Control', 'Memory Function']
-  },
+  // {
+  //   id: 'pearl-4-switch',
+  //   name: 'Pearl 4-Switch',
+  //   category: 'pearl-series',
+  //   shortSpec: '4 Switches | Retrofit Design',
+  //   description: 'Domotiq Pearl Series 4-Switch panel. Retrofit design compatible with existing switchboards. Elegant glass finish.',
+  //   wattage: 'N/A',
+  //   lumens: 'N/A',
+  //   colorTemp: 'N/A',
+  //   lifespan: '100,000 operations',
+  //   image: pearlSeries,
+  //   features: ['Retrofit', 'Touch Control', 'Glass Panel', 'WiFi Optional']
+  // },
+  // {
+  //   id: 'pearl-fan-regulator',
+  //   name: 'Pearl Fan Regulator',
+  //   category: 'pearl-series',
+  //   shortSpec: 'Fan Control | Touch Interface',
+  //   description: 'Touch-controlled fan regulator from the Pearl Series. Smooth speed adjustment and premium aesthetic.',
+  //   wattage: 'N/A',
+  //   lumens: 'N/A',
+  //   colorTemp: 'N/A',
+  //   lifespan: '100,000 operations',
+  //   image: pearlSeries, // Using same image as it's a series showcase
+  //   features: ['5-Step Speed', 'No Humming', 'Touch Control', 'Memory Function']
+  // },
 
   // Smart Curtains
-  {
-    id: 'curtain-track-10f',
-    name: 'Curtain Track 10F',
-    category: 'smart-curtains',
-    shortSpec: 'Telescopic Track | 51mm',
-    description: 'Expandable center opening curtain track. Telescopic patterned technology, smooth operation, and easy transport.',
-    wattage: 'N/A',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'Heavy Duty',
-    image: smartCurtains,
-    features: ['Telescopic', 'Smooth Gliding', 'Anti-oxidation', 'Adjustable Size']
-  },
-  {
-    id: 'curtain-motor-60k',
-    name: 'Curtain Motor 60K',
-    category: 'smart-curtains',
-    shortSpec: 'Silent Motor | App Control',
-    description: 'Silent operating motorized curtain track kit. Supports remote, mobile app, and voice control via Alexa/Google Home.',
-    wattage: 'N/A',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'Premium Motor',
-    image: smartCurtains,
-    features: ['Silent Operation', 'Voice Control', 'App Control', 'Touch Start']
-  },
+  // {
+  //   id: 'curtain-track-10f',
+  //   name: 'Curtain Track 10F',
+  //   category: 'smart-curtains',
+  //   shortSpec: 'Telescopic Track | 51mm',
+  //   description: 'Expandable center opening curtain track. Telescopic patterned technology, smooth operation, and easy transport.',
+  //   wattage: 'N/A',
+  //   lumens: 'N/A',
+  //   colorTemp: 'N/A',
+  //   lifespan: 'Heavy Duty',
+  //   image: smartCurtains,
+  //   features: ['Telescopic', 'Smooth Gliding', 'Anti-oxidation', 'Adjustable Size']
+  // },
+  // {
+  //   id: 'curtain-motor-60k',
+  //   name: 'Curtain Motor 60K',
+  //   category: 'smart-curtains',
+  //   shortSpec: 'Silent Motor | App Control',
+  //   description: 'Silent operating motorized curtain track kit. Supports remote, mobile app, and voice control via Alexa/Google Home.',
+  //   wattage: 'N/A',
+  //   lumens: 'N/A',
+  //   colorTemp: 'N/A',
+  //   lifespan: 'Premium Motor',
+  //   image: smartCurtains,
+  //   features: ['Silent Operation', 'Voice Control', 'App Control', 'Touch Start']
+  // },
 
   // Smart Locks
-  {
-    id: 'lock-r1-pro',
-    name: 'Domotiq R1 PRO',
-    category: 'smart-locks',
-    shortSpec: 'Fingerprint | RFID | Key',
-    description: 'Advanced smart lock with multiple unlock methods including fingerprint, RFID card, passcode, and mechanical key.',
-    wattage: 'Battery',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
-    image: smartLockR1,
-    features: ['Fingerprint', 'RFID Card', 'Passcode', 'Remote Support']
-  },
-  {
-    id: 'lock-r3-pro',
-    name: 'Domotiq R3 PRO',
-    category: 'smart-locks',
-    shortSpec: 'Face Rec | Camera | Video Call',
-    description: 'Premium smart lock with 3D Face Recognition and built-in HD camera for video calls. The ultimate in home security.',
-    wattage: 'Rechargeable Li-ion',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
-    image: smartLockR3,
-    features: ['3D Face Rec', 'Video Call', 'Inside Display', 'Auto Lock']
-  },
-  {
-    id: 'lock-r5',
-    name: 'Domotiq R5',
-    category: 'smart-locks',
-    shortSpec: 'Face ID | Palm Vein | 3.5" Display',
-    description: 'Flagship smart lock featuring Palm Vein recognition and a large 3.5-inch indoor display monitor for visitor verification.',
-    wattage: 'Rechargeable Li-ion',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
-    image: smartLockR5,
-    features: ['Palm Vein Rec', '3.5" Screen', 'Hijack Alarm', '200 Fingerprints']
-  },
+  // {
+  //   id: 'lock-r1-pro',
+  //   name: 'Domotiq R1 PRO',
+  //   category: 'smart-locks',
+  //   shortSpec: 'Fingerprint | RFID | Key',
+  //   description: 'Advanced smart lock with multiple unlock methods including fingerprint, RFID card, passcode, and mechanical key.',
+  //   wattage: 'Battery',
+  //   lumens: 'N/A',
+  //   colorTemp: 'N/A',
+  //   lifespan: 'High Security',
+  //   image: smartLockR1,
+  //   features: ['Fingerprint', 'RFID Card', 'Passcode', 'Remote Support']
+  // },
+  // {
+  //   id: 'lock-r3-pro',
+  //   name: 'Domotiq R3 PRO',
+  //   category: 'smart-locks',
+  //   shortSpec: 'Face Rec | Camera | Video Call',
+  //   description: 'Premium smart lock with 3D Face Recognition and built-in HD camera for video calls. The ultimate in home security.',
+  //   wattage: 'Rechargeable Li-ion',
+  //   lumens: 'N/A',
+  //   colorTemp: 'N/A',
+  //   lifespan: 'High Security',
+  //   image: smartLockR3,
+  //   features: ['3D Face Rec', 'Video Call', 'Inside Display', 'Auto Lock']
+  // },
+  // {
+  //   id: 'lock-r5',
+  //   name: 'Domotiq R5',
+  //   category: 'smart-locks',
+  //   shortSpec: 'Face ID | Palm Vein | 3.5" Display',
+  //   description: 'Flagship smart lock featuring Palm Vein recognition and a large 3.5-inch indoor display monitor for visitor verification.',
+  //   wattage: 'Rechargeable Li-ion',
+  //   lumens: 'N/A',
+  //   colorTemp: 'N/A',
+  //   lifespan: 'High Security',
+  //   image: smartLockR5,
+  //   features: ['Palm Vein Rec', '3.5" Screen', 'Hijack Alarm', '200 Fingerprints']
+  // },
 
   // New Detailed Products
   {
@@ -371,19 +369,19 @@ export const products: Product[] = [
     image: prod1,
     features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
   },
-  {
-    id: 'curtain-ctrl-std',
-    name: 'Smart Curtain Control',
-    category: 'smart-curtains',
-    shortSpec: 'Touch | WiFi',
-    description: 'Dedicated touch panel for smooth operation of smart curtains or blinds.',
-    wattage: 'N/A',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'Heavy Duty',
-    image: prod2,
-    features: ['Smooth Control', 'App Integration', 'Timer Support', 'Direct Drive']
-  },
+  // {
+  //   id: 'curtain-ctrl-std',
+  //   name: 'Smart Curtain Control',
+  //   category: 'smart-curtains',
+  //   shortSpec: 'Touch | WiFi',
+  //   description: 'Dedicated touch panel for smooth operation of smart curtains or blinds.',
+  //   wattage: 'N/A',
+  //   lumens: 'N/A',
+  //   colorTemp: 'N/A',
+  //   lifespan: 'Heavy Duty',
+  //   image: prod2,
+  //   features: ['Smooth Control', 'App Integration', 'Timer Support', 'Direct Drive']
+  // },
   {
     id: 'sw-scene-1b',
     name: 'Smart Scene Button',
@@ -423,19 +421,19 @@ export const products: Product[] = [
     image: prod5,
     features: ['Fan Regulation', 'Step-less Speed', 'Light Dimming', 'Touch Feedbak']
   },
-  {
-    id: 'curtain-ctrl-pro',
-    name: 'Smart Curtain Control Pro',
-    category: 'smart-curtains',
-    shortSpec: '8 Button | Multi-Zone',
-    description: 'Advanced curtain control panel supporting multiple zones and scene automation.',
-    wattage: 'N/A',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'Heavy Duty',
-    image: prod6,
-    features: ['Multi-zone', 'Scene Preset', 'Auto Schedule', 'Silent Control']
-  },
+  // {
+  //   id: 'curtain-ctrl-pro',
+  //   name: 'Smart Curtain Control Pro',
+  //   category: 'smart-curtains',
+  //   shortSpec: '8 Button | Multi-Zone',
+  //   description: 'Advanced curtain control panel supporting multiple zones and scene automation.',
+  //   wattage: 'N/A',
+  //   lumens: 'N/A',
+  //   colorTemp: 'N/A',
+  //   lifespan: 'Heavy Duty',
+  //   image: prod6,
+  //   features: ['Multi-zone', 'Scene Preset', 'Auto Schedule', 'Silent Control']
+  // },
   {
     id: 'sw-touch-elite-8g',
     name: 'Smart Touch Switch Elite',
@@ -475,19 +473,19 @@ export const products: Product[] = [
     image: prod9,
     features: ['Slim Profile', 'Vertical Mount', 'Anti-oxidation', 'WiFi Mesh']
   },
-  {
-    id: 'sw-micro-scene',
-    name: 'Micro Smart Switch',
-    category: 'smart-curtains',
-    shortSpec: 'Hybrid | Mini',
-    description: 'Micro-sized switch panel combining curtain icons with standard lighting control.',
-    wattage: 'N/A',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: '100,000 ops',
-    image: prod10,
-    features: ['Hybrid Icons', 'Small Form Factor', 'Zigbee Ready', 'Quick Install']
-  },
+  // {
+  //   id: 'sw-micro-scene',
+  //   name: 'Micro Smart Switch',
+  //   category: 'smart-curtains',
+  //   shortSpec: 'Hybrid | Mini',
+  //   description: 'Micro-sized switch panel combining curtain icons with standard lighting control.',
+  //   wattage: 'N/A',
+  //   lumens: 'N/A',
+  //   colorTemp: 'N/A',
+  //   lifespan: '100,000 ops',
+  //   image: prod10,
+  //   features: ['Hybrid Icons', 'Small Form Factor', 'Zigbee Ready', 'Quick Install']
+  // },
   {
     id: 'sw-plus-8g',
     name: 'Smart Touch Switch Plus (8 Gang)',
@@ -605,19 +603,19 @@ export const products: Product[] = [
     image: prod19,
     features: ['Quad Zone', 'App Control', 'Auto Off Timer', 'Silent Relay']
   },
-  {
-    id: 'security-doorbell-v1',
-    name: 'Smart Video Doorbell',
-    category: 'security',
-    shortSpec: 'HD Camera | WiFi',
-    description: 'Wireless video doorbell with night vision and two-way audio talk.',
-    wattage: 'Battery/Plug',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'Rechargeable',
-    image: prod20,
-    features: ['Video Call', 'Motion Detection', 'Night Vision', 'WiFi Chime']
-  },
+  // {
+  //   id: 'security-doorbell-v1',
+  //   name: 'Smart Video Doorbell',
+  //   category: 'security',
+  //   shortSpec: 'HD Camera | WiFi',
+  //   description: 'Wireless video doorbell with night vision and two-way audio talk.',
+  //   wattage: 'Battery/Plug',
+  //   lumens: 'N/A',
+  //   colorTemp: 'N/A',
+  //   lifespan: 'Rechargeable',
+  //   image: prod20,
+  //   features: ['Video Call', 'Motion Detection', 'Night Vision', 'WiFi Chime']
+  // },
   {
     id: 'sw-glass-premium',
     name: 'Premium Glass Panel Switch',
@@ -657,19 +655,19 @@ export const products: Product[] = [
     image: prod23,
     features: ['Silent Reg', 'Speed Sync', 'Timer', 'Overload Protection']
   },
-  {
-    id: 'sw-retrofit-curtain',
-    name: 'Retrofit Curtain Switch',
-    category: 'smart-curtains',
-    shortSpec: 'Curtain | WiFi',
-    description: 'Retrofit touch switch specifically for operating curtain motors.',
-    wattage: 'N/A',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: '100,000 ops',
-    image: prod24,
-    features: ['Motor Limit Sync', 'App Control', 'Manual Override', 'Easy Setup']
-  },
+  // {
+  //   id: 'sw-retrofit-curtain',
+  //   name: 'Retrofit Curtain Switch',
+  //   category: 'smart-curtains',
+  //   shortSpec: 'Curtain | WiFi',
+  //   description: 'Retrofit touch switch specifically for operating curtain motors.',
+  //   wattage: 'N/A',
+  //   lumens: 'N/A',
+  //   colorTemp: 'N/A',
+  //   lifespan: '100,000 ops',
+  //   image: prod24,
+  //   features: ['Motor Limit Sync', 'App Control', 'Manual Override', 'Easy Setup']
+  // },
   {
     id: 'sw-relay-module',
     name: 'Smart Relay Control Module',
@@ -684,8 +682,8 @@ export const products: Product[] = [
     features: ['DIN Rail Mount', 'Dry Contact', 'App Control', 'Energy Monitor']
   },
   {
-    id: 'lock-x1-black',
-    name: 'Smart Digital Lock X1',
+    id: 'domotiq-r1-pro',
+    name: 'Domotiq R1 Pro',
     category: 'smart-locks',
     shortSpec: 'Fingerprint | Keypad',
     description: 'Standard smart mortise lock with multiple unlock options for home security.',
@@ -694,11 +692,11 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lifespan: 'High Security',
     image: prod26,
-    features: ['Fingerprint', 'PIN Code', 'RFID Card', 'Emergency Key']
+    features: ['Fingerprint Unlock', 'RFID Card Unlock', 'Passcode Unlock', 'Low Battery Indication', 'Emergency Power', 'Mechanical Key Unlock', 'RX-TX Remote Support']
   },
   {
-    id: 'lock-x3-bronze',
-    name: 'Smart Digital Lock X3 (Bronze)',
+    id: 'domotiq-r1-pro-g',
+    name: 'Domotiq R1 Pro-G',
     category: 'smart-locks',
     shortSpec: 'Bronze Finish | WiFi',
     description: 'Elegant bronze-finished smart lock with remote unlock support.',
@@ -707,11 +705,11 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lifespan: 'High Security',
     image: prod27,
-    features: ['Premium Finish', 'App Unlock', 'Passcode History', 'Anti-hijack']
+    features: ['Fingerprint Unlock', 'RFID Card Unlock', 'Passcode Unlock', 'Low Battery Indication', 'Emergency Power', 'Mechanical Key Unlock', 'RX-TX Remote Support']
   },
   {
-    id: 'lock-x5-silver',
-    name: 'Smart Digital Lock X5 (Silver)',
+    id: 'domotiq-r3-pro',
+    name: 'Domotiq R-3 Pro',
     category: 'smart-locks',
     shortSpec: 'Silver Finish | Camera',
     description: 'Advanced security lock featuring an integrated camera for visitor snapshots.',
@@ -720,11 +718,20 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lifespan: 'High Security',
     image: prod28,
-    features: ['Built-in Camera', 'Silver Plate', 'Fingerprint', 'Doorbell Function']
+    features: [
+      'One Touch Automatic open and close mortise system',
+      'Access by 3D Face Recognition, RFID Card, Fingerprint, Pass code, Key & App with 3.5" larger rear display inside & HD 1.3MP CAMERA for Video call on app',
+      'Back-up USB external power supply interface, in case the power is dead',
+      'Compatible with 6068 mortise & can be fitted most of the wooden or metal doors',
+      'Inbuilt rechargeable 7.4V Lithium batteries',
+      'Secure zinc Alloy+ABS, Anti-corrosion and sturdy ',
+      'Active Smart Lock Bind Technology',
+      'Compatible to Unlock with Domotiq Video Door Bell'
+    ]
   },
   {
-    id: 'lock-v1-video',
-    name: 'Smart Video Lock V1',
+    id: 'domotiq-r4',
+    name: 'Domotiq R-4',
     category: 'smart-locks',
     shortSpec: 'Video Screen | HD',
     description: 'High-end door lock with a built-in indoor screen for outside viewing.',
@@ -733,11 +740,20 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lifespan: 'High Security',
     image: prod29,
-    features: ['Indoor Screen', 'Live Video', 'App Video Call', 'Face Recognition']
+    features: [
+      'One Touch Automatic open and close mortise system',
+      'Access by 3D Face Recognition, RFID Card, Pass code, key, & APP with 3.5" larger rear display inside & HD 1.3MP Camera',
+      'Back-up USB external power supply interface, in case the power is dead',
+      'Compatible with 6068 mortise & can be fitted most of the wooden or metal door',
+      'Inbuilt rechargeable 7.4V Lithium batteries',
+      'Secure zinc alloy+ABS, Anti-corrosion and sturdy',
+      'Active Smart Lock Bind Technology',
+      'Compatible to Unlock with Domotiq Video Door Bell',
+    ]
   },
   {
-    id: 'lock-comparison-series',
-    name: 'Smart Security Lock Series',
+    id: 'domotiq-r5',
+    name: 'Domotiq R-5',
     category: 'smart-locks',
     shortSpec: 'Full Series | Comparison',
     description: 'Comparison showcase of the flagship smart lock series featuring all available finishes.',
@@ -746,11 +762,26 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lifespan: 'High Security',
     image: prod30,
-    features: ['Series Overview', 'All Finishes', 'Feature Comparison', 'Bundle Offers']
+    features: [
+      'Face ID, Fingerprint, Passcode, RFID Card, Mechanical keys & Remote App (Phlipton) Unlock',
+      'You can add upto 200 Fingerprints, RFID & Passcode',
+      '3.5 inch display on the Indoor Unit & 1.3 MP camera on Outdoor Unit',
+      'You can see the visitor on the display monitor of the Indoor Unit through camera installed on the Outdoor Unit',
+      '5 Heavy Duty Motorized latches',
+      'Rechargeable Lithium Ion Battery',
+      'External Micro USB Port for Emergency Power',
+      'Hijacking Alarm',
+      'Door thickness of 38–90 mm',
+      'Privacy latch for added convenience',
+      'Check past unlocking records through Phlipton App',
+      'In-built bell & lock button on the Outdoor Unit with app notification',
+      'Compatible to unlock with Domotiq Video Door Bell',
+      'Active Smart Lock Bind Technology'
+    ]
   },
   {
-    id: 'lock-slim-std',
-    name: 'Slim Smart Door Lock',
+    id: 'domotiq-r7',
+    name: 'Domotiq R-7',
     category: 'smart-locks',
     shortSpec: 'Slim Design | WiFi',
     description: 'Compact and slim profile smart lock perfect for modern aluminum or thin doors.',
@@ -759,11 +790,23 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lifespan: 'High Security',
     image: prod31,
-    features: ['Slim Mortise', 'Keypad', 'Fingerprint', 'App Control']
+    features: [
+      '3D Face recognition, Fingerprint, Passcode, Palm Vein, Mechanical key, RFID card & Remote Phlipton App unlock',
+      '4.5 inch IPS HD large screen on the indoor unit',
+      '5 heavy duty motorized latches',
+      'Rechargeable Lithium Ion battery',
+      'Door thickness 38 mm – 110 mm',
+      'In-built bell & lock button on the outdoor unit',
+      'Check past unlocking records in Phlipton App',
+      'External Micro USB port for Emergency Power',
+      'Special CNC process of manufacturing',
+      'Active Smart Lock Bind Technology',
+      'Compatible to unlock with Domotiq Video Door Bell'
+    ]
   },
   {
-    id: 'lock-mortise-fg',
-    name: 'Fingerprint Mortise Lock',
+    id: 'domotiq-model-rb1-knob-style',
+    name: 'Domotiq Model RB1 Knob style',
     category: 'smart-locks',
     shortSpec: 'Heavy Duty | Fingerprint',
     description: 'Solid mortise lock with semi-conductor fingerprint sensor for high-speed entry.',
@@ -772,24 +815,38 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lifespan: 'High Security',
     image: prod32,
-    features: ['High-speed FG', 'Panic Exit', 'Auto Locking', 'Robust Body']
+    features: [
+      'Material: Aluminium Alloy Casting',
+      'Power Supply: 4 pcs AA Alkaline Batteries',
+      'RB1 Colors: Black, Gold, Silver, Brown',
+      'Unlock Methods: Card, Fingerprint, Passcode, Mobile App, Key',
+      'Indoor knob unlocking design — gently twist the indoor knob for fast and convenient unlocking',
+      'Hidden key unlocking hole — key can be used to unlock when the battery is out of power, practical and convenient'
+    ]
   },
   {
-    id: 'lock-handle-pro',
-    name: 'Smart Handle Lock Pro',
+    id: 'domotiq-model-rb2-dead-bolt-style',
+    name: 'Domotiq Model RB2 dead Bolt Style',
     category: 'smart-locks',
-    shortSpec: 'Dual Handle | Pro',
-    description: 'Professional grade handle-based smart lock with reinforced security points.',
+    shortSpec: 'Dead Bolt Style | Pro',
+    description: 'Professional grade dead bolt style smart lock with reinforced security points.',
     wattage: 'Battery',
     lumens: 'N/A',
     colorTemp: 'N/A',
     lifespan: 'High Security',
     image: prod33,
-    features: ['Reinforced Handle', 'Mortise Pro', 'Multiple Users', 'Keypad Backlight']
+    features: [
+      'Material: Aluminium Alloy Casting',
+      'Power Supply: 4 pcs AA Alkaline Batteries',
+      'RB1 Colors: Black, Gold, Silver, Brown',
+      'Unlock Methods: Card, Fingerprint, Passcode, Mobile App, Key',
+      'Indoor knob unlocking design — gently twist the indoor knob for fast and convenient unlocking',
+      'Hidden key unlocking hole — key can be used to unlock when the battery is out of power, practical and convenient'
+    ]
   },
   {
-    id: 'lock-glass-std',
-    name: 'Smart Glass Door Lock',
+    id: 'domotiq-glass-lock',
+    name: 'Domotiq Glass Lock',
     category: 'smart-locks',
     shortSpec: 'Glass Door | No Drill',
     description: 'Specialized smart lock for glass doors with no-drill installation.',
@@ -798,11 +855,18 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lifespan: 'High Security',
     image: prod34,
-    features: ['No Drilling', 'Glass Fitting', 'Double Door Opt', 'Fingerprint']
+    features: [
+      'Material: Zinc alloy and acrylic keypad',
+      'Power supply: 4 pcs AA alkaline batteries',
+      'Unlock method: App, code, card, fingerprint, passcode',
+      'Card capacity & fingerprint capacity: 150 pcs',
+      'Application: Wooden door / Glass door / Aluminium door',
+      'Glass door thickness requirement: 8–14 mm'
+    ]
   },
   {
-    id: 'lock-face-3d',
-    name: 'Ultimate 3D Face Lock',
+    id: 'domotiq-smart-video-door-bell-with-motion-sensor',
+    name: 'Domotiq Smart Video Door Bell with Motion Sensor',
     category: 'smart-locks',
     shortSpec: '3D Face ID | Flagship',
     description: 'Flagship smart lock with 3D structured light face recognition and video display.',
@@ -811,7 +875,17 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lifespan: 'High Security',
     image: prod35,
-    features: ['3D Face ID', 'Full HD Display', 'Video Doorbell', 'Remote Access']
+    features: [
+      'Active Smart Lock Bind Technology to unlock through doorbell app user interface',
+      '1080P Full HD high quality image',
+      'IP65 waterproof rating, suitable for various complex weather conditions',
+      'Optionally works with 12V DC power supply for stable performance',
+      'Built-in camera and night vision system with motion detection',
+      'Equipped with an indoor sensor',
+      'Night-light wireless chime with 58 music options and multiple volume levels',
+      'Supports max 128GB SD card recording without network',
+      '18650 lithium battery (2 pcs) with Type-C fast charging support'
+    ]
   },
 ];
 

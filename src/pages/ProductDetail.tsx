@@ -35,7 +35,7 @@ const ProductDetail = () => {
   return (
     <Layout>
       {/* Breadcrumb */}
-      <div className="container-wide py-6 animate-fade-in">
+      <div className="container-wide pt-12 pb-6 animate-fade-in">
         <Link
           to="/shop"
           className="inline-flex items-center gap-2 body-small text-muted-foreground hover:text-foreground transition-colors group"
@@ -102,8 +102,8 @@ const ProductDetail = () => {
                 <h3 className="heading-product mb-4">Features</h3>
                 <ul className="space-y-3">
                   {product.features.map((feature, idx) => (
-                    <li key={feature} className="flex items-center gap-3 animate-fade-up" style={{ animationDelay: `${idx * 0.1}s` }}>
-                      <div className="w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+                    <li key={feature} className="flex items-start gap-3 animate-fade-up" style={{ animationDelay: `${idx * 0.1}s` }}>
+                      <div className="w-5 h-5 rounded-full bg-primary flex items-center justify-center shrink-0 mt-0.5">
                         <Check size={12} className="text-primary-foreground" />
                       </div>
                       <span className="body-regular">{feature}</span>
