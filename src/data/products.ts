@@ -17,6 +17,43 @@ import smartLockR1 from '@/assets/products/smart-lock-r1.png';
 import smartLockR3 from '@/assets/products/smart-lock-r3.png';
 import smartLockR5 from '@/assets/products/smart-lock-r5.png';
 
+// New Arrivals Imports
+import prod1 from '@/assets/products/prod-1.png';
+import prod2 from '@/assets/products/prod-2.png';
+import prod3 from '@/assets/products/prod-3.png';
+import prod4 from '@/assets/products/prod-4.png';
+import prod5 from '@/assets/products/prod-5.png';
+import prod6 from '@/assets/products/prod-6.png';
+import prod7 from '@/assets/products/prod-7.png';
+import prod8 from '@/assets/products/prod-8.png';
+import prod9 from '@/assets/products/prod-9.png';
+import prod10 from '@/assets/products/prod-10.png';
+import prod11 from '@/assets/products/prod-11.png';
+import prod12 from '@/assets/products/prod-12.png';
+import prod13 from '@/assets/products/prod-13.png';
+import prod14 from '@/assets/products/prod-14.png';
+import prod15 from '@/assets/products/prod-15.png';
+import prod16 from '@/assets/products/prod-16.png';
+import prod17 from '@/assets/products/prod-17.png';
+import prod18 from '@/assets/products/prod-18.png';
+import prod19 from '@/assets/products/prod-19.png';
+import prod20 from '@/assets/products/prod-20.png';
+import prod21 from '@/assets/products/prod-21.png';
+import prod22 from '@/assets/products/prod-22.png';
+import prod23 from '@/assets/products/prod-23.png';
+import prod24 from '@/assets/products/prod-24.png';
+import prod25 from '@/assets/products/prod-25.png';
+import prod26 from '@/assets/products/prod-26.png';
+import prod27 from '@/assets/products/prod-27.png';
+import prod28 from '@/assets/products/prod-28.png';
+import prod29 from '@/assets/products/prod-29.png';
+import prod30 from '@/assets/products/prod-30.png';
+import prod31 from '@/assets/products/prod-31.png';
+import prod32 from '@/assets/products/prod-32.png';
+import prod33 from '@/assets/products/prod-33.png';
+import prod34 from '@/assets/products/prod-34.png';
+import prod35 from '@/assets/products/prod-35.png';
+
 export interface Product {
   id: string;
   name: string;
@@ -50,6 +87,7 @@ export const categories: Category[] = [
   { id: 'pearl-series', name: 'Pearl Series', description: 'Retrofit switches', image: pearlSeries },
   { id: 'smart-curtains', name: 'Smart Curtains', description: 'Automated tracks & motors', image: smartCurtains },
   { id: 'smart-locks', name: 'Smart Locks', description: 'Advanced security locks', image: smartLockR1 },
+  { id: 'security', name: 'Security', description: 'Smart doorbells and cameras', image: prod20 },
 ];
 
 export const products: Product[] = [
@@ -317,6 +355,463 @@ export const products: Product[] = [
     lifespan: 'High Security',
     image: smartLockR5,
     features: ['Palm Vein Rec', '3.5" Screen', 'Hijack Alarm', '200 Fingerprints']
+  },
+
+  // New Detailed Products
+  {
+    id: 'sw-touch-4g',
+    name: 'Smart Touch Switch (4 Gang)',
+    category: 'smart-switches',
+    shortSpec: 'Glass Finish | WiFi',
+    description: 'Elegant 4-button touch switch with LED backlight and WiFi for app control.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod1,
+    features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
+  },
+  {
+    id: 'curtain-ctrl-std',
+    name: 'Smart Curtain Control',
+    category: 'smart-curtains',
+    shortSpec: 'Touch | WiFi',
+    description: 'Dedicated touch panel for smooth operation of smart curtains or blinds.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'Heavy Duty',
+    image: prod2,
+    features: ['Smooth Control', 'App Integration', 'Timer Support', 'Direct Drive']
+  },
+  {
+    id: 'sw-scene-1b',
+    name: 'Smart Scene Button',
+    category: 'smart-switches',
+    shortSpec: 'Single Button | Mini',
+    description: 'Compact single-button scene switch for quick execution of smart home routines.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '50,000 ops',
+    image: prod3,
+    features: ['Compact Design', 'Muti-click Support', 'WiFi/Zigbee', 'Easy Mount']
+  },
+  {
+    id: 'sw-touch-8g',
+    name: 'Smart Touch Switch (8 Gang)',
+    category: 'smart-switches',
+    shortSpec: 'High Capacity | WiFi',
+    description: 'Comprehensive 8-button touch panel for complete room control.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod4,
+    features: ['8 Gang Control', 'Master Off', 'Custom Labels', 'Glass Panel']
+  },
+  {
+    id: 'sw-fan-light-8g',
+    name: 'Smart Fan & Light Control',
+    category: 'smart-switches',
+    shortSpec: '8 Button | Fan Reg',
+    description: 'Combined 8-button panel with dedicated fan speed and light intensity controls.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod5,
+    features: ['Fan Regulation', 'Step-less Speed', 'Light Dimming', 'Touch Feedbak']
+  },
+  {
+    id: 'curtain-ctrl-pro',
+    name: 'Smart Curtain Control Pro',
+    category: 'smart-curtains',
+    shortSpec: '8 Button | Multi-Zone',
+    description: 'Advanced curtain control panel supporting multiple zones and scene automation.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'Heavy Duty',
+    image: prod6,
+    features: ['Multi-zone', 'Scene Preset', 'Auto Schedule', 'Silent Control']
+  },
+  {
+    id: 'sw-touch-elite-8g',
+    name: 'Smart Touch Switch Elite',
+    category: 'smart-switches',
+    shortSpec: 'Elite Series | WiFi',
+    description: 'Premium 8-gang switch from the Elite series with ultra-responsive touch.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod7,
+    features: ['Premium Finish', 'Edge Lighting', 'Surge Protection', 'App Sync']
+  },
+  {
+    id: 'sw-scene-ctrl',
+    name: 'Smart Scene Controller',
+    category: 'smart-switches',
+    shortSpec: '12 Button | Scene Master',
+    description: 'The ultimate scene controller with 12 customizable touch points for complex home automation.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod8,
+    features: ['12 Gang Master', 'Scene Unlimited', 'Voice Compatible', 'Robust Build']
+  },
+  {
+    id: 'sw-touch-vert',
+    name: 'Smart Touch Switch Vertical',
+    category: 'smart-switches',
+    shortSpec: 'Slim Design | WiFi',
+    description: 'Sleek vertical-orientated touch switch for narrow spaces and modern aesthetics.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod9,
+    features: ['Slim Profile', 'Vertical Mount', 'Anti-oxidation', 'WiFi Mesh']
+  },
+  {
+    id: 'sw-micro-scene',
+    name: 'Micro Smart Switch',
+    category: 'smart-curtains',
+    shortSpec: 'Hybrid | Mini',
+    description: 'Micro-sized switch panel combining curtain icons with standard lighting control.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod10,
+    features: ['Hybrid Icons', 'Small Form Factor', 'Zigbee Ready', 'Quick Install']
+  },
+  {
+    id: 'sw-plus-8g',
+    name: 'Smart Touch Switch Plus (8 Gang)',
+    category: 'smart-switches',
+    shortSpec: 'Plus Series | WiFi',
+    description: 'Enhanced 8-gang touch panel with improved touch sensitivity and feedback.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod11,
+    features: ['Enhanced Touch', 'Cloud Connected', 'Timer Support', 'Glass Shell']
+  },
+  {
+    id: 'sw-plus-10g',
+    name: 'Smart Touch Switch Plus (10 Gang)',
+    category: 'smart-switches',
+    shortSpec: 'High Density | WiFi',
+    description: 'High-density 10-gang touch panel for extensive lighting setups.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod12,
+    features: ['10-Gang Control', 'Overload Protection', 'Status Sync', 'Voice Ready']
+  },
+  {
+    id: 'sw-plus-12g-mix',
+    name: 'Smart Touch Switch Plus (12 Gang Mix)',
+    category: 'smart-switches',
+    shortSpec: 'Multi-functional | WiFi',
+    description: 'Versatile 12-gang panel combining standard switches with special utility icons.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod13,
+    features: ['Utility Icons', '12 points', 'Fire Retardant', 'WiFi 6 Support']
+  },
+  {
+    id: 'sw-plus-12g',
+    name: 'Smart Touch Switch Plus (12 Gang)',
+    category: 'smart-switches',
+    shortSpec: 'Full Control | WiFi',
+    description: 'Complete 12-button switchboard for full house automation in a single plate.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod14,
+    features: ['12 Gang Std', 'Remote Monitoring', 'Child Lock', 'Tempered Glass']
+  },
+  {
+    id: 'sw-compact-mini',
+    name: 'Compact Smart Switch',
+    category: 'smart-switches',
+    shortSpec: 'Compact | Zigbee',
+    description: 'Small footprint scene switch for minimalist interiors.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod15,
+    features: ['Minimalist', 'Battery/Direct', 'Multi-press', 'App Config']
+  },
+  {
+    id: 'sw-glass-1g',
+    name: 'Glass Touch Switch (1 Gang)',
+    category: 'smart-switches',
+    shortSpec: 'Glass | 1 Gang',
+    description: 'Standard 1-gang glass touch switch for simple lighting control.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod16,
+    features: ['Touch Only', 'Retrofit Ready', 'Indicator LED', 'Waterproof']
+  },
+  {
+    id: 'sw-glass-2g',
+    name: 'Glass Touch Switch (2 Gang)',
+    category: 'smart-switches',
+    shortSpec: 'Glass | 2 Gang',
+    description: 'Standard 2-gang glass touch switch for moderate lighting control.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod17,
+    features: ['Dual Zone', 'Sleek Look', 'Instant Response', 'Easy Clean']
+  },
+  {
+    id: 'sw-glass-3g',
+    name: 'Glass Touch Switch (3 Gang)',
+    category: 'smart-switches',
+    shortSpec: 'Glass | 3 Gang',
+    description: 'Standard 3-gang glass touch switch for living space lighting control.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod18,
+    features: ['Triple Zone', 'WiFi Module', 'Cloud Link', 'Scratch Resistant']
+  },
+  {
+    id: 'sw-glass-4g',
+    name: 'Glass Touch Switch (4 Gang)',
+    category: 'smart-switches',
+    shortSpec: 'Glass | 4 Gang',
+    description: 'Standard 4-gang glass touch switch for comprehensive lighting control.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod19,
+    features: ['Quad Zone', 'App Control', 'Auto Off Timer', 'Silent Relay']
+  },
+  {
+    id: 'security-doorbell-v1',
+    name: 'Smart Video Doorbell',
+    category: 'security',
+    shortSpec: 'HD Camera | WiFi',
+    description: 'Wireless video doorbell with night vision and two-way audio talk.',
+    wattage: 'Battery/Plug',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'Rechargeable',
+    image: prod20,
+    features: ['Video Call', 'Motion Detection', 'Night Vision', 'WiFi Chime']
+  },
+  {
+    id: 'sw-glass-premium',
+    name: 'Premium Glass Panel Switch',
+    category: 'smart-switches',
+    shortSpec: 'Premium | WiFi',
+    description: 'High-end multi-functional glass panel with luxury icons and finish.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod21,
+    features: ['Luxury Icons', 'Multi-touch', 'Scene Enabled', 'Gold Accents']
+  },
+  {
+    id: 'sw-retrofit-1g',
+    name: 'Retrofit Smart Switch (1 Gang)',
+    category: 'smart-switches',
+    shortSpec: 'Retrofit | WiFi',
+    description: 'Smart switch designed to fit existing electrical boxes without rewiring.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod22,
+    features: ['No Rewire', 'Universal Fit', 'App Control', 'Voice Link']
+  },
+  {
+    id: 'sw-retrofit-fan',
+    name: 'Retrofit Fan Regulator',
+    category: 'smart-switches',
+    shortSpec: 'Fan Control | WiFi',
+    description: 'Digital fan regulator with smooth touch interface and remote control.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod23,
+    features: ['Silent Reg', 'Speed Sync', 'Timer', 'Overload Protection']
+  },
+  {
+    id: 'sw-retrofit-curtain',
+    name: 'Retrofit Curtain Switch',
+    category: 'smart-curtains',
+    shortSpec: 'Curtain | WiFi',
+    description: 'Retrofit touch switch specifically for operating curtain motors.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod24,
+    features: ['Motor Limit Sync', 'App Control', 'Manual Override', 'Easy Setup']
+  },
+  {
+    id: 'sw-relay-module',
+    name: 'Smart Relay Control Module',
+    category: 'smart-switches',
+    shortSpec: 'Control Box | Industrial',
+    description: 'Heavy-duty relay control module for automated switching of high-power loads.',
+    wattage: 'High Power',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'Industrial Grade',
+    image: prod25,
+    features: ['DIN Rail Mount', 'Dry Contact', 'App Control', 'Energy Monitor']
+  },
+  {
+    id: 'lock-x1-black',
+    name: 'Smart Digital Lock X1',
+    category: 'smart-locks',
+    shortSpec: 'Fingerprint | Keypad',
+    description: 'Standard smart mortise lock with multiple unlock options for home security.',
+    wattage: 'Battery',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: prod26,
+    features: ['Fingerprint', 'PIN Code', 'RFID Card', 'Emergency Key']
+  },
+  {
+    id: 'lock-x3-bronze',
+    name: 'Smart Digital Lock X3 (Bronze)',
+    category: 'smart-locks',
+    shortSpec: 'Bronze Finish | WiFi',
+    description: 'Elegant bronze-finished smart lock with remote unlock support.',
+    wattage: 'Battery',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: prod27,
+    features: ['Premium Finish', 'App Unlock', 'Passcode History', 'Anti-hijack']
+  },
+  {
+    id: 'lock-x5-silver',
+    name: 'Smart Digital Lock X5 (Silver)',
+    category: 'smart-locks',
+    shortSpec: 'Silver Finish | Camera',
+    description: 'Advanced security lock featuring an integrated camera for visitor snapshots.',
+    wattage: 'Rechargeable',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: prod28,
+    features: ['Built-in Camera', 'Silver Plate', 'Fingerprint', 'Doorbell Function']
+  },
+  {
+    id: 'lock-v1-video',
+    name: 'Smart Video Lock V1',
+    category: 'smart-locks',
+    shortSpec: 'Video Screen | HD',
+    description: 'High-end door lock with a built-in indoor screen for outside viewing.',
+    wattage: 'Rechargeable',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: prod29,
+    features: ['Indoor Screen', 'Live Video', 'App Video Call', 'Face Recognition']
+  },
+  {
+    id: 'lock-comparison-series',
+    name: 'Smart Security Lock Series',
+    category: 'smart-locks',
+    shortSpec: 'Full Series | Comparison',
+    description: 'Comparison showcase of the flagship smart lock series featuring all available finishes.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: prod30,
+    features: ['Series Overview', 'All Finishes', 'Feature Comparison', 'Bundle Offers']
+  },
+  {
+    id: 'lock-slim-std',
+    name: 'Slim Smart Door Lock',
+    category: 'smart-locks',
+    shortSpec: 'Slim Design | WiFi',
+    description: 'Compact and slim profile smart lock perfect for modern aluminum or thin doors.',
+    wattage: 'Battery',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: prod31,
+    features: ['Slim Mortise', 'Keypad', 'Fingerprint', 'App Control']
+  },
+  {
+    id: 'lock-mortise-fg',
+    name: 'Fingerprint Mortise Lock',
+    category: 'smart-locks',
+    shortSpec: 'Heavy Duty | Fingerprint',
+    description: 'Solid mortise lock with semi-conductor fingerprint sensor for high-speed entry.',
+    wattage: 'Battery',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: prod32,
+    features: ['High-speed FG', 'Panic Exit', 'Auto Locking', 'Robust Body']
+  },
+  {
+    id: 'lock-handle-pro',
+    name: 'Smart Handle Lock Pro',
+    category: 'smart-locks',
+    shortSpec: 'Dual Handle | Pro',
+    description: 'Professional grade handle-based smart lock with reinforced security points.',
+    wattage: 'Battery',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: prod33,
+    features: ['Reinforced Handle', 'Mortise Pro', 'Multiple Users', 'Keypad Backlight']
+  },
+  {
+    id: 'lock-glass-std',
+    name: 'Smart Glass Door Lock',
+    category: 'smart-locks',
+    shortSpec: 'Glass Door | No Drill',
+    description: 'Specialized smart lock for glass doors with no-drill installation.',
+    wattage: 'Battery',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: prod34,
+    features: ['No Drilling', 'Glass Fitting', 'Double Door Opt', 'Fingerprint']
+  },
+  {
+    id: 'lock-face-3d',
+    name: 'Ultimate 3D Face Lock',
+    category: 'smart-locks',
+    shortSpec: '3D Face ID | Flagship',
+    description: 'Flagship smart lock with 3D structured light face recognition and video display.',
+    wattage: 'High-cap Li-ion',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: prod35,
+    features: ['3D Face ID', 'Full HD Display', 'Video Doorbell', 'Remote Access']
   },
 ];
 

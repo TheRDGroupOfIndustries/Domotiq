@@ -9,7 +9,7 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
 
   useEffect(() => {
     // Initialize reveal animations after a short delay to ensure DOM is ready
@@ -17,7 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
       initGlobalReveal();
     }, 100);
     return () => clearTimeout(timer);
-  }, [pathname]);
+  }, [pathname, search]);
 
   return (
     <div className="min-h-screen flex flex-col">

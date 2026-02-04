@@ -46,16 +46,16 @@ const ProductDetail = () => {
       </div>
 
       {/* Product Detail */}
-      <section className="pb-20">
+      <section className="pb-20 pt-10 md:pt-16">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Image Gallery */}
             <div className="space-y-4 animate-fade-in">
-              <div className="aspect-square bg-secondary rounded-2xl overflow-hidden group">
+              <div className="bg-secondary rounded-2xl overflow-hidden group flex items-center justify-center min-h-[500px] p-12 md:p-20 pt-16 md:pt-24">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="max-w-full max-h-[600px] w-auto h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
             </div>
