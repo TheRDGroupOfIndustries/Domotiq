@@ -34,23 +34,25 @@ const ProductDetail = () => {
 
   return (
     <Layout>
-      {/* Breadcrumb */}
-      <div className="container-wide pt-12 pb-6 animate-fade-in">
-        <Link
-          to="/shop"
-          className="inline-flex items-center gap-2 body-small text-muted-foreground hover:text-foreground transition-colors group"
-        >
-          <ArrowLeft size={16} className="transition-transform group-hover:-translate-x-1" />
-          Back to Catalogue
-        </Link>
-      </div>
-
       {/* Product Detail */}
-      <section className="pb-20 pt-10 md:pt-16">
-        <div className="container-wide">
+      <section className="pb-20 relative">
+        {/* Breadcrumb */}
+        <div className="sticky top-20 md:top-24 z-30 bg-background/80 backdrop-blur-md border-b border-border/50 lg:border-none">
+          <div className="container-wide py-4 md:py-6 animate-fade-in">
+            <Link
+              to="/shop"
+              className="inline-flex items-center gap-2 body-small text-muted-foreground hover:text-foreground transition-colors group"
+            >
+              <ArrowLeft size={16} className="transition-transform group-hover:-translate-x-1" />
+              Back to Catalogue
+            </Link>
+          </div>
+        </div>
+
+        <div className="container-wide pt-8 md:pt-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Image Gallery */}
-            <div className="space-y-4 animate-fade-in">
+            <div className="lg:sticky lg:top-40 h-fit space-y-4 animate-fade-in">
               <div className="bg-secondary rounded-2xl overflow-hidden group flex items-center justify-center min-h-[500px] p-12 md:p-20 pt-16 md:pt-24">
                 <img
                   src={product.image}
