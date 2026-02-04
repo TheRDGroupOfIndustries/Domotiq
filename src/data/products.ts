@@ -7,15 +7,6 @@ import bulb1 from '@/assets/products/bulb-1.jpg';
 import tube1 from '@/assets/products/tube-1.jpg';
 import flat1 from '@/assets/products/flat-1.jpg';
 import surface1 from '@/assets/products/surface-1.jpg';
-import smartSwitch2m from '@/assets/products/smart-switch-2m.png';
-import smartSwitch4m from '@/assets/products/smart-switch-4m.png';
-import smartSwitch6m from '@/assets/products/smart-switch-6m.png';
-import smartSwitch8m from '@/assets/products/smart-switch-8m.png';
-import pearlSeries from '@/assets/products/pearl-series.png';
-import smartCurtains from '@/assets/products/smart-curtains.png';
-import smartLockR1 from '@/assets/products/smart-lock-r1.png';
-import smartLockR3 from '@/assets/products/smart-lock-r3.png';
-import smartLockR5 from '@/assets/products/smart-lock-r5.png';
 
 // New Arrivals Imports
 import prod1 from '@/assets/products/prod-1.png';
@@ -85,7 +76,6 @@ export const categories: Category[] = [
   { id: 'streetlight', name: 'Street Light', description: 'Urban lighting', image: streetlight1 },
   { id: 'smart-switches', name: 'Smart Switches', description: 'Touch capacitive switches', image: prod23 },
   { id: 'smart-locks', name: 'Smart Locks', description: 'Advanced security locks', image: prod26 },
-  // { id: 'security', name: 'Security', description: 'Smart doorbells and cameras', image: prod20 },
 ];
 
 export const products: Product[] = [
@@ -206,185 +196,11 @@ export const products: Product[] = [
     image: surface1,
     features: ['Opal diffuser', 'IP44 bathroom', 'Quick mount', 'Motion sensor option']
   },
-  // {
-  //   id: 'smart-switch-2m',
-  //   name: 'Smart Switch 2M',
-  //   category: 'smart-switches',
-  //   shortSpec: '2 Module | Touch Control | WiFi',
-  //   description: 'Elegant 2-module smart touch switch with glass finish. Supports WiFi connectivity for remote control via app and voice assistants.',
-  //   wattage: 'N/A',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: '100,000 operations',
-  //   image: smartSwitch2m,
-  //   features: ['Tempered Glass', 'App Control', 'Voice Control', 'schedule & Timer']
-  // },
-  // {
-  //   id: 'smart-switch-4m',
-  //   name: 'Smart Switch 4M',
-  //   category: 'smart-switches',
-  //   shortSpec: '4 Module | Touch Control | WiFi',
-  //   description: 'Premium 4-module touch switch panel. Customizable icons and backlighting. Perfect for controlling multiple circuits in living and bedrooms.',
-  //   wattage: 'N/A',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: '100,000 operations',
-  //   image: smartSwitch4m,
-  //   features: ['Custom Icons', 'Backlit Touch', 'Scene Control', 'Easy Retrofit']
-  // },
-  // {
-  //   id: 'smart-switch-6m',
-  //   name: 'Smart Switch 6M',
-  //   category: 'smart-switches',
-  //   shortSpec: '6 Module | Touch Control | Fan Control',
-  //   description: 'Comprehensive 6-module panel including fan regulation. Combine lighting and fan control in a single sleek glass interface.',
-  //   wattage: 'N/A',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: '100,000 operations',
-  //   image: smartSwitch6m,
-  //   features: ['Fan Regulator', 'Master Switch', 'Surge Protection', 'Cloud Sync']
-  // },
-  // {
-  //   id: 'smart-switch-8m',
-  //   name: 'Smart Switch 8M',
-  //   category: 'smart-switches',
-  //   shortSpec: '8 Module | Touch Control | Master',
-  //   description: 'The ultimate control hub. 8-module smart panel for extensive lighting configurations. Features master control and scene automation.',
-  //   wattage: 'N/A',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: '100,000 operations',
-  //   image: smartSwitch8m,
-  //   features: ['8 Gang Control', 'Master All Off', 'Group Control', 'Premium Build']
-  // },
-  // Pearl Series
-  // {
-  //   id: 'pearl-4-switch',
-  //   name: 'Pearl 4-Switch',
-  //   category: 'pearl-series',
-  //   shortSpec: '4 Switches | Retrofit Design',
-  //   description: 'Domotiq Pearl Series 4-Switch panel. Retrofit design compatible with existing switchboards. Elegant glass finish.',
-  //   wattage: 'N/A',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: '100,000 operations',
-  //   image: pearlSeries,
-  //   features: ['Retrofit', 'Touch Control', 'Glass Panel', 'WiFi Optional']
-  // },
-  // {
-  //   id: 'pearl-fan-regulator',
-  //   name: 'Pearl Fan Regulator',
-  //   category: 'pearl-series',
-  //   shortSpec: 'Fan Control | Touch Interface',
-  //   description: 'Touch-controlled fan regulator from the Pearl Series. Smooth speed adjustment and premium aesthetic.',
-  //   wattage: 'N/A',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: '100,000 operations',
-  //   image: pearlSeries, // Using same image as it's a series showcase
-  //   features: ['5-Step Speed', 'No Humming', 'Touch Control', 'Memory Function']
-  // },
-
-  // Smart Curtains
-  // {
-  //   id: 'curtain-track-10f',
-  //   name: 'Curtain Track 10F',
-  //   category: 'smart-curtains',
-  //   shortSpec: 'Telescopic Track | 51mm',
-  //   description: 'Expandable center opening curtain track. Telescopic patterned technology, smooth operation, and easy transport.',
-  //   wattage: 'N/A',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: 'Heavy Duty',
-  //   image: smartCurtains,
-  //   features: ['Telescopic', 'Smooth Gliding', 'Anti-oxidation', 'Adjustable Size']
-  // },
-  // {
-  //   id: 'curtain-motor-60k',
-  //   name: 'Curtain Motor 60K',
-  //   category: 'smart-curtains',
-  //   shortSpec: 'Silent Motor | App Control',
-  //   description: 'Silent operating motorized curtain track kit. Supports remote, mobile app, and voice control via Alexa/Google Home.',
-  //   wattage: 'N/A',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: 'Premium Motor',
-  //   image: smartCurtains,
-  //   features: ['Silent Operation', 'Voice Control', 'App Control', 'Touch Start']
-  // },
-
-  // Smart Locks
-  // {
-  //   id: 'lock-r1-pro',
-  //   name: 'Domotiq R1 PRO',
-  //   category: 'smart-locks',
-  //   shortSpec: 'Fingerprint | RFID | Key',
-  //   description: 'Advanced smart lock with multiple unlock methods including fingerprint, RFID card, passcode, and mechanical key.',
-  //   wattage: 'Battery',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: 'High Security',
-  //   image: smartLockR1,
-  //   features: ['Fingerprint', 'RFID Card', 'Passcode', 'Remote Support']
-  // },
-  // {
-  //   id: 'lock-r3-pro',
-  //   name: 'Domotiq R3 PRO',
-  //   category: 'smart-locks',
-  //   shortSpec: 'Face Rec | Camera | Video Call',
-  //   description: 'Premium smart lock with 3D Face Recognition and built-in HD camera for video calls. The ultimate in home security.',
-  //   wattage: 'Rechargeable Li-ion',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: 'High Security',
-  //   image: smartLockR3,
-  //   features: ['3D Face Rec', 'Video Call', 'Inside Display', 'Auto Lock']
-  // },
-  // {
-  //   id: 'lock-r5',
-  //   name: 'Domotiq R5',
-  //   category: 'smart-locks',
-  //   shortSpec: 'Face ID | Palm Vein | 3.5" Display',
-  //   description: 'Flagship smart lock featuring Palm Vein recognition and a large 3.5-inch indoor display monitor for visitor verification.',
-  //   wattage: 'Rechargeable Li-ion',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: 'High Security',
-  //   image: smartLockR5,
-  //   features: ['Palm Vein Rec', '3.5" Screen', 'Hijack Alarm', '200 Fingerprints']
-  // },
 
   // New Detailed Products
   {
-    id: 'sw-touch-4g',
-    name: 'Smart Touch Switch (4 Gang)',
-    category: 'smart-switches',
-    shortSpec: 'Glass Finish | WiFi',
-    description: 'Elegant 4-button touch switch with LED backlight and WiFi for app control.',
-    wattage: 'N/A',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: '100,000 ops',
-    image: prod1,
-    features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
-  },
-  // {
-  //   id: 'curtain-ctrl-std',
-  //   name: 'Smart Curtain Control',
-  //   category: 'smart-curtains',
-  //   shortSpec: 'Touch | WiFi',
-  //   description: 'Dedicated touch panel for smooth operation of smart curtains or blinds.',
-  //   wattage: 'N/A',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: 'Heavy Duty',
-  //   image: prod2,
-  //   features: ['Smooth Control', 'App Integration', 'Timer Support', 'Direct Drive']
-  // },
-  {
-    id: 'sw-scene-1b',
-    name: 'Smart Scene Button',
+    id: 'd-2001',
+    name: 'D-2001',
     category: 'smart-switches',
     shortSpec: 'Single Button | Mini',
     description: 'Compact single-button scene switch for quick execution of smart home routines.',
@@ -396,60 +212,47 @@ export const products: Product[] = [
     features: ['Compact Design', 'Muti-click Support', 'WiFi/Zigbee', 'Easy Mount']
   },
   {
-    id: 'sw-touch-8g',
-    name: 'Smart Touch Switch (8 Gang)',
+    id: 'd-2002',
+    name: 'D-2002',
     category: 'smart-switches',
-    shortSpec: 'High Capacity | WiFi',
-    description: 'Comprehensive 8-button touch panel for complete room control.',
+    shortSpec: 'Glass Finish | WiFi',
+    description: 'Elegant 4-button touch switch with LED backlight and WiFi for app control.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
     lifespan: '100,000 ops',
-    image: prod4,
-    features: ['8 Gang Control', 'Master Off', 'Custom Labels', 'Glass Panel']
+    image: prod1,
+    features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
   },
   {
-    id: 'sw-fan-light-8g',
-    name: 'Smart Fan & Light Control',
+    id: 'd-2003',
+    name: 'D-2003',
     category: 'smart-switches',
-    shortSpec: '8 Button | Fan Reg',
-    description: 'Combined 8-button panel with dedicated fan speed and light intensity controls.',
+    shortSpec: 'Glass Finish | WiFi',
+    description: 'Elegant 4-button touch switch with LED backlight and WiFi for app control.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
     lifespan: '100,000 ops',
-    image: prod5,
-    features: ['Fan Regulation', 'Step-less Speed', 'Light Dimming', 'Touch Feedbak']
+    image: prod2,
+    features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
   },
-  // {
-  //   id: 'curtain-ctrl-pro',
-  //   name: 'Smart Curtain Control Pro',
-  //   category: 'smart-curtains',
-  //   shortSpec: '8 Button | Multi-Zone',
-  //   description: 'Advanced curtain control panel supporting multiple zones and scene automation.',
-  //   wattage: 'N/A',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: 'Heavy Duty',
-  //   image: prod6,
-  //   features: ['Multi-zone', 'Scene Preset', 'Auto Schedule', 'Silent Control']
-  // },
   {
-    id: 'sw-touch-elite-8g',
-    name: 'Smart Touch Switch Elite',
+    id: 'd-6014',
+    name: 'D-6014',
     category: 'smart-switches',
-    shortSpec: 'Elite Series | WiFi',
-    description: 'Premium 8-gang switch from the Elite series with ultra-responsive touch.',
+    shortSpec: 'Glass Finish | WiFi',
+    description: 'Elegant 4-button touch switch with LED backlight and WiFi for app control.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
     lifespan: '100,000 ops',
-    image: prod7,
-    features: ['Premium Finish', 'Edge Lighting', 'Surge Protection', 'App Sync']
+    image: prod10,
+    features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
   },
   {
-    id: 'sw-scene-ctrl',
-    name: 'Smart Scene Controller',
+    id: 'd-4002',
+    name: 'D-4002',
     category: 'smart-switches',
     shortSpec: '12 Button | Scene Master',
     description: 'The ultimate scene controller with 12 customizable touch points for complex home automation.',
@@ -461,8 +264,60 @@ export const products: Product[] = [
     features: ['12 Gang Master', 'Scene Unlimited', 'Voice Compatible', 'Robust Build']
   },
   {
-    id: 'sw-touch-vert',
-    name: 'Smart Touch Switch Vertical',
+    id: 'd-4003',
+    name: 'D-4003',
+    category: 'smart-switches',
+    shortSpec: 'High Capacity | WiFi',
+    description: 'Comprehensive 8-button touch panel for complete room control.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod4,
+    features: ['8 Gang Control', 'Master Off', 'Custom Labels', 'Glass Panel']
+  },
+  {
+    id: 'd-4004',
+    name: 'D-4004',
+    category: 'smart-switches',
+    shortSpec: '8 Button | Fan Reg',
+    description: 'Combined 8-button panel with dedicated fan speed and light intensity controls.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod5,
+    features: ['Fan Regulation', 'Step-less Speed', 'Light Dimming', 'Touch Feedbak']
+  },
+  {
+    id: 'd-4005',
+    name: 'D-4005',
+    category: 'smart-switches',
+    shortSpec: 'Glass Finish | WiFi',
+    description: 'Elegant 4-button touch switch with LED backlight and WiFi for app control.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod6,
+    features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
+  },
+  {
+    id: 'd-4012',
+    name: 'D-4012',
+    category: 'smart-switches',
+    shortSpec: 'Elite Series | WiFi',
+    description: 'Premium 8-gang switch from the Elite series with ultra-responsive touch.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod7,
+    features: ['Premium Finish', 'Edge Lighting', 'Surge Protection', 'App Sync']
+  },
+  {
+    id: 'd-6012',
+    name: 'D-6012',
     category: 'smart-switches',
     shortSpec: 'Slim Design | WiFi',
     description: 'Sleek vertical-orientated touch switch for narrow spaces and modern aesthetics.',
@@ -473,22 +328,9 @@ export const products: Product[] = [
     image: prod9,
     features: ['Slim Profile', 'Vertical Mount', 'Anti-oxidation', 'WiFi Mesh']
   },
-  // {
-  //   id: 'sw-micro-scene',
-  //   name: 'Micro Smart Switch',
-  //   category: 'smart-curtains',
-  //   shortSpec: 'Hybrid | Mini',
-  //   description: 'Micro-sized switch panel combining curtain icons with standard lighting control.',
-  //   wattage: 'N/A',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: '100,000 ops',
-  //   image: prod10,
-  //   features: ['Hybrid Icons', 'Small Form Factor', 'Zigbee Ready', 'Quick Install']
-  // },
   {
-    id: 'sw-plus-8g',
-    name: 'Smart Touch Switch Plus (8 Gang)',
+    id: 'd-6013',
+    name: 'D-6013',
     category: 'smart-switches',
     shortSpec: 'Plus Series | WiFi',
     description: 'Enhanced 8-gang touch panel with improved touch sensitivity and feedback.',
@@ -500,8 +342,8 @@ export const products: Product[] = [
     features: ['Enhanced Touch', 'Cloud Connected', 'Timer Support', 'Glass Shell']
   },
   {
-    id: 'sw-plus-10g',
-    name: 'Smart Touch Switch Plus (10 Gang)',
+    id: 'd-6003',
+    name: 'D-6003',
     category: 'smart-switches',
     shortSpec: 'High Density | WiFi',
     description: 'High-density 10-gang touch panel for extensive lighting setups.',
@@ -513,8 +355,8 @@ export const products: Product[] = [
     features: ['10-Gang Control', 'Overload Protection', 'Status Sync', 'Voice Ready']
   },
   {
-    id: 'sw-plus-12g-mix',
-    name: 'Smart Touch Switch Plus (12 Gang Mix)',
+    id: 'd-6004',
+    name: 'D-6004',
     category: 'smart-switches',
     shortSpec: 'Multi-functional | WiFi',
     description: 'Versatile 12-gang panel combining standard switches with special utility icons.',
@@ -526,8 +368,8 @@ export const products: Product[] = [
     features: ['Utility Icons', '12 points', 'Fire Retardant', 'WiFi 6 Support']
   },
   {
-    id: 'sw-plus-12g',
-    name: 'Smart Touch Switch Plus (12 Gang)',
+    id: 'd-6005',
+    name: 'D-6005',
     category: 'smart-switches',
     shortSpec: 'Full Control | WiFi',
     description: 'Complete 12-button switchboard for full house automation in a single plate.',
@@ -539,8 +381,8 @@ export const products: Product[] = [
     features: ['12 Gang Std', 'Remote Monitoring', 'Child Lock', 'Tempered Glass']
   },
   {
-    id: 'sw-compact-mini',
-    name: 'Compact Smart Switch',
+    id: 'd-6002',
+    name: 'D-6002',
     category: 'smart-switches',
     shortSpec: 'Compact | Zigbee',
     description: 'Small footprint scene switch for minimalist interiors.',
@@ -552,8 +394,8 @@ export const products: Product[] = [
     features: ['Minimalist', 'Battery/Direct', 'Multi-press', 'App Config']
   },
   {
-    id: 'sw-glass-1g',
-    name: 'Glass Touch Switch (1 Gang)',
+    id: 'd-8002',
+    name: 'D-8002',
     category: 'smart-switches',
     shortSpec: 'Glass | 1 Gang',
     description: 'Standard 1-gang glass touch switch for simple lighting control.',
@@ -565,8 +407,8 @@ export const products: Product[] = [
     features: ['Touch Only', 'Retrofit Ready', 'Indicator LED', 'Waterproof']
   },
   {
-    id: 'sw-glass-2g',
-    name: 'Glass Touch Switch (2 Gang)',
+    id: 'd-8004',
+    name: 'D-8004',
     category: 'smart-switches',
     shortSpec: 'Glass | 2 Gang',
     description: 'Standard 2-gang glass touch switch for moderate lighting control.',
@@ -578,8 +420,21 @@ export const products: Product[] = [
     features: ['Dual Zone', 'Sleek Look', 'Instant Response', 'Easy Clean']
   },
   {
-    id: 'sw-glass-3g',
-    name: 'Glass Touch Switch (3 Gang)',
+    id: 'd-8014',
+    name: 'D-8014',
+    category: 'smart-switches',
+    shortSpec: 'Glass Finish | WiFi',
+    description: 'Elegant 4-button touch switch with LED backlight and WiFi for app control.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod20,
+    features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
+  },
+  {
+    id: 'd-8015',
+    name: 'D-8015',
     category: 'smart-switches',
     shortSpec: 'Glass | 3 Gang',
     description: 'Standard 3-gang glass touch switch for living space lighting control.',
@@ -591,8 +446,8 @@ export const products: Product[] = [
     features: ['Triple Zone', 'WiFi Module', 'Cloud Link', 'Scratch Resistant']
   },
   {
-    id: 'sw-glass-4g',
-    name: 'Glass Touch Switch (4 Gang)',
+    id: 'd-8012',
+    name: 'D-8012',
     category: 'smart-switches',
     shortSpec: 'Glass | 4 Gang',
     description: 'Standard 4-gang glass touch switch for comprehensive lighting control.',
@@ -603,22 +458,9 @@ export const products: Product[] = [
     image: prod19,
     features: ['Quad Zone', 'App Control', 'Auto Off Timer', 'Silent Relay']
   },
-  // {
-  //   id: 'security-doorbell-v1',
-  //   name: 'Smart Video Doorbell',
-  //   category: 'security',
-  //   shortSpec: 'HD Camera | WiFi',
-  //   description: 'Wireless video doorbell with night vision and two-way audio talk.',
-  //   wattage: 'Battery/Plug',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: 'Rechargeable',
-  //   image: prod20,
-  //   features: ['Video Call', 'Motion Detection', 'Night Vision', 'WiFi Chime']
-  // },
   {
-    id: 'sw-glass-premium',
-    name: 'Premium Glass Panel Switch',
+    id: '4-switches',
+    name: '4-Switches',
     category: 'smart-switches',
     shortSpec: 'Premium | WiFi',
     description: 'High-end multi-functional glass panel with luxury icons and finish.',
@@ -630,8 +472,8 @@ export const products: Product[] = [
     features: ['Luxury Icons', 'Multi-touch', 'Scene Enabled', 'Gold Accents']
   },
   {
-    id: 'sw-retrofit-1g',
-    name: 'Retrofit Smart Switch (1 Gang)',
+    id: '1-switches',
+    name: '1-Switches',
     category: 'smart-switches',
     shortSpec: 'Retrofit | WiFi',
     description: 'Smart switch designed to fit existing electrical boxes without rewiring.',
@@ -643,8 +485,8 @@ export const products: Product[] = [
     features: ['No Rewire', 'Universal Fit', 'App Control', 'Voice Link']
   },
   {
-    id: 'sw-retrofit-fan',
-    name: 'Retrofit Fan Regulator',
+    id: 'fan-regulator',
+    name: 'Fan Regulator',
     category: 'smart-switches',
     shortSpec: 'Fan Control | WiFi',
     description: 'Digital fan regulator with smooth touch interface and remote control.',
@@ -655,22 +497,28 @@ export const products: Product[] = [
     image: prod23,
     features: ['Silent Reg', 'Speed Sync', 'Timer', 'Overload Protection']
   },
-  // {
-  //   id: 'sw-retrofit-curtain',
-  //   name: 'Retrofit Curtain Switch',
-  //   category: 'smart-curtains',
-  //   shortSpec: 'Curtain | WiFi',
-  //   description: 'Retrofit touch switch specifically for operating curtain motors.',
-  //   wattage: 'N/A',
-  //   lumens: 'N/A',
-  //   colorTemp: 'N/A',
-  //   lifespan: '100,000 ops',
-  //   image: prod24,
-  //   features: ['Motor Limit Sync', 'App Control', 'Manual Override', 'Easy Setup']
-  // },
   {
-    id: 'sw-relay-module',
-    name: 'Smart Relay Control Module',
+    id: 'wifi-in-wall-heavy-duty-p1',
+    name: 'WIFI in wall heavy duty retrofit switch modules 1',
+    category: 'smart-switches',
+    shortSpec: 'Control Box | Industrial',
+    description: 'Heavy-duty relay control module for automated switching of high-power loads.',
+    wattage: 'High Power',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'Industrial Grade',
+    image: prod24,
+    features: [
+      'Control From Mobile App',
+      'Schedule Events | Retain Manual Control',
+      'Hands Free with Amazon alexa & Google Assistant',
+      'Easy and Intelligent Installation | Make Normal Tik-Tok switch Automated',
+      'Multi Times Support Delay, Loop Countdown | Configurable restore behaviour on Power / Resume'
+    ]
+  },
+  {
+    id: 'wifi-in-wall-heavy-duty',
+    name: 'WIFI in wall heavy duty retrofit switch modules',
     category: 'smart-switches',
     shortSpec: 'Control Box | Industrial',
     description: 'Heavy-duty relay control module for automated switching of high-power loads.',
@@ -679,7 +527,13 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lifespan: 'Industrial Grade',
     image: prod25,
-    features: ['DIN Rail Mount', 'Dry Contact', 'App Control', 'Energy Monitor']
+    features: [
+      'Control From Mobile App',
+      'Schedule Events | Retain Manual Control',
+      'Hands Free with Amazon alexa & Google Assistant',
+      'Easy and Intelligent Installation | Make Normal Tik-Tok switch Automated',
+      'Multi Times Support Delay, Loop Countdown | Configurable restore behaviour on Power / Resume'
+    ]
   },
   {
     id: 'domotiq-r1-pro',
