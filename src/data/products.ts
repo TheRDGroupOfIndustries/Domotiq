@@ -1,12 +1,12 @@
-import ledPanel1 from '@/assets/products/led-panel-1.jpg';
-import downlight1 from '@/assets/products/downlight-1.jpg';
-import spotlight1 from '@/assets/products/spotlight-1.jpg';
-import streetlight1 from '@/assets/products/streetlight-1.jpg';
-import outdoor1 from '@/assets/products/outdoor-1.jpg';
-import bulb1 from '@/assets/products/bulb-1.jpg';
-import tube1 from '@/assets/products/tube-1.jpg';
-import flat1 from '@/assets/products/flat-1.jpg';
-import surface1 from '@/assets/products/surface-1.jpg';
+// import ledPanel1 from '@/assets/products/led-panel-1.jpg';
+// import downlight1 from '@/assets/products/downlight-1.jpg';
+// import spotlight1 from '@/assets/products/spotlight-1.jpg';
+// import streetlight1 from '@/assets/products/streetlight-1.jpg';
+// import outdoor1 from '@/assets/products/outdoor-1.jpg';
+// import bulb1 from '@/assets/products/bulb-1.jpg';
+// import tube1 from '@/assets/products/tube-1.jpg';
+// import flat1 from '@/assets/products/flat-1.jpg';
+// import surface1 from '@/assets/products/surface-1.jpg';
 
 // New Arrivals Imports
 import prod1 from '@/assets/products/prod-1.png';
@@ -67,135 +67,135 @@ export interface Category {
 }
 
 export const categories: Category[] = [
-  { id: 'surface', name: 'Surface', description: 'Ceiling mounted fixtures', image: surface1 },
-  { id: 'spots', name: 'Spots', description: 'Directional lighting', image: spotlight1 },
-  { id: 'tube', name: 'Tube', description: 'Linear lighting solutions', image: tube1 },
-  { id: 'flat', name: 'Flat Panel', description: 'Ultra-thin panels', image: flat1 },
-  { id: 'bulb', name: 'Bulb', description: 'Smart LED bulbs', image: bulb1 },
-  { id: 'outdoor', name: 'Outdoor', description: 'Weather-resistant lights', image: outdoor1 },
-  { id: 'streetlight', name: 'Street Light', description: 'Urban lighting', image: streetlight1 },
+  // { id: 'surface', name: 'Surface', description: 'Ceiling mounted fixtures', image: surface1 },
+  // { id: 'spots', name: 'Spots', description: 'Directional lighting', image: spotlight1 },
+  // { id: 'tube', name: 'Tube', description: 'Linear lighting solutions', image: tube1 },
+  // { id: 'flat', name: 'Flat Panel', description: 'Ultra-thin panels', image: flat1 },
+  // { id: 'bulb', name: 'Bulb', description: 'Smart LED bulbs', image: bulb1 },
+  // { id: 'outdoor', name: 'Outdoor', description: 'Weather-resistant lights', image: outdoor1 },
+  // { id: 'streetlight', name: 'Street Light', description: 'Urban lighting', image: streetlight1 },
   { id: 'smart-switches', name: 'Smart Switches', description: 'Touch capacitive switches', image: prod23 },
   { id: 'smart-locks', name: 'Smart Locks', description: 'Advanced security locks', image: prod26 },
 ];
 
 export const products: Product[] = [
-  {
-    id: 'led-panel-pro-600',
-    name: 'LED Panel Pro 600',
-    category: 'flat',
-    shortSpec: '40W | 4000lm | 4000K',
-    description: 'Premium LED panel with edge-lit technology for uniform light distribution. Perfect for offices, commercial spaces, and modern interiors.',
-    wattage: '40W',
-    lumens: '4000lm',
-    colorTemp: '4000K',
-    lifespan: '50,000 hours',
-    image: ledPanel1,
-    features: ['Flicker-free driver', 'UGR<19', 'Dimmable 0-10V', 'Easy installation']
-  },
-  {
-    id: 'downlight-elite-15',
-    name: 'Downlight Elite 15',
-    category: 'surface',
-    shortSpec: '15W | 1500lm | 3000K',
-    description: 'Recessed LED downlight with precision optics and excellent color rendering. Ideal for residential and hospitality applications.',
-    wattage: '15W',
-    lumens: '1500lm',
-    colorTemp: '3000K',
-    lifespan: '40,000 hours',
-    image: downlight1,
-    features: ['CRI>90', 'IP44 rated', 'Adjustable beam', 'Thermal management']
-  },
-  {
-    id: 'track-spot-25',
-    name: 'Track Spot 25',
-    category: 'spots',
-    shortSpec: '25W | 2200lm | 3000K',
-    description: 'Professional track-mounted spotlight with 350° rotation. Designed for retail displays, galleries, and accent lighting.',
-    wattage: '25W',
-    lumens: '2200lm',
-    colorTemp: '3000K',
-    lifespan: '35,000 hours',
-    image: spotlight1,
-    features: ['350° rotation', 'Honeycomb lens', 'Tool-free adjustment', 'Premium aluminum body']
-  },
-  {
-    id: 'urban-street-150',
-    name: 'Urban Street 150',
-    category: 'streetlight',
-    shortSpec: '150W | 18000lm | 5000K',
-    description: 'High-efficiency street light with smart control compatibility. Built for roads, parking lots, and urban infrastructure.',
-    wattage: '150W',
-    lumens: '18000lm',
-    colorTemp: '5000K',
-    lifespan: '60,000 hours',
-    image: streetlight1,
-    features: ['IP66 rated', 'Surge protection', 'Smart ready', 'Die-cast aluminum']
-  },
-  {
-    id: 'garden-wall-pro',
-    name: 'Garden Wall Pro',
-    category: 'outdoor',
-    shortSpec: '12W | 1100lm | 3000K',
-    description: 'Contemporary outdoor wall light with IP65 protection. Perfect for facades, pathways, and landscape lighting.',
-    wattage: '12W',
-    lumens: '1100lm',
-    colorTemp: '3000K',
-    lifespan: '45,000 hours',
-    image: outdoor1,
-    features: ['IP65 rated', 'Powder coated', 'UV resistant', 'Easy wall mount']
-  },
-  {
-    id: 'smart-bulb-e27',
-    name: 'Smart Bulb E27',
-    category: 'bulb',
-    shortSpec: '9W | 800lm | 2700-6500K',
-    description: 'WiFi-enabled smart LED bulb with tunable white and dimming. Compatible with voice assistants and smart home systems.',
-    wattage: '9W',
-    lumens: '800lm',
-    colorTemp: '2700-6500K',
-    lifespan: '25,000 hours',
-    image: bulb1,
-    features: ['WiFi enabled', 'Voice control', 'Tunable white', 'App scheduling']
-  },
-  {
-    id: 'linear-tube-1200',
-    name: 'Linear Tube 1200',
-    category: 'tube',
-    shortSpec: '18W | 2000lm | 4000K',
-    description: 'Slim profile LED tube for suspended or surface mounting. Ideal for offices, corridors, and commercial spaces.',
-    wattage: '18W',
-    lumens: '2000lm',
-    colorTemp: '4000K',
-    lifespan: '50,000 hours',
-    image: tube1,
-    features: ['Linkable design', 'DALI compatible', 'Emergency option', 'Slim 40mm profile']
-  },
-  {
-    id: 'flat-panel-ultra',
-    name: 'Flat Panel Ultra',
-    category: 'flat',
-    shortSpec: '36W | 3600lm | 4000K',
-    description: 'Ultra-thin edge-lit panel with premium light quality. Designed for suspended ceilings and modern interiors.',
-    wattage: '36W',
-    lumens: '3600lm',
-    colorTemp: '4000K',
-    lifespan: '50,000 hours',
-    image: flat1,
-    features: ['9mm profile', 'Micro-prismatic', 'Backlit option', 'Suspended mount']
-  },
-  {
-    id: 'surface-round-24',
-    name: 'Surface Round 24',
-    category: 'surface',
-    shortSpec: '24W | 2200lm | 3000K',
-    description: 'Sleek surface-mounted ceiling light with uniform diffusion. Perfect for residential spaces and corridors.',
-    wattage: '24W',
-    lumens: '2200lm',
-    colorTemp: '3000K',
-    lifespan: '40,000 hours',
-    image: surface1,
-    features: ['Opal diffuser', 'IP44 bathroom', 'Quick mount', 'Motion sensor option']
-  },
+  // {
+  //   id: 'led-panel-pro-600',
+  //   name: 'LED Panel Pro 600',
+  //   category: 'flat',
+  //   shortSpec: '40W | 4000lm | 4000K',
+  //   description: 'Premium LED panel with edge-lit technology for uniform light distribution. Perfect for offices, commercial spaces, and modern interiors.',
+  //   wattage: '40W',
+  //   lumens: '4000lm',
+  //   colorTemp: '4000K',
+  //   lifespan: '50,000 hours',
+  //   image: ledPanel1,
+  //   features: ['Flicker-free driver', 'UGR<19', 'Dimmable 0-10V', 'Easy installation']
+  // },
+  // {
+  //   id: 'downlight-elite-15',
+  //   name: 'Downlight Elite 15',
+  //   category: 'surface',
+  //   shortSpec: '15W | 1500lm | 3000K',
+  //   description: 'Recessed LED downlight with precision optics and excellent color rendering. Ideal for residential and hospitality applications.',
+  //   wattage: '15W',
+  //   lumens: '1500lm',
+  //   colorTemp: '3000K',
+  //   lifespan: '40,000 hours',
+  //   image: downlight1,
+  //   features: ['CRI>90', 'IP44 rated', 'Adjustable beam', 'Thermal management']
+  // },
+  // {
+  //   id: 'track-spot-25',
+  //   name: 'Track Spot 25',
+  //   category: 'spots',
+  //   shortSpec: '25W | 2200lm | 3000K',
+  //   description: 'Professional track-mounted spotlight with 350° rotation. Designed for retail displays, galleries, and accent lighting.',
+  //   wattage: '25W',
+  //   lumens: '2200lm',
+  //   colorTemp: '3000K',
+  //   lifespan: '35,000 hours',
+  //   image: spotlight1,
+  //   features: ['350° rotation', 'Honeycomb lens', 'Tool-free adjustment', 'Premium aluminum body']
+  // },
+  // {
+  //   id: 'urban-street-150',
+  //   name: 'Urban Street 150',
+  //   category: 'streetlight',
+  //   shortSpec: '150W | 18000lm | 5000K',
+  //   description: 'High-efficiency street light with smart control compatibility. Built for roads, parking lots, and urban infrastructure.',
+  //   wattage: '150W',
+  //   lumens: '18000lm',
+  //   colorTemp: '5000K',
+  //   lifespan: '60,000 hours',
+  //   image: streetlight1,
+  //   features: ['IP66 rated', 'Surge protection', 'Smart ready', 'Die-cast aluminum']
+  // },
+  // {
+  //   id: 'garden-wall-pro',
+  //   name: 'Garden Wall Pro',
+  //   category: 'outdoor',
+  //   shortSpec: '12W | 1100lm | 3000K',
+  //   description: 'Contemporary outdoor wall light with IP65 protection. Perfect for facades, pathways, and landscape lighting.',
+  //   wattage: '12W',
+  //   lumens: '1100lm',
+  //   colorTemp: '3000K',
+  //   lifespan: '45,000 hours',
+  //   image: outdoor1,
+  //   features: ['IP65 rated', 'Powder coated', 'UV resistant', 'Easy wall mount']
+  // },
+  // {
+  //   id: 'smart-bulb-e27',
+  //   name: 'Smart Bulb E27',
+  //   category: 'bulb',
+  //   shortSpec: '9W | 800lm | 2700-6500K',
+  //   description: 'WiFi-enabled smart LED bulb with tunable white and dimming. Compatible with voice assistants and smart home systems.',
+  //   wattage: '9W',
+  //   lumens: '800lm',
+  //   colorTemp: '2700-6500K',
+  //   lifespan: '25,000 hours',
+  //   image: bulb1,
+  //   features: ['WiFi enabled', 'Voice control', 'Tunable white', 'App scheduling']
+  // },
+  // {
+  //   id: 'linear-tube-1200',
+  //   name: 'Linear Tube 1200',
+  //   category: 'tube',
+  //   shortSpec: '18W | 2000lm | 4000K',
+  //   description: 'Slim profile LED tube for suspended or surface mounting. Ideal for offices, corridors, and commercial spaces.',
+  //   wattage: '18W',
+  //   lumens: '2000lm',
+  //   colorTemp: '4000K',
+  //   lifespan: '50,000 hours',
+  //   image: tube1,
+  //   features: ['Linkable design', 'DALI compatible', 'Emergency option', 'Slim 40mm profile']
+  // },
+  // {
+  //   id: 'flat-panel-ultra',
+  //   name: 'Flat Panel Ultra',
+  //   category: 'flat',
+  //   shortSpec: '36W | 3600lm | 4000K',
+  //   description: 'Ultra-thin edge-lit panel with premium light quality. Designed for suspended ceilings and modern interiors.',
+  //   wattage: '36W',
+  //   lumens: '3600lm',
+  //   colorTemp: '4000K',
+  //   lifespan: '50,000 hours',
+  //   image: flat1,
+  //   features: ['9mm profile', 'Micro-prismatic', 'Backlit option', 'Suspended mount']
+  // },
+  // {
+  //   id: 'surface-round-24',
+  //   name: 'Surface Round 24',
+  //   category: 'surface',
+  //   shortSpec: '24W | 2200lm | 3000K',
+  //   description: 'Sleek surface-mounted ceiling light with uniform diffusion. Perfect for residential spaces and corridors.',
+  //   wattage: '24W',
+  //   lumens: '2200lm',
+  //   colorTemp: '3000K',
+  //   lifespan: '40,000 hours',
+  //   image: surface1,
+  //   features: ['Opal diffuser', 'IP44 bathroom', 'Quick mount', 'Motion sensor option']
+  // },
 
   // New Detailed Products
   {
