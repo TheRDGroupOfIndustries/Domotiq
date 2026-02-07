@@ -9,12 +9,15 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-16">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link to="/" className="inline-block mb-6 group">
+            <Link to="/" className="inline-flex flex-col mb-6 group">
               <img
                 src={logo}
                 alt="Domotiq"
                 className="h-10 w-auto transition-transform duration-500 group-hover:scale-105"
               />
+              <span className="text-[9px] md:text-[10px] font-medium tracking-wide text-muted-foreground mt-2 leading-none">
+                Touch switches & Smart living products
+              </span>
             </Link>
             <p className="body-small text-muted-foreground max-w-xs leading-relaxed">
               Smart lighting and automation for modern living spaces. Elevating architectural excellence through intelligent technology.
