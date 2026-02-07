@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 const WhatsAppFloatingButton = () => {
   const handleClick = () => {
     window.open(
-      "https://wa.me/919997690669?text=Hi! I'm interested in Domotiq products.",
+      "https://wa.me/916386282989?text=Hi! I'm interested in Domotiq products.",
       "_blank"
     );
   };
