@@ -30,7 +30,7 @@ const CategoryDetail = () => {
             <div className="container-wide py-6 animate-fade-in">
                 <Link
                     to="/shop"
-                    className="inline-flex items-center gap-2 body-small text-muted-foreground hover:text-foreground transition-colors group"
+                    className="inline-flex items-center gap-2 body-small text-muted-foreground hover:text-foreground transition-colors group  mt-8"
                 >
                     <ArrowLeft size={16} className="transition-transform group-hover:-translate-x-1" />
                     Back to Catalogue
@@ -38,7 +38,7 @@ const CategoryDetail = () => {
             </div>
 
             {/* Header */}
-            <section className="py-12 md:py-20 bg-secondary/10">
+            <section className=" pt-6 pb-12 md:pb-20 bg-secondary/10">
                 <div className="container-wide">
                     <div className="max-w-2xl animate-fade-up">
                         <p className="body-small uppercase tracking-widest text-muted-foreground mb-2">Category</p>
@@ -51,7 +51,7 @@ const CategoryDetail = () => {
             </section>
 
             {/* Products Grid */}
-            <section className="py-12 md:py-16">
+            <section className="pb-12 md:pb-16">
                 <div className="container-wide">
                     <div className="mb-12 items-center flex justify-between animate-fade-in">
                         <p className="body-small text-muted-foreground tracking-widest uppercase">
