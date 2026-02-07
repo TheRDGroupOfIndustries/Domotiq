@@ -33,6 +33,7 @@ const CategoryCard = ({ category }: CategoryCardProps) => {
         </p>
       </div>
     </Link>
+    // Check
   );
 };
 
