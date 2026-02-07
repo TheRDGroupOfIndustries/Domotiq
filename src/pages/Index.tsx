@@ -17,7 +17,7 @@ const Index = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={heroBg}
-            alt="Premium Lighting"
+            alt="Smart Home Automation"
             className="w-full h-full object-cover opacity-60 scale-105 animate-slow-zoom"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
@@ -33,13 +33,13 @@ const Index = () => {
             </div>
 
             <h1 className="heading-display text-white drop-shadow-2xl animate-fade-up" style={{ animationDelay: '0.2s' }}>
-              Illuminating Spaces.
+              Automating Spaces.
               <br />
               <span className="font-light italic">Inspiring Life.</span>
             </h1>
 
             <p className="body-large text-white/70 max-w-xl mx-auto animate-fade-up" style={{ animationDelay: '0.4s' }}>
-              Premium LED lighting solutions and smart automation for modern architectural spaces.
+              Premium smart home automation solutions for modern architectural spaces.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8 animate-fade-up" style={{ animationDelay: '0.6s' }}>
@@ -76,7 +76,7 @@ const Index = () => {
               <p className="body-small uppercase tracking-[0.4em] text-muted-foreground mb-4">The Collection</p>
               <h2 className="heading-section">Product Categories</h2>
               <p className="body-regular text-muted-foreground mt-4 leading-relaxed">
-                Discover our curated range of premium lighting solutions, from architectural surface lights to smart home integration modules.
+                Discover our curated range of premium smart home solutions, from intelligent touch switches to advanced automation modules.
               </p>
             </div>
             <Link
@@ -109,7 +109,7 @@ const Index = () => {
               <p className="body-small uppercase tracking-[0.4em] text-muted-foreground mb-4">Highlights</p>
               <h2 className="heading-section">Featured Products</h2>
               <p className="body-regular text-muted-foreground mt-4 leading-relaxed">
-                Our most sought-after lighting fixtures, meticulously engineered for performance and aesthetic excellence.
+                Our most sought-after automation products, meticulously engineered for performance and aesthetic excellence.
               </p>
             </div>
             <Link
@@ -141,13 +141,13 @@ const Index = () => {
             <p className="body-small uppercase tracking-[0.4em] text-muted-foreground mb-4">Excellence</p>
             <h2 className="heading-section">Why Domotiq</h2>
             <p className="body-regular text-muted-foreground mt-4 max-w-xl mx-auto leading-relaxed">
-              We merge architectural lighting principles with cutting-edge engineering to create environments that inspire.
+              We merge modern design principles with cutting-edge automation to create environments that inspire.
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-16">
             {[
-              { icon: Lightbulb, title: 'Premium Quality', desc: 'Industry-leading LED technology' },
+              { icon: Lightbulb, title: 'Premium Quality', desc: 'Industry-leading Smart technology' },
               { icon: Zap, title: 'Energy Efficient', desc: 'Up to 80% energy savings' },
               { icon: Wifi, title: 'Smart Ready', desc: 'IoT integration compatible' },
               { icon: Shield, title: '5 Year Warranty', desc: 'Complete peace of mind' },
@@ -176,13 +176,13 @@ const Index = () => {
               Our Philosophy
             </p>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-light leading-[1.1] tracking-tight reveal-on-scroll" style={{ transitionDelay: '200ms' }}>
-              "Light shapes space. <br />
+              "Technology shapes space. <br />
               <span className="italic font-serif">Smart technology</span> <br />
               transforms how we live."
             </h2>
             <div className="w-px h-24 bg-background/20 mx-auto reveal-on-scroll" style={{ transitionDelay: '400ms' }} />
             <p className="body-large opacity-70 max-w-2xl mx-auto leading-relaxed reveal-on-scroll" style={{ transitionDelay: '600ms' }}>
-              At Domotiq, we believe lighting is the silent architect. Every product we create is designed to enhance human experience while minimizing environmental impact.
+              At Domotiq, we believe automation is the silent architect. Every product we create is designed to enhance human experience while minimizing environmental impact.
             </p>
           </div>
         </div>
@@ -194,7 +194,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center space-y-10 reveal-on-scroll">
             <h2 className="text-4xl md:text-5xl font-light tracking-tight">Ready to Transform Your Space?</h2>
             <p className="body-regular text-muted-foreground text-lg max-w-xl mx-auto">
-              Discover our complete range of smart lighting solutions designed for modern architectural living.
+              Discover our complete range of smart home solutions designed for modern architectural living.
             </p>
             <div className="pt-4">
               <Link

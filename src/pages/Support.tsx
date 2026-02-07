@@ -10,8 +10,8 @@ const faqs = [
     answer: 'All Domotiq products come with a standard 5-year warranty covering manufacturing defects and component failures under normal use conditions. Extended warranty options are available for commercial projects.'
   },
   {
-    question: 'Are Domotiq lights compatible with smart home systems?',
-    answer: 'Yes, our smart-ready products are compatible with major smart home platforms including DALI, KNX, and 0-10V dimming systems. Our WiFi-enabled products also work with voice assistants like Alexa and Google Home.'
+    question: 'Are Domotiq products compatible with smart home systems?',
+    answer: 'Yes, our smart-ready products are compatible with major smart home platforms including DALI, KNX, and 0-10V systems. Our WiFi-enabled products also work with voice assistants like Alexa and Google Home.'
   },
   {
     question: 'How do I request a product datasheet?',
@@ -19,11 +19,11 @@ const faqs = [
   },
   {
     question: 'Do you offer project consultation services?',
-    answer: 'Yes, our lighting specialists provide free consultation for architectural and commercial projects. We can assist with lighting design, product selection, and energy calculations.'
+    answer: 'Yes, our automation specialists provide free consultation for architectural and commercial projects. We can assist with system design, product selection, and energy calculations.'
   },
   {
-    question: 'What is the typical lifespan of Domotiq LED products?',
-    answer: 'Our LED products are rated for 35,000 to 60,000 hours of operation, depending on the product line. This translates to over 15 years of use under typical commercial operating conditions.'
+    question: 'What is the typical lifespan of Domotiq smart products?',
+    answer: 'Our smart products are rated for 35,000 to 60,000 operations, depending on the product line. This translates to over 15 years of use under typical commercial operating conditions.'
   },
 ];
 
@@ -46,7 +46,7 @@ const Support = () => {
               <span className="italic font-serif text-accent">Assist.</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl leading-relaxed reveal-on-scroll" style={{ transitionDelay: '300ms' }}>
-              Find answers to common technical queries or get in touch with our team of precision-lighting specialists.
+              Find answers to common technical queries or get in touch with our team of automation specialists.
             </p>
           </div>
         </div>
@@ -111,7 +111,7 @@ const Support = () => {
               <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-10">Warranty Information</h2>
               <div className="space-y-10 body-regular text-muted-foreground text-lg leading-relaxed">
                 <p className="reveal-on-scroll" style={{ transitionDelay: '200ms' }}>
-                  Domotiq stands behind the quality of every product we manufacture. Our comprehensive warranty program ensures absolute peace of mind for your architectural lighting investment.
+                  Domotiq stands behind the quality of every product we manufacture. Our comprehensive warranty program ensures absolute peace of mind for your smart home investment.
                 </p>
                 <ul className="space-y-6">
                   {[

@@ -90,7 +90,7 @@ const Contact = () => {
               <span className="italic font-serif">Conversation.</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl leading-relaxed reveal-on-scroll" style={{ transitionDelay: '300ms' }}>
-              Have a project in mind or need technical support? We're here to help bring your lighting vision to life with precision and care.
+              Have a project in mind or need technical support? We're here to help bring your automation vision to life with precision and care.
             </p>
           </div>
         </div>

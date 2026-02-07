@@ -20,7 +20,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="body-small text-muted-foreground max-w-xs leading-relaxed">
-              Smart lighting and automation for modern living spaces. Elevating architectural excellence through intelligent technology.
+              Smart home automation for modern living spaces. Elevating architectural excellence through intelligent technology.
             </p>
           </div>
 
@@ -28,10 +28,8 @@ const Footer = () => {
           <div>
             <h4 className="heading-product mb-6 uppercase tracking-[0.2em] text-[10px] opacity-60">Catalogue</h4>
             <ul className="space-y-4">
-              <li><Link to="/shop?category=surface" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Surface Lights</Link></li>
-              <li><Link to="/shop?category=spots" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Spotlights</Link></li>
-              <li><Link to="/shop?category=outdoor" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Outdoor</Link></li>
-              <li><Link to="/shop?category=bulb" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Smart Bulbs</Link></li>
+              <li><Link to="/shop?category=smart-switches" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Smart Switches</Link></li>
+              <li><Link to="/shop?category=smart-locks" className="body-small text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-2 inline-block">Smart Locks</Link></li>
             </ul>
           </div>
 
@@ -50,7 +48,7 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <h4 className="heading-product mb-6 uppercase tracking-[0.2em] text-[10px] opacity-60">Stay Updated</h4>
             <p className="body-small text-muted-foreground mb-6">
-              Subscribe for new products and architectural lighting updates.
+              Subscribe for new products and smart home updates.
             </p>
             <form className="flex flex-col gap-3">
               <input

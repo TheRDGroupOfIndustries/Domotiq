@@ -32,7 +32,7 @@ const Catalogue = () => {
           <div className="max-w-2xl animate-fade-in">
             <h1 className="heading-display mb-4">Our Catalogue</h1>
             <p className="body-large text-muted-foreground">
-              Premium LED lighting solutions curated for architectural excellence and modern living.
+              Premium smart home solutions curated for architectural excellence and modern living.
             </p>
           </div>
         </div>

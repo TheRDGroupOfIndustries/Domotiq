@@ -216,39 +216,39 @@ export const products: Product[] = [
     name: 'D-2002',
     category: 'smart-switches',
     shortSpec: 'Glass Finish | WiFi',
-    description: 'Elegant 4-button touch switch with LED backlight and WiFi for app control.',
+    description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
     lifespan: '100,000 ops',
     image: prod1,
-    features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
+    features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
   {
     id: 'd-2003',
     name: 'D-2003',
     category: 'smart-switches',
     shortSpec: 'Glass Finish | WiFi',
-    description: 'Elegant 4-button touch switch with LED backlight and WiFi for app control.',
+    description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
     lifespan: '100,000 ops',
     image: prod2,
-    features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
+    features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
   {
     id: 'd-6014',
     name: 'D-6014',
     category: 'smart-switches',
     shortSpec: 'Glass Finish | WiFi',
-    description: 'Elegant 4-button touch switch with LED backlight and WiFi for app control.',
+    description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
     lifespan: '100,000 ops',
     image: prod10,
-    features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
+    features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
   {
     id: 'd-4002',
@@ -280,27 +280,27 @@ export const products: Product[] = [
     id: 'd-4004',
     name: 'D-4004',
     category: 'smart-switches',
-    shortSpec: '8 Button | Fan Reg',
-    description: 'Combined 8-button panel with dedicated fan speed and light intensity controls.',
+    shortSpec: 'Fan Regulation',
+    description: 'Combined 8-button panel with dedicated fan speed and dimmer controls.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
     lifespan: '100,000 ops',
     image: prod5,
-    features: ['Fan Regulation', 'Step-less Speed', 'Light Dimming', 'Touch Feedbak']
+    features: ['Fan Regulation', 'Step-less Speed', 'Dimming', 'Touch Feedbak']
   },
   {
     id: 'd-4005',
     name: 'D-4005',
     category: 'smart-switches',
     shortSpec: 'Glass Finish | WiFi',
-    description: 'Elegant 4-button touch switch with LED backlight and WiFi for app control.',
+    description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
     lifespan: '100,000 ops',
     image: prod6,
-    features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
+    features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
   {
     id: 'd-4012',
@@ -313,7 +313,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lifespan: '100,000 ops',
     image: prod7,
-    features: ['Premium Finish', 'Edge Lighting', 'Surge Protection', 'App Sync']
+    features: ['Premium Finish', 'Edge Glow', 'Surge Protection', 'App Sync']
   },
   {
     id: 'd-6012',
@@ -346,7 +346,7 @@ export const products: Product[] = [
     name: 'D-6003',
     category: 'smart-switches',
     shortSpec: 'High Density | WiFi',
-    description: 'High-density 10-gang touch panel for extensive lighting setups.',
+    description: 'High-density 10-gang touch panel for extensive automation setups.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
@@ -398,7 +398,7 @@ export const products: Product[] = [
     name: 'D-8002',
     category: 'smart-switches',
     shortSpec: 'Glass | 1 Gang',
-    description: 'Standard 1-gang glass touch switch for simple lighting control.',
+    description: 'Standard 1-gang glass touch switch for simple device control.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
@@ -411,7 +411,7 @@ export const products: Product[] = [
     name: 'D-8004',
     category: 'smart-switches',
     shortSpec: 'Glass | 2 Gang',
-    description: 'Standard 2-gang glass touch switch for moderate lighting control.',
+    description: 'Standard 2-gang glass touch switch for moderate device control.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
@@ -424,20 +424,20 @@ export const products: Product[] = [
     name: 'D-8014',
     category: 'smart-switches',
     shortSpec: 'Glass Finish | WiFi',
-    description: 'Elegant 4-button touch switch with LED backlight and WiFi for app control.',
+    description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
     lifespan: '100,000 ops',
     image: prod20,
-    features: ['WiFi Enabled', 'Tempered Glass', 'Backlight', 'Scene Support']
+    features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
   {
     id: 'd-8015',
     name: 'D-8015',
     category: 'smart-switches',
     shortSpec: 'Glass | 3 Gang',
-    description: 'Standard 3-gang glass touch switch for living space lighting control.',
+    description: 'Standard 3-gang glass touch switch for living space device control.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
@@ -450,7 +450,7 @@ export const products: Product[] = [
     name: 'D-8012',
     category: 'smart-switches',
     shortSpec: 'Glass | 4 Gang',
-    description: 'Standard 4-gang glass touch switch for comprehensive lighting control.',
+    description: 'Standard 4-gang glass touch switch for comprehensive device control.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
@@ -723,7 +723,7 @@ export const products: Product[] = [
     name: 'Domotiq Smart Video Door Bell with Motion Sensor',
     category: 'smart-locks',
     shortSpec: '3D Face ID | Flagship',
-    description: 'Flagship smart lock with 3D structured light face recognition and video display.',
+    description: 'Flagship smart lock with 3D structured sensor face recognition and video display.',
     wattage: 'High-cap Li-ion',
     lumens: 'N/A',
     colorTemp: 'N/A',
@@ -736,7 +736,7 @@ export const products: Product[] = [
       'Optionally works with 12V DC power supply for stable performance',
       'Built-in camera and night vision system with motion detection',
       'Equipped with an indoor sensor',
-      'Night-light wireless chime with 58 music options and multiple volume levels',
+      'Night-mode wireless chime with 58 music options and multiple volume levels',
       'Supports max 128GB SD card recording without network',
       '18650 lithium battery (2 pcs) with Type-C fast charging support'
     ]
