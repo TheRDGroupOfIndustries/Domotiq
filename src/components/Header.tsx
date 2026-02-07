@@ -30,8 +30,8 @@ const Header = () => {
                 alt="Domotiq"
                 className="h-10 md:h-12 w-auto transition-transform duration-500 group-hover:scale-105"
               />
-              <span className="text-[9px] md:text-[10px] font-medium tracking-wide text-foreground/80 mt-1 text-center leading-none">
-                Touch switches & Smart living products
+              <span className="text-[9px] md:text-[10px] font-bold tracking-wide text-foreground/80 mt-1 text-center leading-none">
+                Touch <span className='text-primary'>switches</span> & Smart living products
               </span>
             </Link>
 

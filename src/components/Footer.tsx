@@ -15,8 +15,8 @@ const Footer = () => {
                 alt="Domotiq"
                 className="h-10 w-auto transition-transform duration-500 group-hover:scale-105"
               />
-              <span className="text-[9px] md:text-[10px] font-medium tracking-wide text-muted-foreground mt-2 leading-none">
-                Touch switches & Smart living products
+              <span className="text-[9px] md:text-[10px] font-bold tracking-wide text-muted-foreground mt-2 leading-none">
+                Touch <span className='text-primary'>switches</span> & Smart living products
               </span>
             </Link>
             <p className="body-small text-muted-foreground max-w-xs leading-relaxed">
