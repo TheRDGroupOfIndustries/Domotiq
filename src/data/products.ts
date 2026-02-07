@@ -1,14 +1,3 @@
-// import ledPanel1 from '@/assets/products/led-panel-1.jpg';
-// import downlight1 from '@/assets/products/downlight-1.jpg';
-// import spotlight1 from '@/assets/products/spotlight-1.jpg';
-// import streetlight1 from '@/assets/products/streetlight-1.jpg';
-// import outdoor1 from '@/assets/products/outdoor-1.jpg';
-// import bulb1 from '@/assets/products/bulb-1.jpg';
-// import tube1 from '@/assets/products/tube-1.jpg';
-// import flat1 from '@/assets/products/flat-1.jpg';
-// import surface1 from '@/assets/products/surface-1.jpg';
-
-// New Arrivals Imports
 import prod1 from '@/assets/products/prod-1.png';
 import prod2 from '@/assets/products/prod-2.png';
 import prod3 from '@/assets/products/prod-3.png';
@@ -67,141 +56,21 @@ export interface Category {
 }
 
 export const categories: Category[] = [
-  // { id: 'surface', name: 'Surface', description: 'Ceiling mounted fixtures', image: surface1 },
-  // { id: 'spots', name: 'Spots', description: 'Directional lighting', image: spotlight1 },
-  // { id: 'tube', name: 'Tube', description: 'Linear lighting solutions', image: tube1 },
-  // { id: 'flat', name: 'Flat Panel', description: 'Ultra-thin panels', image: flat1 },
-  // { id: 'bulb', name: 'Bulb', description: 'Smart LED bulbs', image: bulb1 },
-  // { id: 'outdoor', name: 'Outdoor', description: 'Weather-resistant lights', image: outdoor1 },
-  // { id: 'streetlight', name: 'Street Light', description: 'Urban lighting', image: streetlight1 },
-  { id: 'smart-switches', name: 'Smart Switches', description: 'Touch capacitive switches', image: prod23 },
-  { id: 'smart-locks', name: 'Smart Locks', description: 'Advanced security locks', image: prod26 },
+  { id: 'advati', name: 'Advati', description: 'Smart Touch panelx', image: "" },
+  { id: 'sparsh', name: 'Sparsh', description: 'Smart Touch panel', image: prod3 },
+  { id: 'uday', name: 'Uday', description: 'Modular touch  switches', image: "" },
+  { id: 'kavach', name: 'Kavach', description: 'Smart door lock', image: prod27 },
+  { id: 'aavarun', name: 'Aavarun', description: 'Smart curtain', image: prod21 },
+  { id: 'sahaj', name: 'Sahaj', description: 'smart living products products', image: prod32 },
+  { id: 'alok', name: 'Alok', description: 'smart lighting', image: "" },
+  { id: 'atithi', name: 'Atithi', description: 'Hotel automation', image: "" },
 ];
 
 export const products: Product[] = [
-  // {
-  //   id: 'led-panel-pro-600',
-  //   name: 'LED Panel Pro 600',
-  //   category: 'flat',
-  //   shortSpec: '40W | 4000lm | 4000K',
-  //   description: 'Premium LED panel with edge-lit technology for uniform light distribution. Perfect for offices, commercial spaces, and modern interiors.',
-  //   wattage: '40W',
-  //   lumens: '4000lm',
-  //   colorTemp: '4000K',
-  //   lifespan: '50,000 hours',
-  //   image: ledPanel1,
-  //   features: ['Flicker-free driver', 'UGR<19', 'Dimmable 0-10V', 'Easy installation']
-  // },
-  // {
-  //   id: 'downlight-elite-15',
-  //   name: 'Downlight Elite 15',
-  //   category: 'surface',
-  //   shortSpec: '15W | 1500lm | 3000K',
-  //   description: 'Recessed LED downlight with precision optics and excellent color rendering. Ideal for residential and hospitality applications.',
-  //   wattage: '15W',
-  //   lumens: '1500lm',
-  //   colorTemp: '3000K',
-  //   lifespan: '40,000 hours',
-  //   image: downlight1,
-  //   features: ['CRI>90', 'IP44 rated', 'Adjustable beam', 'Thermal management']
-  // },
-  // {
-  //   id: 'track-spot-25',
-  //   name: 'Track Spot 25',
-  //   category: 'spots',
-  //   shortSpec: '25W | 2200lm | 3000K',
-  //   description: 'Professional track-mounted spotlight with 350° rotation. Designed for retail displays, galleries, and accent lighting.',
-  //   wattage: '25W',
-  //   lumens: '2200lm',
-  //   colorTemp: '3000K',
-  //   lifespan: '35,000 hours',
-  //   image: spotlight1,
-  //   features: ['350° rotation', 'Honeycomb lens', 'Tool-free adjustment', 'Premium aluminum body']
-  // },
-  // {
-  //   id: 'urban-street-150',
-  //   name: 'Urban Street 150',
-  //   category: 'streetlight',
-  //   shortSpec: '150W | 18000lm | 5000K',
-  //   description: 'High-efficiency street light with smart control compatibility. Built for roads, parking lots, and urban infrastructure.',
-  //   wattage: '150W',
-  //   lumens: '18000lm',
-  //   colorTemp: '5000K',
-  //   lifespan: '60,000 hours',
-  //   image: streetlight1,
-  //   features: ['IP66 rated', 'Surge protection', 'Smart ready', 'Die-cast aluminum']
-  // },
-  // {
-  //   id: 'garden-wall-pro',
-  //   name: 'Garden Wall Pro',
-  //   category: 'outdoor',
-  //   shortSpec: '12W | 1100lm | 3000K',
-  //   description: 'Contemporary outdoor wall light with IP65 protection. Perfect for facades, pathways, and landscape lighting.',
-  //   wattage: '12W',
-  //   lumens: '1100lm',
-  //   colorTemp: '3000K',
-  //   lifespan: '45,000 hours',
-  //   image: outdoor1,
-  //   features: ['IP65 rated', 'Powder coated', 'UV resistant', 'Easy wall mount']
-  // },
-  // {
-  //   id: 'smart-bulb-e27',
-  //   name: 'Smart Bulb E27',
-  //   category: 'bulb',
-  //   shortSpec: '9W | 800lm | 2700-6500K',
-  //   description: 'WiFi-enabled smart LED bulb with tunable white and dimming. Compatible with voice assistants and smart home systems.',
-  //   wattage: '9W',
-  //   lumens: '800lm',
-  //   colorTemp: '2700-6500K',
-  //   lifespan: '25,000 hours',
-  //   image: bulb1,
-  //   features: ['WiFi enabled', 'Voice control', 'Tunable white', 'App scheduling']
-  // },
-  // {
-  //   id: 'linear-tube-1200',
-  //   name: 'Linear Tube 1200',
-  //   category: 'tube',
-  //   shortSpec: '18W | 2000lm | 4000K',
-  //   description: 'Slim profile LED tube for suspended or surface mounting. Ideal for offices, corridors, and commercial spaces.',
-  //   wattage: '18W',
-  //   lumens: '2000lm',
-  //   colorTemp: '4000K',
-  //   lifespan: '50,000 hours',
-  //   image: tube1,
-  //   features: ['Linkable design', 'DALI compatible', 'Emergency option', 'Slim 40mm profile']
-  // },
-  // {
-  //   id: 'flat-panel-ultra',
-  //   name: 'Flat Panel Ultra',
-  //   category: 'flat',
-  //   shortSpec: '36W | 3600lm | 4000K',
-  //   description: 'Ultra-thin edge-lit panel with premium light quality. Designed for suspended ceilings and modern interiors.',
-  //   wattage: '36W',
-  //   lumens: '3600lm',
-  //   colorTemp: '4000K',
-  //   lifespan: '50,000 hours',
-  //   image: flat1,
-  //   features: ['9mm profile', 'Micro-prismatic', 'Backlit option', 'Suspended mount']
-  // },
-  // {
-  //   id: 'surface-round-24',
-  //   name: 'Surface Round 24',
-  //   category: 'surface',
-  //   shortSpec: '24W | 2200lm | 3000K',
-  //   description: 'Sleek surface-mounted ceiling light with uniform diffusion. Perfect for residential spaces and corridors.',
-  //   wattage: '24W',
-  //   lumens: '2200lm',
-  //   colorTemp: '3000K',
-  //   lifespan: '40,000 hours',
-  //   image: surface1,
-  //   features: ['Opal diffuser', 'IP44 bathroom', 'Quick mount', 'Motion sensor option']
-  // },
-
-  // New Detailed Products
   {
     id: 'd-2001',
     name: 'D-2001',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Single Button | Mini',
     description: 'Compact single-button scene switch for quick execution of smart home routines.',
     wattage: 'N/A',
@@ -214,7 +83,7 @@ export const products: Product[] = [
   {
     id: 'd-2002',
     name: 'D-2002',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Glass Finish | WiFi',
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
@@ -227,7 +96,7 @@ export const products: Product[] = [
   {
     id: 'd-2003',
     name: 'D-2003',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Glass Finish | WiFi',
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
@@ -238,22 +107,9 @@ export const products: Product[] = [
     features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
   {
-    id: 'd-6014',
-    name: 'D-6014',
-    category: 'smart-switches',
-    shortSpec: 'Glass Finish | WiFi',
-    description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
-    wattage: 'N/A',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: '100,000 ops',
-    image: prod10,
-    features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
-  },
-  {
     id: 'd-4002',
     name: 'D-4002',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: '12 Button | Scene Master',
     description: 'The ultimate scene controller with 12 customizable touch points for complex home automation.',
     wattage: 'N/A',
@@ -266,7 +122,7 @@ export const products: Product[] = [
   {
     id: 'd-4003',
     name: 'D-4003',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'High Capacity | WiFi',
     description: 'Comprehensive 8-button touch panel for complete room control.',
     wattage: 'N/A',
@@ -279,7 +135,7 @@ export const products: Product[] = [
   {
     id: 'd-4004',
     name: 'D-4004',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Fan Regulation',
     description: 'Combined 8-button panel with dedicated fan speed and dimmer controls.',
     wattage: 'N/A',
@@ -292,7 +148,7 @@ export const products: Product[] = [
   {
     id: 'd-4005',
     name: 'D-4005',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Glass Finish | WiFi',
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
@@ -305,7 +161,7 @@ export const products: Product[] = [
   {
     id: 'd-4012',
     name: 'D-4012',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Elite Series | WiFi',
     description: 'Premium 8-gang switch from the Elite series with ultra-responsive touch.',
     wattage: 'N/A',
@@ -318,7 +174,7 @@ export const products: Product[] = [
   {
     id: 'd-6012',
     name: 'D-6012',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Slim Design | WiFi',
     description: 'Sleek vertical-orientated touch switch for narrow spaces and modern aesthetics.',
     wattage: 'N/A',
@@ -329,9 +185,22 @@ export const products: Product[] = [
     features: ['Slim Profile', 'Vertical Mount', 'Anti-oxidation', 'WiFi Mesh']
   },
   {
+    id: 'd-6014',
+    name: 'D-6014',
+    category: 'sparsh',
+    shortSpec: 'Glass Finish | WiFi',
+    description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
+    wattage: 'N/A',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: '100,000 ops',
+    image: prod10,
+    features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
+  },
+  {
     id: 'd-6013',
     name: 'D-6013',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Plus Series | WiFi',
     description: 'Enhanced 8-gang touch panel with improved touch sensitivity and feedback.',
     wattage: 'N/A',
@@ -344,9 +213,9 @@ export const products: Product[] = [
   {
     id: 'd-6003',
     name: 'D-6003',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'High Density | WiFi',
-    description: 'High-density 10-gang touch panel for extensive automation setups.',
+    description: 'High-density 1sparsh0-gang touch panel for extensive automation setups.',
     wattage: 'N/A',
     lumens: 'N/A',
     colorTemp: 'N/A',
@@ -357,7 +226,7 @@ export const products: Product[] = [
   {
     id: 'd-6004',
     name: 'D-6004',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Multi-functional | WiFi',
     description: 'Versatile 12-gang panel combining standard switches with special utility icons.',
     wattage: 'N/A',
@@ -370,7 +239,7 @@ export const products: Product[] = [
   {
     id: 'd-6005',
     name: 'D-6005',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Full Control | WiFi',
     description: 'Complete 12-button switchboard for full house automation in a single plate.',
     wattage: 'N/A',
@@ -383,7 +252,7 @@ export const products: Product[] = [
   {
     id: 'd-6002',
     name: 'D-6002',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Compact | Zigbee',
     description: 'Small footprint scene switch for minimalist interiors.',
     wattage: 'N/A',
@@ -396,7 +265,7 @@ export const products: Product[] = [
   {
     id: 'd-8002',
     name: 'D-8002',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Glass | 1 Gang',
     description: 'Standard 1-gang glass touch switch for simple device control.',
     wattage: 'N/A',
@@ -409,7 +278,7 @@ export const products: Product[] = [
   {
     id: 'd-8004',
     name: 'D-8004',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Glass | 2 Gang',
     description: 'Standard 2-gang glass touch switch for moderate device control.',
     wattage: 'N/A',
@@ -422,7 +291,7 @@ export const products: Product[] = [
   {
     id: 'd-8014',
     name: 'D-8014',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Glass Finish | WiFi',
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
@@ -435,7 +304,7 @@ export const products: Product[] = [
   {
     id: 'd-8015',
     name: 'D-8015',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Glass | 3 Gang',
     description: 'Standard 3-gang glass touch switch for living space device control.',
     wattage: 'N/A',
@@ -448,7 +317,7 @@ export const products: Product[] = [
   {
     id: 'd-8012',
     name: 'D-8012',
-    category: 'smart-switches',
+    category: 'sparsh',
     shortSpec: 'Glass | 4 Gang',
     description: 'Standard 4-gang glass touch switch for comprehensive device control.',
     wattage: 'N/A',
@@ -461,7 +330,7 @@ export const products: Product[] = [
   {
     id: '4-switches',
     name: '4-Switches',
-    category: 'smart-switches',
+    category: 'aavarun',
     shortSpec: 'Premium | WiFi',
     description: 'High-end multi-functional glass panel with luxury icons and finish.',
     wattage: 'N/A',
@@ -474,7 +343,7 @@ export const products: Product[] = [
   {
     id: '1-switches',
     name: '1-Switches',
-    category: 'smart-switches',
+    category: 'aavarun',
     shortSpec: 'Retrofit | WiFi',
     description: 'Smart switch designed to fit existing electrical boxes without rewiring.',
     wattage: 'N/A',
@@ -487,7 +356,7 @@ export const products: Product[] = [
   {
     id: 'fan-regulator',
     name: 'Fan Regulator',
-    category: 'smart-switches',
+    category: 'aavarun',
     shortSpec: 'Fan Control | WiFi',
     description: 'Digital fan regulator with smooth touch interface and remote control.',
     wattage: 'N/A',
@@ -500,7 +369,7 @@ export const products: Product[] = [
   {
     id: 'wifi-in-wall-heavy-duty-p1',
     name: 'WIFI in wall heavy duty retrofit switch modules 1',
-    category: 'smart-switches',
+    category: 'kavach',
     shortSpec: 'Control Box | Industrial',
     description: 'Heavy-duty relay control module for automated switching of high-power loads.',
     wattage: 'High Power',
@@ -519,7 +388,7 @@ export const products: Product[] = [
   {
     id: 'wifi-in-wall-heavy-duty',
     name: 'WIFI in wall heavy duty retrofit switch modules',
-    category: 'smart-switches',
+    category: 'kavach',
     shortSpec: 'Control Box | Industrial',
     description: 'Heavy-duty relay control module for automated switching of high-power loads.',
     wattage: 'High Power',
@@ -538,7 +407,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-r1-pro',
     name: 'Domotiq R1 Pro',
-    category: 'smart-locks',
+    category: 'kavach',
     shortSpec: 'Fingerprint | Keypad',
     description: 'Standard smart mortise lock with multiple unlock options for home security.',
     wattage: 'Battery',
@@ -551,7 +420,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-r1-pro-g',
     name: 'Domotiq R1 Pro-G',
-    category: 'smart-locks',
+    category: 'kavach',
     shortSpec: 'Bronze Finish | WiFi',
     description: 'Elegant bronze-finished smart lock with remote unlock support.',
     wattage: 'Battery',
@@ -564,7 +433,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-r3-pro',
     name: 'Domotiq R-3 Pro',
-    category: 'smart-locks',
+    category: 'kavach',
     shortSpec: 'Silver Finish | Camera',
     description: 'Advanced security lock featuring an integrated camera for visitor snapshots.',
     wattage: 'Rechargeable',
@@ -586,7 +455,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-r4',
     name: 'Domotiq R-4',
-    category: 'smart-locks',
+    category: 'kavach',
     shortSpec: 'Video Screen | HD',
     description: 'High-end door lock with a built-in indoor screen for outside viewing.',
     wattage: 'Rechargeable',
@@ -608,7 +477,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-r5',
     name: 'Domotiq R-5',
-    category: 'smart-locks',
+    category: 'kavach',
     shortSpec: 'Full Series | Comparison',
     description: 'Comparison showcase of the flagship smart lock series featuring all available finishes.',
     wattage: 'N/A',
@@ -636,7 +505,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-r7',
     name: 'Domotiq R-7',
-    category: 'smart-locks',
+    category: 'kavach',
     shortSpec: 'Slim Design | WiFi',
     description: 'Compact and slim profile smart lock perfect for modern aluminum or thin doors.',
     wattage: 'Battery',
@@ -661,7 +530,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-model-rb1-knob-style',
     name: 'Domotiq Model RB1 Knob style',
-    category: 'smart-locks',
+    category: 'sahaj',
     shortSpec: 'Heavy Duty | Fingerprint',
     description: 'Solid mortise lock with semi-conductor fingerprint sensor for high-speed entry.',
     wattage: 'Battery',
@@ -681,7 +550,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-model-rb2-dead-bolt-style',
     name: 'Domotiq Model RB2 dead Bolt Style',
-    category: 'smart-locks',
+    category: 'sahaj',
     shortSpec: 'Dead Bolt Style | Pro',
     description: 'Professional grade dead bolt style smart lock with reinforced security points.',
     wattage: 'Battery',
@@ -701,7 +570,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-glass-lock',
     name: 'Domotiq Glass Lock',
-    category: 'smart-locks',
+    category: 'sahaj',
     shortSpec: 'Glass Door | No Drill',
     description: 'Specialized smart lock for glass doors with no-drill installation.',
     wattage: 'Battery',
@@ -721,7 +590,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-smart-video-door-bell-with-motion-sensor',
     name: 'Domotiq Smart Video Door Bell with Motion Sensor',
-    category: 'smart-locks',
+    category: 'sahaj',
     shortSpec: '3D Face ID | Flagship',
     description: 'Flagship smart lock with 3D structured sensor face recognition and video display.',
     wattage: 'High-cap Li-ion',
