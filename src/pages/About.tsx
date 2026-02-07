@@ -15,12 +15,12 @@ const About = () => {
               About Domotiq
             </p>
             <h1 className="text-5xl md:text-8xl font-light tracking-tighter mb-10 leading-[1.1]">
-              Smart Control.
+              The Future of
               <br />
-              <span className="italic font-serif">Seamless living.</span>
+              <span className="italic font-serif">Intelligent Living.</span>
             </h1>
             <p className="body-large text-muted-foreground max-w-2xl text-xl md:text-2xl leading-relaxed reveal-on-scroll" style={{ transitionDelay: '300ms' }}>
-              Domotiq is redefining modern living in India by integrating intelligent technology into everyday spaces. Our philosophy of clean, luxury-focused design reflects clarity, innovation, and connectivity.
+              At Domotiq, we believe that technology should be invisible yet indispensable. We don’t just manufacture automation hardware; we craft experiences that blend luxury, comfort, and security into the very fabric of your space.
             </p>
           </div>
         </div>
@@ -31,14 +31,11 @@ const About = () => {
         <div className="container-wide">
           <div className="grid md:grid-cols-2 gap-20 md:gap-32 items-center">
             <div className="reveal-on-scroll">
-              <p className="body-small uppercase tracking-[0.3em] text-muted-foreground mb-6">Our Narrative</p>
-              <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-10">Smart Homes, <span className="font-serif italic">Seamless Living</span></h2>
+              <p className="body-small uppercase tracking-[0.3em] text-muted-foreground mb-6">About Us</p>
+              <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-10">Our <span className="font-serif italic">Identity</span></h2>
               <div className="space-y-8 text-muted-foreground text-lg leading-relaxed">
                 <p className="reveal-on-scroll" style={{ transitionDelay: '200ms' }}>
-                  Domotiq transforms ordinary spaces into intelligent environments where convenience and control are integrated into the architecture. It's a promise of connectivity, of reliability, and of a home that truly listens.
-                </p>
-                <p className="reveal-on-scroll" style={{ transitionDelay: '400ms' }}>
-                  It's not just automation; it's about making life effortless, secure, and tailored to the unique rhythm of your lifestyle.
+                  Born from a passion for innovation, Domotiq bridges the gap between sophisticated technology and human intuition. From residential sanctuaries to grand hospitality projects, our solutions are designed to respond to your touch, your voice, and your presence.
                 </p>
               </div>
             </div>
@@ -48,45 +45,6 @@ const About = () => {
                 alt="Architectural Excellence"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* India Section */}
-      <section className="py-24 md:py-40">
-        <div className="container-wide">
-          <div className="max-w-4xl mx-auto text-center reveal-on-scroll">
-            <p className="body-small uppercase tracking-[0.4em] text-muted-foreground mb-8">The Local Context</p>
-            <h2 className="text-4xl md:text-6xl font-light tracking-tight mb-12">Domotiq for <span className="font-serif italic">India</span></h2>
-            <div className="w-20 h-px bg-foreground/10 mx-auto mb-12" />
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed reveal-on-scroll" style={{ transitionDelay: '300ms' }}>
-              From metropolitan luxury apartments to sprawling family estates, Domotiq brings accessible smart living solutions to households across the country. Designed with India's diverse lifestyles in mind, our technology is intuitive, reliable, and fundamentally future-ready.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Vision Section */}
-      <section className="py-32 md:py-48 bg-foreground text-background overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 blur-3xl bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-accent/40 via-transparent to-transparent" />
-        <div className="container-wide relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-12">
-            <p className="body-small uppercase tracking-[0.4em] opacity-50 reveal-on-scroll">The Vision</p>
-            <h2 className="text-4xl md:text-7xl font-light tracking-tighter reveal-on-scroll" style={{ transitionDelay: '200ms' }}>
-              The future of living is <span className="italic font-serif">intelligent.</span>
-            </h2>
-            <p className="text-xl md:text-2xl opacity-70 leading-relaxed reveal-on-scroll" style={{ transitionDelay: '400ms' }}>
-              Our smart-ready solutions integrate seamlessly with modern building automation, enabling adaptive environments that respond to human presence, saving energy while enhancing comfort.
-            </p>
-            <div className="pt-8 reveal-on-scroll" style={{ transitionDelay: '600ms' }}>
-              <Link
-                to="/shop"
-                className="group inline-flex items-center gap-4 px-12 py-5 bg-primary text-primary-foreground rounded-full font-semibold transition-all duration-500 hover:scale-105"
-              >
-                <span>Explore Catalogue</span>
-                <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-2" />
-              </Link>
             </div>
           </div>
         </div>
