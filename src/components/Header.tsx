@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Search } from 'lucide-react';
+import { Menu, X, Search, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { categories } from '@/data/products';
@@ -16,6 +16,7 @@ const navLinks = [
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileCatalogueOpen, setIsMobileCatalogueOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const location = useLocation();
 
@@ -134,20 +135,58 @@ const Header = () => {
             isMenuOpen ? "opacity-100 translate-y-0 visibility-visible" : "opacity-0 -translate-y-4 visibility-hidden pointer-events-none"
           )}
         >
-          <nav className="container-wide py-12 flex flex-col items-center gap-8">
-            {navLinks.map((link, idx) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                onClick={() => setIsMenuOpen(false)}
-                className={cn(
-                  "text-3xl tracking-tighter transition-all duration-500 hover:opacity-50",
-                  location.pathname === link.href ? "font-semibold translate-x-2" : "font-light"
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
+          <nav className="container-wide py-4 flex flex-col items-center gap-8 h-[92vh] overflow-y-auto">
+            {navLinks.map((link) => {
+              if (link.label === 'Catalogue') {
+                return (
+                  <div key={link.href} className="flex flex-col items-center gap-4 w-full">
+                    <button
+                      onClick={() => setIsMobileCatalogueOpen(!isMobileCatalogueOpen)}
+                      className={cn(
+                        "text-3xl tracking-tighter transition-all duration-500 hover:opacity-50 flex items-center gap-2",
+                        location.pathname === link.href || isMobileCatalogueOpen ? "font-semibold" : "font-light"
+                      )}
+                    >
+                      {link.label}
+                      <ChevronDown
+                        size={24}
+                        className={cn("transition-transform duration-300", isMobileCatalogueOpen ? "rotate-180" : "")}
+                      />
+                    </button>
+
+                    <div className={cn(
+                      "flex flex-col items-center gap-4 overflow-hidden transition-all duration-500 ease-smooth w-full",
+                      isMobileCatalogueOpen ? "max-h-[500px] opacity-100 mt-2" : "max-h-0 opacity-0"
+                    )}>
+                      {categories.map((category) => (
+                        <Link
+                          key={category.id}
+                          to={`/shop?category=${category.id}`}
+                          onClick={() => setIsMenuOpen(false)}
+                          className="text-lg font-light text-muted-foreground hover:text-foreground transition-colors py-1"
+                        >
+                          {category.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={cn(
+                    "text-3xl tracking-tighter transition-all duration-500 hover:opacity-50",
+                    location.pathname === link.href ? "font-semibold translate-x-2" : "font-light"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </nav>
         </div>
       </header>
