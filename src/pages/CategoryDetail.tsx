@@ -76,7 +76,7 @@ const CategoryDetail = () => {
                     ) : (
                         <div className="text-center py-32 animate-fade-in">
                             <p className="body-large text-muted-foreground mb-8">
-                                No products found in this category.
+                                Coming Soon...
                             </p>
                             <Link to="/shop" className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background rounded-full font-medium hover:opacity-90 transition-all duration-300">
                                 View Full Catalogue
