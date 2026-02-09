@@ -53,6 +53,7 @@ const Header = () => {
                         )}
                       >
                         {link.label}
+                        <ChevronDown size={14} strokeWidth={1.5} className="transition-transform duration-300 group-hover:rotate-180" />
                       </Link>
 
                       {/* Dropdown Menu */}
