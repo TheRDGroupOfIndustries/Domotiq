@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Search } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
+import { categories } from '@/data/products';
 import logo from '@/assets/logo.png';
 import SearchModal from './SearchModal';
 
@@ -37,20 +38,58 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-10">
-              {navLinks.map((link, idx) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className={cn(
-                    "body-small uppercase tracking-[0.2em] transition-all duration-300 hover:opacity-100 hover:translate-y-[-1px]",
-                    (location.pathname === link.href) || (link.href === '/shop' && (location.pathname.startsWith('/category/') || location.pathname.startsWith('/product/')))
-                      ? "font-medium opacity-100"
-                      : "font-light opacity-60"
-                  )}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                if (link.label === 'Catalogue') {
+                  return (
+                    <div key={link.href} className="relative group">
+                      <Link
+                        to={link.href}
+                        className={cn(
+                          "body-small uppercase tracking-[0.2em] transition-all duration-300 hover:opacity-100 hover:translate-y-[-1px] inline-flex items-center gap-1",
+                          (location.pathname === link.href) || (link.href === '/shop' && (location.pathname.startsWith('/category/') || location.pathname.startsWith('/product/')))
+                            ? "font-medium opacity-100"
+                            : "font-light opacity-60"
+                        )}
+                      >
+                        {link.label}
+                      </Link>
+
+                      {/* Dropdown Menu */}
+                      {/* Dropdown Menu */}
+                      <div className="absolute top-full left-1/2 -translate-x-1/2 pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-smooth z-50 min-w-[400px]">
+                        <div className="bg-background/95 backdrop-blur-md border border-border rounded-xl shadow-lg overflow-hidden p-2">
+                          <div className="grid grid-cols-2 gap-2">
+                            {categories.map((category) => (
+                              <Link
+                                key={category.id}
+                                to={`/shop?category=${category.id}`}
+                                className="px-4 py-3 text-sm font-light hover:bg-secondary/50 rounded-lg transition-colors hover:text-primary flex items-center justify-between group/item"
+                              >
+                                <span>{category.name}</span>
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    className={cn(
+                      "body-small uppercase tracking-[0.2em] transition-all duration-300 hover:opacity-100 hover:translate-y-[-1px]",
+                      (location.pathname === link.href)
+                        ? "font-medium opacity-100"
+                        : "font-light opacity-60"
+                    )}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
             </nav>
 
             {/* Right Actions */}
