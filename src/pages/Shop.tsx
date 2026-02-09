@@ -100,7 +100,7 @@ const Catalogue = () => {
                 <Search size={32} className="text-muted-foreground" />
               </div>
               <p className="body-large text-muted-foreground">
-                No products found in this category.
+                Coming soon...
               </p>
               <button
                 onClick={() => handleCategoryChange('all')}
