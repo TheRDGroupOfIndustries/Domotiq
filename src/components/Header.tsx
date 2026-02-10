@@ -3,7 +3,7 @@ import { Menu, X, Search, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { categories } from '@/data/products';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/image.png';
 import SearchModal from './SearchModal';
 
 const navLinks = [
@@ -26,15 +26,12 @@ const Header = () => {
         <div className="container-wide">
           <div className="flex items-center justify-between h-20 md:h-24 transition-all duration-500">
             {/* Logo */}
-            <Link to="/" className="flex flex-col items-center group w-fit relative">
+            <Link to="/" className="flex flex-col items-center group w-fit">
               <img
                 src={logo}
                 alt="Domotiq"
-                className="h-10 md:h-12 w-auto transition-transform duration-500 group-hover:scale-105 ab"
+                className="h-14 md:h-[72px] w-auto transition-transform duration-500 group-hover:scale-105 ab"
               />
-              <span className="self-end w-[85%] text-[6px] font-bold tracking-wider text-foreground/80 mt-1 uppercase text-justify absolute mt-[45px]">
-                Touch <span className='text-primary'>switches</span> & Smart living products
-              </span>
             </Link>
 
             {/* Desktop Navigation */}

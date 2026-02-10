@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/image.png';
 
 const Footer = () => {
   return (
@@ -9,17 +9,14 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-16">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link to="/" className="flex flex-col items-center group w-fit relative">
+            <Link to="/" className="flex flex-col items-center group w-fit">
               <img
                 src={logo}
                 alt="Domotiq"
-                className="h-10 md:h-12 w-auto transition-transform duration-500 group-hover:scale-105 ab"
+                className="h-14 md:h-[72px] w-auto transition-transform duration-500 group-hover:scale-105 ab"
               />
-              <span className="self-end w-[85%] text-[6px] font-bold tracking-wider text-foreground/80 mt-1 uppercase text-justify absolute mt-[45px]">
-                Touch <span className='text-primary'>switches</span> & Smart living products
-              </span>
             </Link>
-            <p className="body-small text-muted-foreground max-w-xs leading-relaxed mt-[30px]">
+            <p className="body-small text-muted-foreground max-w-xs leading-relaxed mt-[20px]">
               Smart home automation for modern living spaces. Elevating architectural excellence through intelligent technology.
             </p>
           </div>
