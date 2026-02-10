@@ -35,7 +35,7 @@ const Header = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-10">
+            <nav className="hidden lg:flex items-center gap-10">
               {navLinks.map((link) => {
                 if (link.label === 'Catalogue') {
                   return (
@@ -104,7 +104,7 @@ const Header = () => {
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="md:hidden p-2 group"
+                className="lg:hidden p-2 group"
                 aria-label="Toggle menu"
               >
                 <div className="relative w-6 h-6 overflow-hidden">
@@ -129,7 +129,7 @@ const Header = () => {
         {/* Mobile Menu */}
         <div
           className={cn(
-            "md:hidden absolute top-full left-0 right-0 bg-background border-b border-border transition-all duration-700 ease-smooth",
+            "lg:hidden absolute top-full left-0 right-0 bg-background border-b border-border transition-all duration-700 ease-smooth",
             isMenuOpen ? "opacity-100 translate-y-0 visibility-visible" : "opacity-0 -translate-y-4 visibility-hidden pointer-events-none"
           )}
         >

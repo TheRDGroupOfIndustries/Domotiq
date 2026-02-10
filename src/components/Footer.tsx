@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="border-t border-border bg-secondary/10">
       <div className="container-wide py-20 ">
         {/* Main Footer */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex flex-col items-center group w-fit">
