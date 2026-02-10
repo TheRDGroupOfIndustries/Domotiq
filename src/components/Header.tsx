@@ -26,13 +26,13 @@ const Header = () => {
         <div className="container-wide">
           <div className="flex items-center justify-between h-20 md:h-24 transition-all duration-500">
             {/* Logo */}
-            <Link to="/" className="flex flex-col items-center group">
+            <Link to="/" className="flex flex-col items-center group w-fit relative">
               <img
                 src={logo}
                 alt="Domotiq"
-                className="h-10 md:h-12 w-auto transition-transform duration-500 group-hover:scale-105"
+                className="h-10 md:h-12 w-auto transition-transform duration-500 group-hover:scale-105 ab"
               />
-              <span className="text-[9px] md:text-[10px] font-bold tracking-wide text-foreground/80 mt-1 text-center leading-none">
+              <span className="self-end w-[85%] text-[6px] font-bold tracking-wider text-foreground/80 mt-1 uppercase text-justify absolute mt-[45px]">
                 Touch <span className='text-primary'>switches</span> & Smart living products
               </span>
             </Link>
