@@ -112,9 +112,9 @@ const Contact = () => {
 
               <div className="space-y-8">
                 {[
-                  { icon: Mail, label: 'Email', value: 'hello@domotiq.com', href: 'mailto:hello@domotiq.com' },
-                  { icon: Phone, label: 'Phone', value: '+91 (800) 555-0199', href: 'tel:+918005550199' },
-                  { icon: MapPin, label: 'Headquarters', value: 'Varanasi, Uttar Pradesh, India', href: null },
+                  { icon: Mail, label: 'Email', value: 'info.domotiq@gmail.com', href: 'mailto:info.domotiq@gmail.com' },
+                  { icon: Phone, label: 'Phone', value: '+91 6386282989', href: 'tel:+916386282989' },
+                  { icon: MapPin, label: 'Headquarters', value: 'Mumbai, India', href: null },
                 ].map((item, idx) => (
                   <div
                     key={item.label}

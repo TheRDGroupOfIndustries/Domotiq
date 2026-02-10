@@ -28,7 +28,7 @@ const ProductDetail = () => {
 
   const handleWhatsAppEnquiry = () => {
     const message = `Hello Domotiq, I'm interested in the ${product.name} (ID: ${product.id}) from your catalogue. Could you provide more details?`;
-    const whatsappUrl = `https://wa.me/919997690669?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/916386282989?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
