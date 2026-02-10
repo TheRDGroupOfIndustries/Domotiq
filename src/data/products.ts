@@ -34,6 +34,11 @@ import prod33 from '@/assets/products/prod-33.png';
 import prod34 from '@/assets/products/prod-34.png';
 import prod35 from '@/assets/products/prod-35.png';
 
+import image1 from "@/assets/products/image.png"
+import image2 from "@/assets/products/image2.png"
+import image3 from "@/assets/products/image3.png"
+import image4 from "@/assets/products/image4.png"
+
 export interface Product {
   id: string;
   name: string;
@@ -58,9 +63,9 @@ export interface Category {
 export const categories: Category[] = [
   { id: 'advati', name: 'Advati', description: 'Our ultra-premium series. The pinnacle of luxury and exclusivity, designed for those who settle for nothing but the best.', image: "" },
   { id: 'sparsh', name: 'Sparsh', description: 'Elegance at your fingertips. Our signature touch-interface series that redefines how you interact with your space.', image: prod3 },
-  { id: 'uday', name: 'Uday', description: 'Uday makes smart living a reality for everyone. It’s the smart switch for the modern Indian family—reliable, elegant, and incredibly affordable.', image: "" },
+  { id: 'uday', name: 'Uday', description: 'Uday makes smart living a reality for everyone. It’s the smart switch for the modern Indian family—reliable, elegant, and incredibly affordable.', image: prod25 },
   { id: 'kavach', name: 'Kavach', description: 'An unbreakable shield of smart security, ensuring your peace of mind 24/7.', image: prod27 },
-  { id: 'aavarun', name: 'Aavarun', description: 'Automated transitions for your environment—from motorized curtains to scheduled moods that start your day.', image: prod21 },
+  { id: 'aavarun', name: 'Aavarun', description: 'Automated transitions for your environment—from motorized curtains to scheduled moods that start your day.', image: image3},
   { id: 'sahaj', name: 'Sahaj', description: 'Smart living made simple. A range of intuitive products designed to make automation accessible and effortless for everyone.', image: prod32 },
   { id: 'alok', name: 'Alok', description: 'Intelligent lighting solutions. Transform your ambiance with smart dimming, color scenes, and energy-efficient illumination.', image: "" },
   { id: 'atithi', name: 'Atithi', description: 'Our flagship Hotel Automation ecosystem, blending traditional hospitality with futuristic technology.', image: "" },
@@ -330,7 +335,7 @@ export const products: Product[] = [
   {
     id: '4-switches',
     name: '4-Switches',
-    category: 'aavarun',
+    category: 'uday',
     shortSpec: 'Premium | WiFi',
     description: 'High-end multi-functional glass panel with luxury icons and finish.',
     wattage: 'N/A',
@@ -343,7 +348,7 @@ export const products: Product[] = [
   {
     id: '1-switches',
     name: '1-Switches',
-    category: 'aavarun',
+    category: 'uday',
     shortSpec: 'Retrofit | WiFi',
     description: 'Smart switch designed to fit existing electrical boxes without rewiring.',
     wattage: 'N/A',
@@ -356,7 +361,7 @@ export const products: Product[] = [
   {
     id: 'fan-regulator',
     name: 'Fan Regulator',
-    category: 'aavarun',
+    category: 'uday',
     shortSpec: 'Fan Control | WiFi',
     description: 'Digital fan regulator with smooth touch interface and remote control.',
     wattage: 'N/A',
@@ -369,7 +374,7 @@ export const products: Product[] = [
   {
     id: 'wifi-in-wall-heavy-duty-p1',
     name: 'WIFI in wall heavy duty retrofit switch modules 1',
-    category: 'kavach',
+    category: 'uday',
     shortSpec: 'Control Box | Industrial',
     description: 'Heavy-duty relay control module for automated switching of high-power loads.',
     wattage: 'High Power',
@@ -388,7 +393,7 @@ export const products: Product[] = [
   {
     id: 'wifi-in-wall-heavy-duty',
     name: 'WIFI in wall heavy duty retrofit switch modules',
-    category: 'kavach',
+    category: 'uday',
     shortSpec: 'Control Box | Industrial',
     description: 'Heavy-duty relay control module for automated switching of high-power loads.',
     wattage: 'High Power',
@@ -530,7 +535,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-model-rb1-knob-style',
     name: 'Domotiq Model RB1 Knob style',
-    category: 'sahaj',
+    category: 'kavach',
     shortSpec: 'Heavy Duty | Fingerprint',
     description: 'Solid mortise lock with semi-conductor fingerprint sensor for high-speed entry.',
     wattage: 'Battery',
@@ -550,7 +555,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-model-rb2-dead-bolt-style',
     name: 'Domotiq Model RB2 dead Bolt Style',
-    category: 'sahaj',
+    category: 'kavach',
     shortSpec: 'Dead Bolt Style | Pro',
     description: 'Professional grade dead bolt style smart lock with reinforced security points.',
     wattage: 'Battery',
@@ -570,7 +575,7 @@ export const products: Product[] = [
   {
     id: 'domotiq-glass-lock',
     name: 'Domotiq Glass Lock',
-    category: 'sahaj',
+    category: 'kavach',
     shortSpec: 'Glass Door | No Drill',
     description: 'Specialized smart lock for glass doors with no-drill installation.',
     wattage: 'Battery',
@@ -608,6 +613,77 @@ export const products: Product[] = [
       'Night-mode wireless chime with 58 music options and multiple volume levels',
       'Supports max 128GB SD card recording without network',
       '18650 lithium battery (2 pcs) with Type-C fast charging support'
+    ]
+  },
+  {
+    id: 'domotiq-finger-cabinet-lock',
+    name: 'Domotiq Finger Cabinet Lock',
+    category: 'sahaj',
+    shortSpec: '3D Face ID | Flagship',
+    description: 'Flagship smart lock with 3D structured sensor face recognition and video display.',
+    wattage: 'High-cap Li-ion',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: image1,
+    features: [
+      'Low Battery Warning',
+      'Energy Saving Technology With Long Battery Life',
+      'Power Supply-AAA Alkaline Battery',
+      'Widely Use in Cabinet, Drawer, Lockers At Home Office Or School',
+    ]
+  },
+  {
+    id: 'domotiq-nfc-smart-card-cabinet-lock',
+    name: 'Domotiq NFC/Smart Card Cabinet Lock',
+    category: 'sahaj',
+    shortSpec: '3D Face ID | Flagship',
+    description: 'Flagship smart lock with 3D structured sensor face recognition and video display.',
+    wattage: 'High-cap Li-ion',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: image2,
+    features: [
+      'Low Battery Warning',
+      'Energy Saving Technology With Long Battery Life',
+      'Power Supply-AAA Alkaline Battery',
+      'Widely Use in Cabinet, Drawer, Lockers At Home Office Or School',
+    ]
+  },
+  {
+    id: 'one-line-telescopic-expandable-center-opening-curtain-track',
+    name: 'One line Telescopic Expandable center Opening Curtain Track',
+    category: 'aavarun',
+    shortSpec: '3D Face ID | Flagship',
+    description: 'Flagship smart lock with 3D structured sensor face recognition and video display.',
+    wattage: 'High-cap Li-ion',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: image3,
+    features: [
+      'New telescopic patterned technology based curtain track is 51mm and easy to transport',
+      'Electrophoresis process, metallic silver powder spraying process, dust-proof, anti-particle and anti-oxidation, smooth after long use.',
+      'Use this curtain  track and you will never need to worry about the size of the rail does not match the size of the curtain.',
+    ]
+  },
+  {
+    id: 'sliding-curtain-motor-solution',
+    name: 'Sliding Curtain Motor Solution',
+    category: 'aavarun',
+    shortSpec: '3D Face ID | Flagship',
+    description: 'Flagship smart lock with 3D structured sensor face recognition and video display.',
+    wattage: 'High-cap Li-ion',
+    lumens: 'N/A',
+    colorTemp: 'N/A',
+    lifespan: 'High Security',
+    image: image4,
+    features: [
+      'Easily operate small and large size curtains using remote and mobile app.',
+      'Silent Operating Motorized Curtain Track Kit up to 16 feet track.',
+      'Voice control using Alexa and Google home through Philpton app.',
+      'Contents-Motor, Remote, Track, Jointer, Runner poles, Master carrier, Driving Belt and Ceiling bracket.',
     ]
   },
 ];
