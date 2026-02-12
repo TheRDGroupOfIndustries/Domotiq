@@ -4,7 +4,7 @@ import logo from '@/assets/image.png';
 const Footer = () => {
   return (
     <footer className="border-t border-border bg-secondary/10">
-      <div className="container-wide py-20 ">
+      <div className="container-wide py-14 ">
         {/* Main Footer */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
           {/* Brand */}
@@ -13,7 +13,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Domotiq"
-                className="h-14 md:h-[72px] w-auto transition-transform duration-500 group-hover:scale-105 ab"
+                className="h-14 md:h-[60px] w-auto transition-transform duration-500 group-hover:scale-105 ab"
               />
             </Link>
             <p className="body-small text-muted-foreground max-w-xs leading-relaxed mt-[20px]">

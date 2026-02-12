@@ -108,9 +108,11 @@ const Catalogue = () => {
                 <h3 className="text-3xl md:text-4xl font-light tracking-tight mb-4">
                   Coming <span className="font-serif italic text-muted-foreground">Soon</span>
                 </h3>
-                <p className="body-regular text-muted-foreground max-w-lg mx-auto">
-                  Intelligent lighting solutions. Transform your ambiance with smart dimming, color scenes, and energy-efficient illumination.
-                </p>
+                {['alok', 'advait'].includes(activeCategory) && (
+                  <p className="body-regular text-muted-foreground max-w-lg mx-auto">
+                    {categories.find(c => c.id === activeCategory)?.description}
+                  </p>
+                )}
               </div>
 
               <button

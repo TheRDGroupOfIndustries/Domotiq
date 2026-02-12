@@ -30,7 +30,7 @@ const Header = () => {
               <img
                 src={logo}
                 alt="Domotiq"
-                className="h-14 md:h-[72px] w-auto transition-transform duration-500 group-hover:scale-105 ab"
+                className="h-14 md:h-[60px] w-auto transition-transform duration-500 group-hover:scale-105"
               />
             </Link>
 
