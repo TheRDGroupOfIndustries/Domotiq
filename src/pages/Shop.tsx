@@ -1,6 +1,6 @@
-import { useState, useMemo } from 'react';
+import { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Search, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import { products, categories } from '@/data/products';
@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 
 const Catalogue = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const activeCategory = searchParams.get('category') || 'all';
+  const activeCategory = (searchParams.get('category') || 'all').toLowerCase();
 
   const filteredProducts = useMemo(() => {
     if (activeCategory === 'all') return products;
@@ -27,19 +27,25 @@ const Catalogue = () => {
   return (
     <Layout>
       {/* Header */}
-      <section className="py-16 md:py-24 bg-secondary/20">
+      <section className="py-16 bg-secondary/20">
         <div className="container-wide">
-          <div className="max-w-2xl animate-fade-in">
-            <h1 className="heading-display mb-4">Our Catalogue</h1>
+          <div className="max-w-4xl animate-fade-in">
+            <h1 className="heading-display mb-4">
+              {activeCategory === 'all'
+                ? 'Our Catalogue'
+                : categories.find(c => c.id === activeCategory)?.name || 'Our Catalogue'}
+            </h1>
             <p className="body-large text-muted-foreground">
-              Premium smart home solutions curated for architectural excellence and modern living.
+              {activeCategory === 'all'
+                ? 'Premium smart home solutions curated for architectural excellence and modern living.'
+                : categories.find(c => c.id === activeCategory)?.description || 'Premium smart home solutions curated for architectural excellence and modern living.'}
             </p>
           </div>
         </div>
       </section>
 
       {/* Filters */}
-      <section className="border-y border-border sticky top-16 md:top-20 bg-background/95 backdrop-blur-md z-40 transition-all duration-300">
+      <section className="sticky top-16 md:top-20 bg-background/95 backdrop-blur-md z-40 transition-all duration-300">
         <div className="container-wide">
           <div className="flex items-center gap-3 py-4 overflow-x-auto scrollbar-hide no-scrollbar">
             <button
@@ -72,12 +78,14 @@ const Catalogue = () => {
       </section>
 
       {/* Products Grid */}
-      <section className="py-12 md:py-16">
+      <section className="py-12 min-h-[50vh]">
         <div className="container-wide">
           <div className="mb-12 flex justify-between items-center animate-fade-in">
-            <p className="body-small text-muted-foreground tracking-widest uppercase">
-              {filteredProducts.length} {filteredProducts.length === 1 ? 'item' : 'items'} in collection
-            </p>
+            {filteredProducts.length > 0 && (
+              <p className="body-small text-muted-foreground tracking-widest uppercase">
+                {filteredProducts.length} {filteredProducts.length === 1 ? 'item' : 'items'} in collection
+              </p>
+            )}
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-12 md:gap-x-8 md:gap-y-16">
@@ -95,18 +103,22 @@ const Catalogue = () => {
           </div>
 
           {filteredProducts.length === 0 && (
-            <div className="text-center py-32 animate-fade-in">
-              <div className="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                <Search size={32} className="text-muted-foreground" />
+            <div className="text-center py-20 px-6 animate-fade-in max-w-2xl mx-auto border border-border/50 rounded-[2rem] bg-secondary/10">
+              <div className="mb-8">
+                <h3 className="text-3xl md:text-4xl font-light tracking-tight mb-4">
+                  Coming <span className="font-serif italic text-muted-foreground">Soon</span>
+                </h3>
+                <p className="body-regular text-muted-foreground max-w-lg mx-auto">
+                  Intelligent lighting solutions. Transform your ambiance with smart dimming, color scenes, and energy-efficient illumination.
+                </p>
               </div>
-              <p className="body-large text-muted-foreground">
-                Coming soon...
-              </p>
+
               <button
                 onClick={() => handleCategoryChange('all')}
-                className="mt-6 link-underline body-small uppercase tracking-widest"
+                className="inline-flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors hover:underline underline-offset-4"
               >
-                Clear all filters
+                <ArrowRight size={16} className="rotate-180" />
+                Return to all products
               </button>
             </div>
           )}
