@@ -77,27 +77,29 @@ const ProductDetail = () => {
               </div>
 
               {/* Quick Specs */}
-              <div className="p-6 bg-secondary rounded-xl hover:bg-secondary/80 transition-colors duration-300">
-                <h3 className="heading-product mb-4">Specifications</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <p className="body-small text-muted-foreground">Power</p>
-                    <p className="body-regular font-medium">{product.wattage}</p>
-                  </div>
-                  <div>
-                    <p className="body-small text-muted-foreground">Luminous Flux</p>
-                    <p className="body-regular font-medium">{product.lumens}</p>
-                  </div>
-                  <div>
-                    <p className="body-small text-muted-foreground">Color Temperature</p>
-                    <p className="body-regular font-medium">{product.colorTemp}</p>
-                  </div>
-                  <div>
-                    <p className="body-small text-muted-foreground">Lifespan</p>
-                    <p className="body-regular font-medium">{product.lifespan}</p>
+              {!['kavach', 'sahaj', 'aavarun'].includes(product.category.toLowerCase()) && (
+                <div className="p-6 bg-secondary rounded-xl hover:bg-secondary/80 transition-colors duration-300">
+                  <h3 className="heading-product mb-4">Specifications</h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <p className="body-small text-muted-foreground">Power</p>
+                      <p className="body-regular font-medium">{product.wattage}</p>
+                    </div>
+                    <div>
+                      <p className="body-small text-muted-foreground">Luminous Flux</p>
+                      <p className="body-regular font-medium">{product.lumens}</p>
+                    </div>
+                    <div>
+                      <p className="body-small text-muted-foreground">Color Temperature</p>
+                      <p className="body-regular font-medium">{product.colorTemp}</p>
+                    </div>
+                    <div>
+                      <p className="body-small text-muted-foreground">Lifespan</p>
+                      <p className="body-regular font-medium">{product.lifespan}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
 
               {/* Features */}
               <div>

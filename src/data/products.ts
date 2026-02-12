@@ -45,10 +45,10 @@ export interface Product {
   category: string;
   shortSpec: string;
   description: string;
-  wattage: string;
-  lumens: string;
-  colorTemp: string;
-  lifespan: string;
+  wattage?: string;
+  lumens?: string;
+  colorTemp?: string;
+  lifespan?: string;
   image: string;
   features: string[];
 }
@@ -61,7 +61,7 @@ export interface Category {
 }
 
 export const categories: Category[] = [
-  { id: 'advati', name: 'Advati', description: 'Our ultra-premium series. The pinnacle of luxury and exclusivity, designed for those who settle for nothing but the best.', image: "" },
+  { id: 'advait', name: 'Advait', description: 'Our ultra-premium series. The pinnacle of luxury and exclusivity, designed for those who settle for nothing but the best.', image: "" },
   { id: 'sparsh', name: 'Sparsh', description: 'Elegance at your fingertips. Our signature touch-interface series that redefines how you interact with your space.', image: prod3 },
   { id: 'uday', name: 'Uday', description: 'Uday makes smart living a reality for everyone. It’s the smart switch for the modern Indian family—reliable, elegant, and incredibly affordable.', image: prod25 },
   { id: 'kavach', name: 'Kavach', description: 'An unbreakable shield of smart security, ensuring your peace of mind 24/7.', image: prod27 },
@@ -415,10 +415,10 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Fingerprint | Keypad',
     description: 'Standard smart mortise lock with multiple unlock options for home security.',
-    wattage: 'Battery',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
+    // wattage: 'Battery',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'High Security',
     image: prod26,
     features: ['Fingerprint Unlock', 'RFID Card Unlock', 'Passcode Unlock', 'Low Battery Indication', 'Emergency Power', 'Mechanical Key Unlock', 'RX-TX Remote Support']
   },
@@ -428,10 +428,10 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Bronze Finish | WiFi',
     description: 'Elegant bronze-finished smart lock with remote unlock support.',
-    wattage: 'Battery',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
+    // wattage: 'Battery',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'High Security',
     image: prod27,
     features: ['Fingerprint Unlock', 'RFID Card Unlock', 'Passcode Unlock', 'Low Battery Indication', 'Emergency Power', 'Mechanical Key Unlock', 'RX-TX Remote Support']
   },
@@ -441,10 +441,10 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Silver Finish | Camera',
     description: 'Advanced security lock featuring an integrated camera for visitor snapshots.',
-    wattage: 'Rechargeable',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
+    // wattage: 'Rechargeable',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'High Security',
     image: prod28,
     features: [
       'One Touch Automatic open and close mortise system',
@@ -463,10 +463,10 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Video Screen | HD',
     description: 'High-end door lock with a built-in indoor screen for outside viewing.',
-    wattage: 'Rechargeable',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
+    // wattage: 'Rechargeable',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'High Security',
     image: prod29,
     features: [
       'One Touch Automatic open and close mortise system',
@@ -485,10 +485,10 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Full Series | Comparison',
     description: 'Comparison showcase of the flagship smart lock series featuring all available finishes.',
-    wattage: 'N/A',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
+    // wattage: 'N/A',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'High Security',
     image: prod30,
     features: [
       'Face ID, Fingerprint, Passcode, RFID Card, Mechanical keys & Remote App (Phlipton) Unlock',
@@ -513,10 +513,10 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Slim Design | WiFi',
     description: 'Compact and slim profile smart lock perfect for modern aluminum or thin doors.',
-    wattage: 'Battery',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
+    // wattage: 'Battery',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'High Security',
     image: prod31,
     features: [
       '3D Face recognition, Fingerprint, Passcode, Palm Vein, Mechanical key, RFID card & Remote Phlipton App unlock',
@@ -538,10 +538,10 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Heavy Duty | Fingerprint',
     description: 'Solid mortise lock with semi-conductor fingerprint sensor for high-speed entry.',
-    wattage: 'Battery',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
+    // wattage: 'Battery',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'High Security',
     image: prod32,
     features: [
       'Material: Aluminium Alloy Casting',
@@ -558,10 +558,10 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Dead Bolt Style | Pro',
     description: 'Professional grade dead bolt style smart lock with reinforced security points.',
-    wattage: 'Battery',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
+    // wattage: 'Battery',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'High Security',
     image: prod33,
     features: [
       'Material: Aluminium Alloy Casting',
@@ -578,10 +578,10 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Glass Door | No Drill',
     description: 'Specialized smart lock for glass doors with no-drill installation.',
-    wattage: 'Battery',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
+    // wattage: 'Battery',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'High Security',
     image: prod34,
     features: [
       'Material: Zinc alloy and acrylic keypad',
@@ -598,10 +598,10 @@ export const products: Product[] = [
     category: 'sahaj',
     shortSpec: '3D Face ID | Flagship',
     description: 'Flagship smart lock with 3D structured sensor face recognition and video display.',
-    wattage: 'High-cap Li-ion',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'High Security',
+    // wattage: 'High-cap Li-ion',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'High Security',
     image: prod35,
     features: [
       'Active Smart Lock Bind Technology to unlock through doorbell app user interface',
@@ -621,10 +621,10 @@ export const products: Product[] = [
     category: 'sahaj',
     shortSpec: 'Fingerprint | Secure',
     description: 'Advanced fingerprint cabinet lock for securing drawers, lockers, and cabinets.',
-    wattage: 'AAA Battery',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'Energy Efficient',
+    // wattage: 'AAA Battery',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'Energy Efficient',
     image: image1,
     features: [
       'Low Battery Warning',
@@ -639,10 +639,10 @@ export const products: Product[] = [
     category: 'sahaj',
     shortSpec: 'NFC Card | Secure',
     description: 'Smart NFC/RFID card lock suitable for cabinets, drawers, and lockers.',
-    wattage: 'AAA Battery',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'Energy Efficient',
+    // wattage: 'AAA Battery',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'Energy Efficient',
     image: image2,
     features: [
       'Low Battery Warning',
@@ -657,10 +657,10 @@ export const products: Product[] = [
     category: 'aavarun',
     shortSpec: 'Telescopic | Track',
     description: 'Premium expandable curtain track with dust-proof and anti-oxidation finish.',
-    wattage: 'N/A',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'Durable',
+    // wattage: 'N/A',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'Durable',
     image: image3,
     features: [
       'New telescopic patterned technology based curtain track is 51mm and easy to transport',
@@ -674,10 +674,10 @@ export const products: Product[] = [
     category: 'aavarun',
     shortSpec: 'Motorized | Smart',
     description: 'Silent motorized curtain system with app and voice control compatibility.',
-    wattage: 'AC Powered',
-    lumens: 'N/A',
-    colorTemp: 'N/A',
-    lifespan: 'Heavy Duty',
+    // wattage: 'AC Powered',
+    // lumens: 'N/A',
+    // colorTemp: 'N/A',
+    // lifespan: 'Heavy Duty',
     image: image4,
     features: [
       'Easily operate small and large size curtains using remote and mobile app.',
