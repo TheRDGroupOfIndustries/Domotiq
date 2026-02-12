@@ -79,7 +79,7 @@ const ProductDetail = () => {
               {/* Quick Specs */}
               {!['kavach', 'sahaj', 'aavarun'].includes(product.category.toLowerCase()) && (
                 <div className="p-6 bg-secondary rounded-xl hover:bg-secondary/80 transition-colors duration-300">
-                  <h3 className="heading-product mb-4">Specifications</h3>
+                  <h3 className="heading-product mb-4">Technical Specifications</h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <p className="body-small text-muted-foreground">Power</p>

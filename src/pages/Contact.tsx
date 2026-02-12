@@ -114,7 +114,7 @@ const Contact = () => {
                 {[
                   { icon: Mail, label: 'Email', value: 'info.domotiq@gmail.com', href: 'mailto:info.domotiq@gmail.com' },
                   { icon: Phone, label: 'Phone', value: '+91 6386282989', href: 'tel:+916386282989' },
-                  { icon: MapPin, label: 'Headquarters', value: 'Mumbai, India', href: null },
+                  { icon: MapPin, label: 'Headquarters', value: 'Dadar East Mumbai, India', href: null },
                 ].map((item, idx) => (
                   <div
                     key={item.label}
@@ -143,8 +143,8 @@ const Contact = () => {
               <div className="pt-12 border-t border-border reveal-on-scroll" style={{ transitionDelay: '500ms' }}>
                 <p className="body-small text-muted-foreground mb-6 uppercase tracking-[0.4em] text-[10px]">Business Hours</p>
                 <div className="space-y-3">
-                  <p className="text-lg font-medium">Monday – Friday: 9:00 AM – 6:00 PM</p>
-                  <p className="text-lg text-muted-foreground font-serif italic">Saturday – Sunday: Closed</p>
+                  <p className="text-lg font-medium">Monday – Saturday: 10:00 AM – 6:00 PM</p>
+                  <p className="text-lg text-muted-foreground font-serif italic">Sunday: Closed</p>
                 </div>
               </div>
             </div>
