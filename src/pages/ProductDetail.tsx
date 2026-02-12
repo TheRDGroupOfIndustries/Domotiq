@@ -26,6 +26,16 @@ const ProductDetail = () => {
     .filter(p => p.category === product.category && p.id !== product.id)
     .slice(0, 4);
 
+  const hasSpecs = [
+    product.wattage,
+    product.protection,
+    product.durability,
+    product.connectivity,
+    product.colorTemp,
+    product.lumens,
+    product.lifespan
+  ].some(spec => spec);
+
   const handleWhatsAppEnquiry = () => {
     const message = `Hello Domotiq, I'm interested in the ${product.name} from your catalogue. Could you provide more details?`;
     const whatsappUrl = `https://wa.me/916386282989?text=${encodeURIComponent(message)}`;
@@ -77,30 +87,52 @@ const ProductDetail = () => {
               </div>
 
               {/* Quick Specs */}
-              {!['kavach', 'sahaj', 'aavarun'].includes(product.category.toLowerCase()) && (
+              {!['kavach', 'sahaj', 'aavarun'].includes(product.category.toLowerCase()) && hasSpecs && (
                 <div className="p-6 bg-secondary rounded-xl hover:bg-secondary/80 transition-colors duration-300">
                   <h3 className="heading-product mb-4">Technical Specifications</h3>
                   <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <p className="body-small text-muted-foreground">Power</p>
-                      <p className="body-regular font-medium">{product.wattage}</p>
-                    </div>
-                    <div>
-                      <p className="body-small text-muted-foreground">Surge Protection</p>
-                      <p className="body-regular font-medium">{product.protection}</p>
-                    </div>
-                    <div>
-                      <p className="body-small text-muted-foreground">Durability: Testing Switching Cycle</p>
-                      <p className="body-regular font-medium">{product.durability}</p>
-                    </div>
-                    <div>
-                      <p className="body-small text-muted-foreground">Connectivity</p>
-                      <p className="body-regular font-medium">{product.connectivity}</p>
-                    </div>
-                    <div>
-                      <p className="body-small text-muted-foreground">Color Option</p>
-                      <p className="body-regular font-medium">{product.colorTemp}</p>
-                    </div>
+                    {product.wattage && (
+                      <div>
+                        <p className="body-small text-muted-foreground">Power</p>
+                        <p className="body-regular font-medium">{product.wattage}</p>
+                      </div>
+                    )}
+                    {product.protection && (
+                      <div>
+                        <p className="body-small text-muted-foreground">Surge Protection</p>
+                        <p className="body-regular font-medium">{product.protection}</p>
+                      </div>
+                    )}
+                    {product.durability && (
+                      <div>
+                        <p className="body-small text-muted-foreground">Durability: Testing Switching Cycle</p>
+                        <p className="body-regular font-medium">{product.durability}</p>
+                      </div>
+                    )}
+                    {product.connectivity && (
+                      <div>
+                        <p className="body-small text-muted-foreground">Connectivity</p>
+                        <p className="body-regular font-medium">{product.connectivity}</p>
+                      </div>
+                    )}
+                    {product.colorTemp && (
+                      <div>
+                        <p className="body-small text-muted-foreground">Color Option</p>
+                        <p className="body-regular font-medium">{product.colorTemp}</p>
+                      </div>
+                    )}
+                    {product.lumens && (
+                      <div>
+                        <p className="body-small text-muted-foreground">Lumens</p>
+                        <p className="body-regular font-medium">{product.lumens}</p>
+                      </div>
+                    )}
+                    {product.lifespan && (
+                      <div>
+                        <p className="body-small text-muted-foreground">Lifespan</p>
+                        <p className="body-regular font-medium">{product.lifespan}</p>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}

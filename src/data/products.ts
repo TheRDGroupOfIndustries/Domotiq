@@ -52,10 +52,13 @@ export interface Product {
   protection?: string;
   durability?: string;
   connectivity?: string;
+  lumens?: string;
   colorTemp?: string;
+  lifespan?: string;
   image: string;
   features: string[];
 }
+
 
 export interface Category {
   id: string;
@@ -84,6 +87,8 @@ export const products: Product[] = [
     description: 'Compact single-button scene switch for quick execution of smart home routines.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod3,
     features: ['Compact Design', 'Muti-click Support', 'WiFi/Zigbee', 'Easy Mount']
   },
@@ -95,6 +100,8 @@ export const products: Product[] = [
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod1,
     features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
@@ -106,6 +113,8 @@ export const products: Product[] = [
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod2,
     features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
@@ -117,6 +126,8 @@ export const products: Product[] = [
     description: 'The ultimate scene controller with 12 customizable touch points for complex home automation.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod8,
     features: ['12 Gang Master', 'Scene Unlimited', 'Voice Compatible', 'Robust Build']
   },
@@ -128,6 +139,8 @@ export const products: Product[] = [
     description: 'Comprehensive 8-button touch panel for complete room control.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod4,
     features: ['8 Gang Control', 'Master Off', 'Custom Labels', 'Glass Panel']
   },
@@ -139,6 +152,8 @@ export const products: Product[] = [
     description: 'Combined 8-button panel with dedicated fan speed and dimmer controls.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod5,
     features: ['Fan Regulation', 'Step-less Speed', 'Dimming', 'Touch Feedbak']
   },
@@ -150,6 +165,8 @@ export const products: Product[] = [
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod6,
     features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
@@ -161,6 +178,8 @@ export const products: Product[] = [
     description: 'Premium 8-gang switch from the Elite series with ultra-responsive touch.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod7,
     features: ['Premium Finish', 'Edge Glow', 'Surge Protection', 'App Sync']
   },
@@ -172,6 +191,8 @@ export const products: Product[] = [
     description: 'Sleek vertical-orientated touch switch for narrow spaces and modern aesthetics.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod9,
     features: ['Slim Profile', 'Vertical Mount', 'Anti-oxidation', 'WiFi Mesh']
   },
@@ -183,6 +204,8 @@ export const products: Product[] = [
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod10,
     features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
@@ -194,6 +217,8 @@ export const products: Product[] = [
     description: 'Enhanced 8-gang touch panel with improved touch sensitivity and feedback.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod11,
     features: ['Enhanced Touch', 'Cloud Connected', 'Timer Support', 'Glass Shell']
   },
@@ -205,6 +230,8 @@ export const products: Product[] = [
     description: 'High-density 1sparsh0-gang touch panel for extensive automation setups.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod12,
     features: ['10-Gang Control', 'Overload Protection', 'Status Sync', 'Voice Ready']
   },
@@ -216,6 +243,8 @@ export const products: Product[] = [
     description: 'Versatile 12-gang panel combining standard switches with special utility icons.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod13,
     features: ['Utility Icons', '12 points', 'Fire Retardant', 'WiFi 6 Support']
   },
@@ -227,6 +256,8 @@ export const products: Product[] = [
     description: 'Complete 12-button switchboard for full house automation in a single plate.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod14,
     features: ['12 Gang Std', 'Remote Monitoring', 'Child Lock', 'Tempered Glass']
   },
@@ -238,6 +269,8 @@ export const products: Product[] = [
     description: 'Small footprint scene switch for minimalist interiors.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod15,
     features: ['Minimalist', 'Battery/Direct', 'Multi-press', 'App Config']
   },
@@ -249,6 +282,8 @@ export const products: Product[] = [
     description: 'Standard 1-gang glass touch switch for simple device control.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod16,
     features: ['Touch Only', 'Retrofit Ready', 'Indicator LED', 'Waterproof']
   },
@@ -260,6 +295,8 @@ export const products: Product[] = [
     description: 'Standard 2-gang glass touch switch for moderate device control.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod17,
     features: ['Dual Zone', 'Sleek Look', 'Instant Response', 'Easy Clean']
   },
@@ -271,6 +308,8 @@ export const products: Product[] = [
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod20,
     features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
@@ -282,6 +321,8 @@ export const products: Product[] = [
     description: 'Standard 3-gang glass touch switch for living space device control.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod18,
     features: ['Triple Zone', 'WiFi Module', 'Cloud Link', 'Scratch Resistant']
   },
@@ -293,6 +334,8 @@ export const products: Product[] = [
     description: 'Standard 4-gang glass touch switch for comprehensive device control.',
     wattage: 'N/A',
     colorTemp: 'N/A',
+    lumens: 'N/A',
+    lifespan: 'N/A',
     image: prod19,
     features: ['Quad Zone', 'App Control', 'Auto Off Timer', 'Silent Relay']
   },
