@@ -86,16 +86,20 @@ const ProductDetail = () => {
                       <p className="body-regular font-medium">{product.wattage}</p>
                     </div>
                     <div>
-                      <p className="body-small text-muted-foreground">Luminous Flux</p>
-                      <p className="body-regular font-medium">{product.lumens}</p>
+                      <p className="body-small text-muted-foreground">Surge Protection</p>
+                      <p className="body-regular font-medium">{product.protection}</p>
                     </div>
                     <div>
-                      <p className="body-small text-muted-foreground">Color Temperature</p>
+                      <p className="body-small text-muted-foreground">Durability: Testing Switching Cycle</p>
+                      <p className="body-regular font-medium">{product.durability}</p>
+                    </div>
+                    <div>
+                      <p className="body-small text-muted-foreground">Connectivity</p>
+                      <p className="body-regular font-medium">{product.connectivity}</p>
+                    </div>
+                    <div>
+                      <p className="body-small text-muted-foreground">Color Option</p>
                       <p className="body-regular font-medium">{product.colorTemp}</p>
-                    </div>
-                    <div>
-                      <p className="body-small text-muted-foreground">Lifespan</p>
-                      <p className="body-regular font-medium">{product.lifespan}</p>
                     </div>
                   </div>
                 </div>
