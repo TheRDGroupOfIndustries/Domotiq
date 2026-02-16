@@ -3,7 +3,7 @@ import { Menu, X, Search, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { categories } from '@/data/products';
-import logo from '@/assets/image.png';
+import logo from '@/assets/image2.png';
 import SearchModal from './SearchModal';
 
 const navLinks = [
@@ -30,7 +30,7 @@ const Header = () => {
               <img
                 src={logo}
                 alt="Domotiq"
-                className="h-14 md:h-[60px] w-auto transition-transform duration-500 group-hover:scale-105"
+                className="h-14 md:h-[70px] w-auto transition-transform duration-500 group-hover:scale-105"
               />
             </Link>
 

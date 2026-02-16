@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaLinkedin, FaFacebook, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa';
-import logo from '@/assets/image.png';
+import logo from '@/assets/image2.png';
 import brochure from '@/assets/Brochure.pdf';
 import { categories } from '@/data/products';
 
@@ -16,7 +16,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Domotiq"
-                className="h-14 md:h-[60px] w-auto transition-transform duration-500 group-hover:scale-105 ab"
+                className="h-14 md:h-[70px] w-auto transition-transform duration-500 group-hover:scale-105 ab"
               />
             </Link>
             <p className="body-small text-muted-foreground max-w-xs leading-relaxed mt-[20px]">
