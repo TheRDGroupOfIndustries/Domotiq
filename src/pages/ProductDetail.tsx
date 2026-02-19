@@ -186,8 +186,8 @@ const ProductDetail = () => {
                       <img
                         src={product.wiring.image}
                         alt="Wiring Diagram"
-                        className="max-w-full h-auto drop-shadow-xl hover:scale-105 transition-transform duration-500"
-                        style={{ maxHeight: '300px' }}
+                        className="max-w-full h-auto drop-shadow-xl "
+                        style={{ maxHeight: '350px' }}
                       />
                     </div>
                   </div>

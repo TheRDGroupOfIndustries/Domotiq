@@ -41,6 +41,9 @@ import RFID from "@/assets/products/RFID.jpeg"
 import hotelKeyCard from "@/assets/products/Hotel-key-card.jpeg"
 
 import diagram1 from '@/assets/diagram/diagram1.png';
+import diagram2 from '@/assets/diagram/diagram2.png';
+import diagram3 from '@/assets/diagram/diagram3.png';
+import diagram4 from "@/assets/diagram/diagram4.png"
 
 export interface Product {
   id: string;
@@ -139,7 +142,13 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D2003,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram1,
+      switches: [
+        { type: 'curtain', label: 'Curtain Switch', count: 2 },
+      ]
+    }
   },
   {
     id: 'd-4002',
@@ -155,7 +164,7 @@ export const products: Product[] = [
     image: D4002,
     features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
     wiring: {
-      image: diagram1,
+      image: diagram2,
       switches: [
         { type: '1-way', label: '6 Amp Switch', count: 5 },
         { type: '16a', label: '16 Amp Switch', count: 1 },
@@ -178,7 +187,7 @@ export const products: Product[] = [
     image: D4003,
     features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
     wiring: {
-      image: diagram1,
+      image: diagram2,
       switches: [
         { type: '1-way', label: '6 Amp Switch', count: 3 },
         { type: '16a', label: '16 Amp Switch', count: 1 },
@@ -202,7 +211,7 @@ export const products: Product[] = [
     image: D4004,
     features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
     wiring: {
-      image: diagram1,
+      image: diagram2,
       switches: [
         { type: '1-way', label: '6 Amp Switch', count: 2 },
         { type: '16a', label: '16 Amp Switch', count: 1 },
@@ -226,7 +235,7 @@ export const products: Product[] = [
     image: D4005,
     features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
     wiring: {
-      image: diagram1,
+      image: diagram2,
       switches: [
         { type: '1-way', label: '6 Amp Switch', count: 2 },
         { type: 'curtain', label: 'Curtain Switch', count: 1 },
@@ -249,7 +258,7 @@ export const products: Product[] = [
     image: D4012,
     features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
     wiring: {
-      image: diagram1,
+      image: diagram2,
       switches: [
         { type: '1-way', label: '6 Amp Switch', count: 2 },
         { type: '16a', label: '16 Amp Switch', count: 1 },
@@ -269,7 +278,16 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6012,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram3,
+      switches: [
+        { type: '1-way', label: '6 Amp Switch', count: 5 },
+        { type: '16a', label: '16 Amp Switch', count: 1 },
+        { type: '2-way', label: '2-Way Switch', count: 1 },
+        { type: 'master', label: 'Master Switch', count: 1 }
+      ]
+    }
   },
   {
     id: 'd-6014',
@@ -283,7 +301,17 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6014,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram3,
+      switches: [
+        { type: '1-way', label: '6 Amp Switch', count: 2 },
+        { type: '16a', label: '16 Amp Switch', count: 1 },
+        { type: '2-way', label: '2-Way Switch', count: 1 },
+        { type: 'master', label: 'Master Switch', count: 1 },
+        { type: 'fan', label: 'Fan Switch', count: 1 }
+      ]
+    }
   },
   {
     id: 'd-6013',
@@ -297,7 +325,17 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6013,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram3,
+      switches: [
+        { type: '1-way', label: '6 Amp Switch', count: 3 },
+        { type: 'curtain', label: 'Curtain Switch', count: 1 },
+        { type: '16a', label: '16 Amp Switch', count: 1 },
+        { type: '2-way', label: '2-Way Switch', count: 1 },
+        { type: 'master', label: 'Master Switch', count: 1 }
+      ]
+    }
   },
   {
     id: 'd-6003',
@@ -311,7 +349,17 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6003,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram3,
+      switches: [
+        { type: '1-way', label: '6 Amp Switch', count: 5 },
+        { type: 'curtain', label: 'Curtain Switch', count: 1 },
+        { type: '16a', label: '16 Amp Switch', count: 1 },
+        { type: '2-way', label: '2-Way Switch', count: 1 },
+        { type: 'master', label: 'Master Switch', count: 1 }
+      ]
+    }
   },
   {
     id: 'd-6004',
@@ -325,7 +373,17 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6004,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram3,
+      switches: [
+        { type: '1-way', label: '6 Amp Switch', count: 4 },
+        { type: '16a', label: '16 Amp Switch', count: 1 },
+        { type: '2-way', label: '2-Way Switch', count: 1 },
+        { type: 'master', label: 'Master Switch', count: 1 },
+        { type: 'fan', label: 'Fan Switch', count: 1 }
+      ]
+    }
   },
   {
     id: 'd-6005',
@@ -339,7 +397,18 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6005,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram3,
+      switches: [
+        { type: '1-way', label: '6 Amp Switch', count: 2 },
+        { type: 'curtain', label: 'Curtain Switch', count: 1 },
+        { type: '16a', label: '16 Amp Switch', count: 1 },
+        { type: '2-way', label: '2-Way Switch', count: 1 },
+        { type: 'master', label: 'Master Switch', count: 1 },
+        { type: 'fan', label: 'Fan Switch', count: 1 }
+      ]
+    }
   },
   {
     id: 'd-6002',
@@ -353,7 +422,16 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6002,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram3,
+      switches: [
+        { type: '1-way', label: '6 Amp Switch', count: 7 },
+        { type: '16a', label: '16 Amp Switch', count: 1 },
+        { type: '2-way', label: '2-Way Switch', count: 1 },
+        { type: 'master', label: 'Master Switch', count: 1 }
+      ]
+    }
   },
   {
     id: 'd-8002',
@@ -367,7 +445,16 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D8002,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram4,
+      switches: [
+        { type: '1-way', label: '6 Amp Switch', count: 10 },
+        { type: '16a', label: '16 Amp Switch', count: 2 },
+        { type: '2-way', label: '2-Way Switch', count: 2 },
+        { type: 'master', label: 'Master Switch', count: 2 }
+      ]
+    }
   },
   {
     id: 'd-8004',
@@ -381,7 +468,17 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D8004,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram4,
+      switches: [
+        { type: '1-way', label: '6 Amp Switch', count: 4 },
+        { type: '16a', label: '16 Amp Switch', count: 3 },
+        { type: '2-way', label: '2-Way Switch', count: 1 },
+        { type: 'master', label: 'Master Switch', count: 2 },
+        { type: 'fan', label: 'Fan Switch', count: 2 }
+      ]
+    }
   },
   {
     id: 'd-8014',
@@ -395,7 +492,17 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D8014,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram4,
+      switches: [
+        { type: '1-way', label: '6 Amp Switch', count: 4 },
+        { type: '16a', label: '16 Amp Switch', count: 1 },
+        { type: '2-way', label: '2-Way Switch', count: 1 },
+        { type: 'master', label: 'Master Switch', count: 1 },
+        { type: 'fan', label: 'Fan Switch', count: 1 }
+      ]
+    }
   },
   {
     id: 'd-8015',
@@ -409,7 +516,18 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D8015,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram4,
+      switches: [
+        { type: '1-way', label: '6 Amp Switch', count: 2 },
+        { type: 'curtain', label: 'Curtain Switch', count: 1 },
+        { type: '16a', label: '16 Amp Switch', count: 1 },
+        { type: '2-way', label: '2-Way Switch', count: 1 },
+        { type: 'master', label: 'Master Switch', count: 1 },
+        { type: 'fan', label: 'Fan Switch', count: 2 }
+      ]
+    }
   },
   {
     id: 'd-8012',
@@ -423,7 +541,16 @@ export const products: Product[] = [
     connectivity: "Wifi/zipbee",
     colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D8012,
-    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization'],
+    wiring: {
+      image: diagram4,
+      switches: [
+        { type: '1-way', label: '6 Amp Switch', count: 7 },
+        { type: '16a', label: '16 Amp Switch', count: 1 },
+        { type: '2-way', label: '2-Way Switch', count: 1 },
+        { type: 'master', label: 'Master Switch', count: 1 }
+      ]
+    }
   },
   {
     id: '4-switches',
