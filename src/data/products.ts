@@ -1,23 +1,23 @@
-import prod1 from '@/assets/products/prod-1.png';
-import prod2 from '@/assets/products/prod-2.png';
-import prod3 from '@/assets/products/prod-3.png';
-import prod4 from '@/assets/products/prod-4.png';
-import prod5 from '@/assets/products/prod-5.png';
-import prod6 from '@/assets/products/prod-6.png';
-import prod7 from '@/assets/products/prod-7.png';
-import prod8 from '@/assets/products/prod-8.png';
-import prod9 from '@/assets/products/prod-9.png';
-import prod10 from '@/assets/products/prod-10.png';
-import prod11 from '@/assets/products/prod-11.png';
-import prod12 from '@/assets/products/prod-12.png';
-import prod13 from '@/assets/products/prod-13.png';
-import prod14 from '@/assets/products/prod-14.png';
-import prod15 from '@/assets/products/prod-15.png';
-import prod16 from '@/assets/products/prod-16.png';
-import prod17 from '@/assets/products/prod-17.png';
-import prod18 from '@/assets/products/prod-18.png';
-import prod19 from '@/assets/products/prod-19.png';
-import prod20 from '@/assets/products/prod-20.png';
+import D2002 from '@/assets/products/D2002.png';
+import D2003 from '@/assets/products/D2003.png';
+import D2001 from '@/assets/products/D2001.png';
+import D4003 from '@/assets/products/D4003.png';
+import D4004 from '@/assets/products/D4004.png';
+import D4005 from '@/assets/products/D4005.png';
+import D4012 from '@/assets/products/D4012.png';
+import D4002 from '@/assets/products/D4002.png';
+import D6012 from '@/assets/products/D6012.png';
+import D6014 from '@/assets/products/D6014.png';
+import D6013 from '@/assets/products/D6013.png';
+import D6003 from '@/assets/products/D6003.png';
+import D6004 from '@/assets/products/D6004.png';
+import D6005 from '@/assets/products/D6005.png';
+import D6002 from '@/assets/products/D6002.png';
+import D8002 from '@/assets/products/D8002.png';
+import D8004 from '@/assets/products/D8004.png';
+import D8015 from '@/assets/products/D8015.png';
+import D8012 from '@/assets/products/D8012.png';
+import D8014 from '@/assets/products/D8014.png';
 import prod21 from '@/assets/products/prod-21.png';
 import prod22 from '@/assets/products/prod-22.png';
 import prod23 from '@/assets/products/prod-23.png';
@@ -69,7 +69,7 @@ export interface Category {
 
 export const categories: Category[] = [
   { id: 'advait', name: 'Advait', description: 'Our ultra-premium series. The pinnacle of luxury and exclusivity, designed for those who settle for nothing but the best.', image: "" },
-  { id: 'sparsh', name: 'Sparsh', description: 'Elegance at your fingertips. Our signature touch-interface series that redefines how you interact with your space.', image: prod3 },
+  { id: 'sparsh', name: 'Sparsh', description: 'Elegance at your fingertips. Our signature touch-interface series that redefines how you interact with your space.', image: D2001 },
   { id: 'uday', name: 'Uday', description: 'Uday makes smart living a reality for everyone. It’s the smart switch for the modern Indian family—reliable, elegant, and incredibly affordable.', image: prod21 },
   { id: 'kavach', name: 'Kavach', description: 'An unbreakable shield of smart security, ensuring your peace of mind 24/7.', image: prod27 },
   { id: 'aavarun', name: 'Aavarun', description: 'Automated transitions for your environment—from motorized curtains to scheduled moods that start your day.', image: image3 },
@@ -89,7 +89,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod3,
+    image: D2001,
     features: ['Compact Design', 'Muti-click Support', 'WiFi/Zigbee', 'Easy Mount']
   },
   {
@@ -102,7 +102,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod1,
+    image: D2002,
     features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
   {
@@ -115,7 +115,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod2,
+    image: D2003,
     features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
   {
@@ -128,7 +128,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod8,
+    image: D4002,
     features: ['12 Gang Master', 'Scene Unlimited', 'Voice Compatible', 'Robust Build']
   },
   {
@@ -141,7 +141,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod4,
+    image: D4003,
     features: ['8 Gang Control', 'Master Off', 'Custom Labels', 'Glass Panel']
   },
   {
@@ -154,7 +154,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod5,
+    image: D4004,
     features: ['Fan Regulation', 'Step-less Speed', 'Dimming', 'Touch Feedbak']
   },
   {
@@ -167,7 +167,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod6,
+    image: D4005,
     features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
   {
@@ -180,7 +180,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod7,
+    image: D4012,
     features: ['Premium Finish', 'Edge Glow', 'Surge Protection', 'App Sync']
   },
   {
@@ -193,7 +193,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod9,
+    image: D6012,
     features: ['Slim Profile', 'Vertical Mount', 'Anti-oxidation', 'WiFi Mesh']
   },
   {
@@ -206,7 +206,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod10,
+    image: D6014,
     features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
   {
@@ -219,7 +219,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod11,
+    image: D6013,
     features: ['Enhanced Touch', 'Cloud Connected', 'Timer Support', 'Glass Shell']
   },
   {
@@ -232,7 +232,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod12,
+    image: D6003,
     features: ['10-Gang Control', 'Overload Protection', 'Status Sync', 'Voice Ready']
   },
   {
@@ -245,7 +245,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod13,
+    image: D6004,
     features: ['Utility Icons', '12 points', 'Fire Retardant', 'WiFi 6 Support']
   },
   {
@@ -258,7 +258,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod14,
+    image: D6005,
     features: ['12 Gang Std', 'Remote Monitoring', 'Child Lock', 'Tempered Glass']
   },
   {
@@ -271,7 +271,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod15,
+    image: D6002,
     features: ['Minimalist', 'Battery/Direct', 'Multi-press', 'App Config']
   },
   {
@@ -284,7 +284,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod16,
+    image: D8002,
     features: ['Touch Only', 'Retrofit Ready', 'Indicator LED', 'Waterproof']
   },
   {
@@ -297,7 +297,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod17,
+    image: D8004,
     features: ['Dual Zone', 'Sleek Look', 'Instant Response', 'Easy Clean']
   },
   {
@@ -310,7 +310,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod20,
+    image: D8014,
     features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
   },
   {
@@ -323,7 +323,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod18,
+    image: D8015,
     features: ['Triple Zone', 'WiFi Module', 'Cloud Link', 'Scratch Resistant']
   },
   {
@@ -336,7 +336,7 @@ export const products: Product[] = [
     colorTemp: 'N/A',
     lumens: 'N/A',
     lifespan: 'N/A',
-    image: prod19,
+    image: D8012,
     features: ['Quad Zone', 'App Control', 'Auto Off Timer', 'Silent Relay']
   },
   {
