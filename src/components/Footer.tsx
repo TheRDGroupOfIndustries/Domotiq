@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaLinkedin, FaFacebook, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import logo from '@/assets/image2.png';
 import brochure from '@/assets/Brochure.pdf';
 import { categories } from '@/data/products';
@@ -8,9 +8,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border bg-secondary/10">
       <div className="container-wide py-14 ">
-        {/* Main Footer */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
-          {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex flex-col items-center group w-fit">
               <img
@@ -23,18 +21,12 @@ const Footer = () => {
               Smart home automation for modern living spaces. Elevating architectural excellence through intelligent technology.
             </p>
             <div className="flex items-center gap-5 mt-6">
-              {/* <a href="/" aria-label="LinkedIn" className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-110">
-                <FaLinkedin size={24} />
-              </a> */}
               <a href="https://www.facebook.com" aria-label="Facebook" className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-110" target='_blank'>
                 <FaFacebook size={24} />
               </a>
               <a href="https://www.instagram.com" aria-label="Instagram" className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-110" target='_blank'>
                 <FaInstagram size={24} />
               </a>
-              {/* <a href="/" aria-label="YouTube" className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-110">
-                <FaYoutube size={24} />
-              </a> */}
                <a href="https://wa.me/916386282989?text=Hi! I'm interested in Domotiq products." aria-label="WhatsApp" target='_blank' className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-110">
                 <FaWhatsapp size={24} />
               </a>

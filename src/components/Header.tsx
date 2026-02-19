@@ -52,9 +52,6 @@ const Header = () => {
                         {link.label}
                         <ChevronDown size={14} strokeWidth={1.5} className="transition-transform duration-300 group-hover:rotate-180" />
                       </Link>
-
-                      {/* Dropdown Menu */}
-                      {/* Dropdown Menu */}
                       <div className="absolute top-full left-1/2 -translate-x-1/2 pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-smooth z-50 min-w-[400px]">
                         <div className="bg-background/95 backdrop-blur-md border border-border rounded-xl shadow-lg overflow-hidden p-2">
                           <div className="grid grid-cols-2 gap-2">

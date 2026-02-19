@@ -54,7 +54,7 @@ const Support = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 md:py-40 border-t border-border bg-secondary/10 relative overflow-hidden">
+      <section className="py-24 border-t border-border bg-secondary/10 relative overflow-hidden">
         <div className="container-wide">
           <div className="max-w-4xl">
             <div className="reveal-on-scroll mb-20">
@@ -104,7 +104,7 @@ const Support = () => {
       </section>
 
       {/* Warranty & Downloads */}
-      <section id="warranty" className="py-24 md:py-40">
+      <section id="warranty" className="py-24">
         <div className="container-wide">
           <div className="grid md:grid-cols-2 gap-24 md:gap-40 items-start">
             <div className="reveal-on-scroll">
@@ -177,7 +177,7 @@ const Support = () => {
       </section>
 
       {/* Support Contact */}
-      <section id="contact" className="py-32 md:py-48 bg-foreground text-background relative overflow-hidden">
+      <section id="contact" className="py-32 bg-foreground text-background relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
         <div className="container-wide relative z-10">
           <div className="max-w-5xl mx-auto">
