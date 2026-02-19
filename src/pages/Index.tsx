@@ -9,6 +9,49 @@ import heroBg from '@/assets/hero.png';
 const Index = () => {
   const featuredProducts = getFeaturedProducts();
 
+  const testimonials = [
+    {
+      text: "Maine apne parents ke liye lagwaya tha. Mujhe chinta thi ki unhe chalane mein dikkat hogi, par interface itna simple hai ki wo ab khud hi voice se sab control kar lete hain. Seniors ke liye best hai!",
+      author: "Priya Sharma, Lucknow"
+    },
+    {
+      text: "Inki team ka kaam bahut fast hai! Subah installation start hui aur sham tak pura ghar smart ho gaya. Koi mess nahi, koi extra wires nahi. Support team bhi hamesha call uthati hai.",
+      author: "Amit Khurana, Gurgaon"
+    },
+    {
+      text: "Ghar ab ekdum futuristic lagta hai. Jab guests aate hain aur lights automatically 'Party Mode' par set ho jati hain, toh sab impress ho jate hain. Domotiq ne ghar ki vibe hi badal di!",
+      author: "Ishan Malhotra, Chandigarh"
+    },
+    {
+      text: "Bahut hi badhiya experience raha. Value for money hai aur sensors ki quality top-notch hai. Agar home automation chahiye toh Domotiq se behtar kuch nahi.",
+      author: "Sanjay Patil, Ahmedabad"
+    },
+    {
+      text: "I've tried many smart home gadgets, but the seamless integration offered by Domotiq is unmatched. Voice commands (Alexa/Google) flawlessly kaam karte hain aur response time zero lag hai. Professional automation at its best.",
+      author: "Vikram Singh, Bangalore"
+    },
+    {
+      text: "I was skeptical about home automation initially, but Domotiq proved me wrong. The hardware quality is premium, and the app never crashes. It’s been six months, and I haven't faced a single glitch. Worth every penny.",
+      author: "Karan Malhotra, Dubai/Mumbai"
+    },
+    {
+      text: "The build quality of Domotiq smart locks is heavy-duty and premium. The real-time notifications on my phone whenever the door opens give me a great sense of security. It even has an anti-theft alarm! If you care about your family’s safety, this is a must-have.",
+      author: "Meera Deshmukh, Mumbai"
+    },
+    {
+      text: "Office mein baith kar bhi mujhe pata rehta hai ki ghar ka darwaza kab khula aur kab band hua. Iska auto-lock feature kamaal hai, ab baar-baar check nahi karna padta ki door lock kiya ya nahi. Domotiq locks are stylish and very smart!",
+      author: "Sahil Verma, Varanasi"
+    },
+    {
+      text: "Not only is it secure, but it also looks stunning on my wooden door. The touch keypad is very responsive, and the battery life is surprisingly long. It’s the first thing my guests notice. Highly impressed with the technology!",
+      author: "Anjali Kapoor, Delhi"
+    },
+    {
+      text: "Our guests are highly impressed with the seamless keyless entry. The locks are sleek and look very professional on our premium suite doors. Integration with our PMS was smooth, and the low-battery alert feature is a lifesaver for our maintenance team. Highly recommended for the hospitality industry.",
+      author: "Vikram Rathore, GM - Heritage hotel"
+    }
+  ];
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -162,6 +205,43 @@ const Index = () => {
                 </div>
                 <h3 className="heading-product mb-3 font-semibold">{feature.title}</h3>
                 <p className="body-small text-muted-foreground leading-relaxed">{feature.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-24 overflow-hidden bg-secondary/10">
+        <div className="container-wide mb-16">
+          <div className="text-center max-w-3xl mx-auto space-y-6 reveal-on-scroll">
+            <p className="body-small uppercase tracking-[0.4em] text-muted-foreground">Testimonials</p>
+            <h2 className="heading-section">What Our Clients Say</h2>
+            <p className="body-regular text-muted-foreground leading-relaxed">
+              Switching to domotiq automated locking system has been a game-changer for our operations. We no longer worry about lost physical keys or front desk bottlenecks during peak check-in hours. The integration was seamless, and our staff can now focus more on guest hospitality rather than managing plastic cards. Highly recommended for any modern hotelier.
+            </p>
+          </div>
+        </div>
+
+        <div className="relative fade-mask-x">
+          {/* Marquee Row 1 */}
+          <div className="flex gap-6 animate-marquee hover:pause whitespace-nowrap mb-6">
+            {[...testimonials, ...testimonials].map((review, idx) => (
+              <div
+                key={idx}
+                className="w-[350px] md:w-[450px] shrink-0 p-8 rounded-2xl bg-background border border-border/50 shadow-sm hover:shadow-md transition-shadow whitespace-normal"
+              >
+                <div className="flex gap-1 text-primary mb-4">
+                  {[1, 2, 3, 4, 5].map((s) => (
+                    <span key={s}>★</span>
+                  ))}
+                </div>
+                <p className="body-regular text-muted-foreground mb-6 line-clamp-4 italic">
+                  &quot;{review.text}&quot;
+                </p>
+                <div>
+                  <p className="font-medium text-foreground">{review.author}</p>
+                </div>
               </div>
             ))}
           </div>
