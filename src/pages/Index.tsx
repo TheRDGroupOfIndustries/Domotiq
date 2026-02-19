@@ -69,7 +69,7 @@ const Index = () => {
       </section>
 
       {/* Categories Grid */}
-      <section className="py-24 md:py-32">
+      <section className="py-20">
         <div className="container-wide">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16 reveal-on-scroll">
             <div className="max-w-xl">
@@ -102,7 +102,7 @@ const Index = () => {
       </section>
 
       {/* Featured Products */}
-      <section className="py-24 md:py-32 bg-secondary/20">
+      <section className="py-20 bg-secondary/20">
         <div className="container-wide">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16 reveal-on-scroll">
             <div className="max-w-xl">
@@ -135,7 +135,7 @@ const Index = () => {
       </section>
 
       {/* Why Domotiq */}
-      <section className="py-24 md:py-32">
+      <section className="py-20">
         <div className="container-wide">
           <div className="text-center mb-20 reveal-on-scroll">
             <p className="body-small uppercase tracking-[0.4em] text-muted-foreground mb-4">Excellence</p>
