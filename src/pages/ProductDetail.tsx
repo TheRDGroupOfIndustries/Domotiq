@@ -141,6 +141,7 @@ const ProductDetail = () => {
               {/* Diagram Section for Sparsh Category - Dynamic */}
               {product.wiring && (
                 <div className="reveal-on-scroll" style={{ transitionDelay: '300ms' }}>
+                  <h3 className="heading-product mb-4">Technical Diagram</h3>
                   <div className="flex flex-col md:flex-row items-center gap-12 bg-secondary/5 rounded-[2rem] p-8 border border-border/50">
                     <div className="flex-1 space-y-6">
                       <div className="space-y-2">
