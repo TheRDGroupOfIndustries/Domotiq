@@ -60,7 +60,7 @@ const About = () => {
             </p>
             <div className="reveal-on-scroll" style={{ transitionDelay: '400ms' }}>
               <Link
-                to="/support#contact"
+                to="/contact#contact-info"
                 className="inline-flex items-center gap-6 px-12 py-5 border-2 border-primary text-primary rounded-full font-bold uppercase tracking-widest text-xs hover:bg-primary hover:text-primary-foreground transition-all duration-500 hover:scale-105"
               >
                 Get in Touch
