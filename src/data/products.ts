@@ -18,11 +18,11 @@ import D8004 from '@/assets/products/D8004.png';
 import D8015 from '@/assets/products/D8015.png';
 import D8012 from '@/assets/products/D8012.png';
 import D8014 from '@/assets/products/D8014.png';
-import prod21 from '@/assets/products/prod-21.png';
-import prod22 from '@/assets/products/prod-22.png';
-import prod23 from '@/assets/products/prod-23.png';
-import prod24 from '@/assets/products/prod-24.png';
-import prod25 from '@/assets/products/prod-25.png';
+import switches4 from '@/assets/products/4-Switches.png';
+import switches1 from '@/assets/products/1-switches.png';
+import fanRegulator from '@/assets/products/fan-regulator.png';
+import wifip1 from '@/assets/products/wifi-p1.png';
+import wifip2 from '@/assets/products/wifi-p2.png';
 import prod26 from '@/assets/products/prod-26.png';
 import prod27 from '@/assets/products/prod-27.png';
 import prod28 from '@/assets/products/prod-28.png';
@@ -70,7 +70,7 @@ export interface Category {
 export const categories: Category[] = [
   { id: 'advait', name: 'Advait', description: 'Our ultra-premium series. The pinnacle of luxury and exclusivity, designed for those who settle for nothing but the best.', image: "" },
   { id: 'sparsh', name: 'Sparsh', description: 'Elegance at your fingertips. Our signature touch-interface series that redefines how you interact with your space.', image: D2001 },
-  { id: 'uday', name: 'Uday', description: 'Uday makes smart living a reality for everyone. It’s the smart switch for the modern Indian family—reliable, elegant, and incredibly affordable.', image: prod21 },
+  { id: 'uday', name: 'Uday', description: 'Uday makes smart living a reality for everyone. It’s the smart switch for the modern Indian family—reliable, elegant, and incredibly affordable.', image: switches4 },
   { id: 'kavach', name: 'Kavach', description: 'An unbreakable shield of smart security, ensuring your peace of mind 24/7.', image: prod27 },
   { id: 'aavarun', name: 'Aavarun', description: 'Automated transitions for your environment—from motorized curtains to scheduled moods that start your day.', image: image3 },
   { id: 'sahaj', name: 'Sahaj', description: 'Smart living made simple. A range of intuitive products designed to make automation accessible and effortless for everyone.', image: prod35 },
@@ -350,7 +350,7 @@ export const products: Product[] = [
     durability: "1,00,000+ Touch Operations",
     connectivity: "Wifi/zipbee",
     colorTemp: 'Acrylic -white / Black ',
-    image: prod21,
+    image: switches4,
     features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control']
   },
   {
@@ -364,7 +364,7 @@ export const products: Product[] = [
     durability: "1,00,000+ Touch Operations",
     connectivity: "Wifi/zipbee",
     colorTemp: 'Acrylic -white / Black ',
-    image: prod22,
+    image: switches1,
     features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control']
   },
   {
@@ -378,7 +378,7 @@ export const products: Product[] = [
     durability: "1,00,000+ Touch Operations",
     connectivity: "Wifi/zipbee",
     colorTemp: 'Acrylic -white / Black ',
-    image: prod23,
+    image: fanRegulator,
     features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control']
   },
   {
@@ -392,7 +392,7 @@ export const products: Product[] = [
     durability: "1,00,000+ Touch Operations",
     connectivity: "Wifi/zipbee",
     colorTemp: 'N/A',
-    image: prod24,
+    image: wifip1,
     features: ['Voice Command', 'Mobile App Access', 'Remote Control']
   },
   {
@@ -405,7 +405,7 @@ export const products: Product[] = [
     protection: 'Up to 2.5 KV',
     durability: "1,00,000+ Touch Operations",
     colorTemp: 'N/A',
-    image: prod25,
+    image: wifip2,
     features: ['Voice Command', 'Mobile App Access', 'Remote Control']
   },
   {
