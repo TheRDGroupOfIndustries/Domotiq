@@ -32,8 +32,6 @@ const ProductDetail = () => {
     product.durability,
     product.connectivity,
     product.colorTemp,
-    product.lumens,
-    product.lifespan
   ].some(spec => spec);
 
   const handleWhatsAppEnquiry = () => {
@@ -119,18 +117,6 @@ const ProductDetail = () => {
                       <div>
                         <p className="body-small text-muted-foreground">Color Option</p>
                         <p className="body-regular font-medium">{product.colorTemp}</p>
-                      </div>
-                    )}
-                    {product.lumens && (
-                      <div>
-                        <p className="body-small text-muted-foreground">Lumens</p>
-                        <p className="body-regular font-medium">{product.lumens}</p>
-                      </div>
-                    )}
-                    {product.lifespan && (
-                      <div>
-                        <p className="body-small text-muted-foreground">Lifespan</p>
-                        <p className="body-regular font-medium">{product.lifespan}</p>
                       </div>
                     )}
                   </div>

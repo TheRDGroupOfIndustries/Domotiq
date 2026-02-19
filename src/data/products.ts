@@ -50,9 +50,7 @@ export interface Product {
   protection?: string;
   durability?: string;
   connectivity?: string;
-  lumens?: string;
   colorTemp?: string;
-  lifespan?: string;
   image: string;
   features: string[];
 }
@@ -83,12 +81,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Single Button | Mini',
     description: 'Compact single-button scene switch for quick execution of smart home routines.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D2001,
-    features: ['Compact Design', 'Muti-click Support', 'WiFi/Zigbee', 'Easy Mount']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-2002',
@@ -96,12 +95,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Glass Finish | WiFi',
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D2002,
-    features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-2003',
@@ -109,12 +109,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Glass Finish | WiFi',
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D2003,
-    features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-4002',
@@ -122,12 +123,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: '12 Button | Scene Master',
     description: 'The ultimate scene controller with 12 customizable touch points for complex home automation.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D4002,
-    features: ['12 Gang Master', 'Scene Unlimited', 'Voice Compatible', 'Robust Build']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-4003',
@@ -135,12 +137,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'High Capacity | WiFi',
     description: 'Comprehensive 8-button touch panel for complete room control.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D4003,
-    features: ['8 Gang Control', 'Master Off', 'Custom Labels', 'Glass Panel']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-4004',
@@ -148,12 +151,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Fan Regulation',
     description: 'Combined 8-button panel with dedicated fan speed and dimmer controls.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D4004,
-    features: ['Fan Regulation', 'Step-less Speed', 'Dimming', 'Touch Feedbak']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-4005',
@@ -161,12 +165,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Glass Finish | WiFi',
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D4005,
-    features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-4012',
@@ -174,12 +179,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Elite Series | WiFi',
     description: 'Premium 8-gang switch from the Elite series with ultra-responsive touch.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D4012,
-    features: ['Premium Finish', 'Edge Glow', 'Surge Protection', 'App Sync']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-6012',
@@ -187,12 +193,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Slim Design | WiFi',
     description: 'Sleek vertical-orientated touch switch for narrow spaces and modern aesthetics.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6012,
-    features: ['Slim Profile', 'Vertical Mount', 'Anti-oxidation', 'WiFi Mesh']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-6014',
@@ -200,12 +207,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Glass Finish | WiFi',
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6014,
-    features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-6013',
@@ -213,12 +221,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Plus Series | WiFi',
     description: 'Enhanced 8-gang touch panel with improved touch sensitivity and feedback.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6013,
-    features: ['Enhanced Touch', 'Cloud Connected', 'Timer Support', 'Glass Shell']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-6003',
@@ -226,12 +235,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'High Density | WiFi',
     description: 'High-density 1sparsh0-gang touch panel for extensive automation setups.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6003,
-    features: ['10-Gang Control', 'Overload Protection', 'Status Sync', 'Voice Ready']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-6004',
@@ -239,12 +249,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Multi-functional | WiFi',
     description: 'Versatile 12-gang panel combining standard switches with special utility icons.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6004,
-    features: ['Utility Icons', '12 points', 'Fire Retardant', 'WiFi 6 Support']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-6005',
@@ -252,12 +263,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Full Control | WiFi',
     description: 'Complete 12-button switchboard for full house automation in a single plate.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6005,
-    features: ['12 Gang Std', 'Remote Monitoring', 'Child Lock', 'Tempered Glass']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-6002',
@@ -265,12 +277,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Compact | Zigbee',
     description: 'Small footprint scene switch for minimalist interiors.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D6002,
-    features: ['Minimalist', 'Battery/Direct', 'Multi-press', 'App Config']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-8002',
@@ -278,12 +291,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Glass | 1 Gang',
     description: 'Standard 1-gang glass touch switch for simple device control.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D8002,
-    features: ['Touch Only', 'Retrofit Ready', 'Indicator LED', 'Waterproof']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-8004',
@@ -291,12 +305,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Glass | 2 Gang',
     description: 'Standard 2-gang glass touch switch for moderate device control.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D8004,
-    features: ['Dual Zone', 'Sleek Look', 'Instant Response', 'Easy Clean']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-8014',
@@ -304,12 +319,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Glass Finish | WiFi',
     description: 'Elegant 4-button touch switch with LED indicator and WiFi for app control.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D8014,
-    features: ['WiFi Enabled', 'Tempered Glass', 'Indicator', 'Scene Support']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-8015',
@@ -317,12 +333,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Glass | 3 Gang',
     description: 'Standard 3-gang glass touch switch for living space device control.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D8015,
-    features: ['Triple Zone', 'WiFi Module', 'Cloud Link', 'Scratch Resistant']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: 'd-8012',
@@ -330,12 +347,13 @@ export const products: Product[] = [
     category: 'sparsh',
     shortSpec: 'Glass | 4 Gang',
     description: 'Standard 4-gang glass touch switch for comprehensive device control.',
-    wattage: 'N/A',
-    colorTemp: 'N/A',
-    lumens: 'N/A',
-    lifespan: 'N/A',
+    wattage: '110V - 415V AC, 50/60Hz',
+    protection: 'Up to 2.5 KV',
+    durability: "1,00,000+ Touch Operations",
+    connectivity: "Wifi/zipbee",
+    colorTemp: 'Glass - White/ Black, Acrylic -white / Black ',
     image: D8012,
-    features: ['Quad Zone', 'App Control', 'Auto Off Timer', 'Silent Relay']
+    features: ['Feather Touch', 'Voice Command', 'Mobile App Access', 'Remote Control', 'Icon Customization']
   },
   {
     id: '4-switches',
