@@ -32,13 +32,11 @@ import r7 from '@/assets/products/R7.png';
 import rb1 from '@/assets/products/RB1-Knob.png';
 import rb2 from '@/assets/products/RB2-Bolt.png';
 import glassLock from '@/assets/products/Glass-Lock.png';
-import prod35 from '@/assets/products/prod-35.png';
-
-import image1 from "@/assets/products/image.png"
-import image2 from "@/assets/products/image2.png"
-import image3 from "@/assets/products/image3.png"
-import image4 from "@/assets/products/image4.png"
-
+import VideoDoorBell from '@/assets/products/VideoDoorBell.png';
+import fingerLock from "@/assets/products/finger-lock.png"
+import smartCardLock from "@/assets/products/smart-card-lock.png"
+import telescopic from "@/assets/products/Telescopic.png"
+import curtainMotor from "@/assets/products/curtain-motor.png"
 import RFID from "@/assets/products/RFID.jpeg"
 import hotelKeyCard from "@/assets/products/Hotel-key-card.jpeg"
 
@@ -72,8 +70,8 @@ export const categories: Category[] = [
   { id: 'sparsh', name: 'Sparsh', description: 'Elegance at your fingertips. Our signature touch-interface series that redefines how you interact with your space.', image: D2001 },
   { id: 'uday', name: 'Uday', description: 'Uday makes smart living a reality for everyone. It’s the smart switch for the modern Indian family—reliable, elegant, and incredibly affordable.', image: switches4 },
   { id: 'kavach', name: 'Kavach', description: 'An unbreakable shield of smart security, ensuring your peace of mind 24/7.', image: r1ProG },
-  { id: 'aavarun', name: 'Aavarun', description: 'Automated transitions for your environment—from motorized curtains to scheduled moods that start your day.', image: image3 },
-  { id: 'sahaj', name: 'Sahaj', description: 'Smart living made simple. A range of intuitive products designed to make automation accessible and effortless for everyone.', image: prod35 },
+  { id: 'aavarun', name: 'Aavarun', description: 'Automated transitions for your environment—from motorized curtains to scheduled moods that start your day.', image: telescopic },
+  { id: 'sahaj', name: 'Sahaj', description: 'Smart living made simple. A range of intuitive products designed to make automation accessible and effortless for everyone.', image: VideoDoorBell },
   { id: 'alok', name: 'Alok', description: 'Intelligent lighting solutions. Transform your ambiance with smart dimming, color scenes, and energy-efficient illumination.', image: "" },
   { id: 'atithi', name: 'Atithi', description: 'Our flagship Hotel Automation ecosystem, blending traditional hospitality with futuristic technology.', image:RFID },
 ];
@@ -561,7 +559,7 @@ export const products: Product[] = [
     category: 'sahaj',
     shortSpec: '3D Face ID | Flagship',
     description: 'Flagship smart lock with 3D structured sensor face recognition and video display.',
-    image: prod35,
+    image: VideoDoorBell,
     features: [
       'Active Smart Lock Bind Technology to unlock through doorbell app user interface',
       '1080P Full HD high quality image',
@@ -580,7 +578,7 @@ export const products: Product[] = [
     category: 'sahaj',
     shortSpec: 'Fingerprint | Secure',
     description: 'Advanced fingerprint cabinet lock for securing drawers, lockers, and cabinets.',
-    image: image1,
+    image: fingerLock,
     features: [
       'Low Battery Warning',
       'Energy Saving Technology With Long Battery Life',
@@ -594,7 +592,7 @@ export const products: Product[] = [
     category: 'sahaj',
     shortSpec: 'NFC Card | Secure',
     description: 'Smart NFC/RFID card lock suitable for cabinets, drawers, and lockers.',
-    image: image2,
+    image: smartCardLock,
     features: [
       'Low Battery Warning',
       'Energy Saving Technology With Long Battery Life',
@@ -608,7 +606,7 @@ export const products: Product[] = [
     category: 'aavarun',
     shortSpec: 'Telescopic | Track',
     description: 'Premium expandable curtain track with dust-proof and anti-oxidation finish.',
-    image: image3,
+    image: telescopic,
     features: [
       'New telescopic patterned technology based curtain track is 51mm and easy to transport',
       'Electrophoresis process, metallic silver powder spraying process, dust-proof, anti-particle and anti-oxidation, smooth after long use.',
@@ -621,7 +619,7 @@ export const products: Product[] = [
     category: 'aavarun',
     shortSpec: 'Motorized | Smart',
     description: 'Silent motorized curtain system with app and voice control compatibility.',
-    image: image4,
+    image: curtainMotor,
     features: [
       'Easily operate small and large size curtains using remote and mobile app.',
       'Silent Operating Motorized Curtain Track Kit up to 16 feet track.',
