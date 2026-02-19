@@ -23,15 +23,15 @@ import switches1 from '@/assets/products/1-switches.png';
 import fanRegulator from '@/assets/products/fan-regulator.png';
 import wifip1 from '@/assets/products/wifi-p1.png';
 import wifip2 from '@/assets/products/wifi-p2.png';
-import prod26 from '@/assets/products/prod-26.png';
-import prod27 from '@/assets/products/prod-27.png';
-import prod28 from '@/assets/products/prod-28.png';
-import prod29 from '@/assets/products/prod-29.png';
-import prod30 from '@/assets/products/prod-30.png';
-import prod31 from '@/assets/products/prod-31.png';
-import prod32 from '@/assets/products/prod-32.png';
-import prod33 from '@/assets/products/prod-33.png';
-import prod34 from '@/assets/products/prod-34.png';
+import r1Pro from '@/assets/products/r1-pro.png';
+import r1ProG from '@/assets/products/r1-pro-g.png';
+import r3 from '@/assets/products/R3.png';
+import r4 from '@/assets/products/R4.png';
+import r5 from '@/assets/products/R5.png';
+import r7 from '@/assets/products/R7.png';
+import rb1 from '@/assets/products/RB1-Knob.png';
+import rb2 from '@/assets/products/RB2-Bolt.png';
+import glassLock from '@/assets/products/Glass-Lock.png';
 import prod35 from '@/assets/products/prod-35.png';
 
 import image1 from "@/assets/products/image.png"
@@ -71,7 +71,7 @@ export const categories: Category[] = [
   { id: 'advait', name: 'Advait', description: 'Our ultra-premium series. The pinnacle of luxury and exclusivity, designed for those who settle for nothing but the best.', image: "" },
   { id: 'sparsh', name: 'Sparsh', description: 'Elegance at your fingertips. Our signature touch-interface series that redefines how you interact with your space.', image: D2001 },
   { id: 'uday', name: 'Uday', description: 'Uday makes smart living a reality for everyone. It’s the smart switch for the modern Indian family—reliable, elegant, and incredibly affordable.', image: switches4 },
-  { id: 'kavach', name: 'Kavach', description: 'An unbreakable shield of smart security, ensuring your peace of mind 24/7.', image: prod27 },
+  { id: 'kavach', name: 'Kavach', description: 'An unbreakable shield of smart security, ensuring your peace of mind 24/7.', image: r1ProG },
   { id: 'aavarun', name: 'Aavarun', description: 'Automated transitions for your environment—from motorized curtains to scheduled moods that start your day.', image: image3 },
   { id: 'sahaj', name: 'Sahaj', description: 'Smart living made simple. A range of intuitive products designed to make automation accessible and effortless for everyone.', image: prod35 },
   { id: 'alok', name: 'Alok', description: 'Intelligent lighting solutions. Transform your ambiance with smart dimming, color scenes, and energy-efficient illumination.', image: "" },
@@ -414,7 +414,7 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Fingerprint | Keypad',
     description: 'Standard smart mortise lock with multiple unlock options for home security.',
-    image: prod26,
+    image: r1Pro,
     features: ['Fingerprint Unlock', 'RFID Card Unlock', 'Passcode Unlock', 'Low Battery Indication', 'Emergency Power', 'Mechanical Key Unlock', 'RX-TX Remote Support']
   },
   {
@@ -423,7 +423,7 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Bronze Finish | WiFi',
     description: 'Elegant bronze-finished smart lock with remote unlock support.',
-    image: prod27,
+    image: r1ProG,
     features: ['Fingerprint Unlock', 'RFID Card Unlock', 'Passcode Unlock', 'Low Battery Indication', 'Emergency Power', 'Mechanical Key Unlock', 'RX-TX Remote Support']
   },
   {
@@ -432,7 +432,7 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Silver Finish | Camera',
     description: 'Advanced security lock featuring an integrated camera for visitor snapshots.',
-    image: prod28,
+    image: r3,
     features: [
       'One Touch Automatic open and close mortise system',
       'Access by 3D Face Recognition, RFID Card, Fingerprint, Pass code, Key & App with 3.5" larger rear display inside & HD 1.3MP CAMERA for Video call on app',
@@ -450,7 +450,7 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Video Screen | HD',
     description: 'High-end door lock with a built-in indoor screen for outside viewing.',
-    image: prod29,
+    image: r4,
     features: [
       'One Touch Automatic open and close mortise system',
       'Access by 3D Face Recognition, RFID Card, Pass code, key, & APP with 3.5" larger rear display inside & HD 1.3MP Camera',
@@ -468,7 +468,7 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Full Series | Comparison',
     description: 'Comparison showcase of the flagship smart lock series featuring all available finishes.',
-    image: prod30,
+    image: r5,
     features: [
       'Face ID, Fingerprint, Passcode, RFID Card, Mechanical keys & Remote App (Phlipton) Unlock',
       'You can add upto 200 Fingerprints, RFID & Passcode',
@@ -492,7 +492,7 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Slim Design | WiFi',
     description: 'Compact and slim profile smart lock perfect for modern aluminum or thin doors.',
-    image: prod31,
+    image: r7,
     features: [
       '3D Face recognition, Fingerprint, Passcode, Palm Vein, Mechanical key, RFID card & Remote Phlipton App unlock',
       '4.5 inch IPS HD large screen on the indoor unit',
@@ -513,7 +513,7 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Heavy Duty | Fingerprint',
     description: 'Solid mortise lock with semi-conductor fingerprint sensor for high-speed entry.',
-    image: prod32,
+    image: rb1,
     features: [
       'Material: Aluminium Alloy Casting',
       'Power Supply: 4 pcs AA Alkaline Batteries',
@@ -529,7 +529,7 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Dead Bolt Style | Pro',
     description: 'Professional grade dead bolt style smart lock with reinforced security points.',
-    image: prod33,
+    image: rb2,
     features: [
       'Material: Aluminium Alloy Casting',
       'Power Supply: 4 pcs AA Alkaline Batteries',
@@ -545,7 +545,7 @@ export const products: Product[] = [
     category: 'kavach',
     shortSpec: 'Glass Door | No Drill',
     description: 'Specialized smart lock for glass doors with no-drill installation.',
-    image: prod34,
+    image: glassLock,
     features: [
       'Material: Zinc alloy and acrylic keypad',
       'Power supply: 4 pcs AA alkaline batteries',
