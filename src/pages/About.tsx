@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout';
 import storyImage from '@/assets/about-story.png';
 
@@ -27,7 +26,7 @@ const About = () => {
       </section>
 
       {/* Story */}
-      <section className="py-24 md:py-40 bg-secondary/10 relative overflow-hidden">
+      <section className="py-24 bg-secondary/10 relative overflow-hidden">
         <div className="container-wide">
           <div className="grid md:grid-cols-2 gap-20 md:gap-32 items-center">
             <div className="reveal-on-scroll">
@@ -51,14 +50,52 @@ const About = () => {
       </section>
 
       {/* Partner Section */}
-      <section className="py-24 md:py-40">
+      <section className="py-24">
         <div className="container-wide">
-          <div className="max-w-3xl mx-auto text-center space-y-12 reveal-on-scroll">
-            <h2 className="text-4xl md:text-5xl font-light tracking-tight">Partner With Us</h2>
-            <p className="body-regular text-muted-foreground text-xl leading-relaxed">
-              Whether you're an architect, developer, or contractor, we'd love to discuss how Domotiq technology can elevate your next project.
-            </p>
-            <div className="reveal-on-scroll" style={{ transitionDelay: '400ms' }}>
+          <div className="space-y-20 reveal-on-scroll">
+            <div className="text-center space-y-6">
+              <h2 className="text-4xl md:text-5xl font-light tracking-tight">Partner With Domotiq: <br /><span className="font-serif italic text-3xl md:text-4xl">Redefining Smart Living</span></h2>
+              <p className="body-regular text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
+                Join the leader in smart home innovation. At Domotiq, we believe that the future of living is intelligent, secure, and energy-efficient. We are looking for passionate distributors, architects, interior designers, and system integrators to join our growing network and bring premium automation solutions to homes across the country.
+              </p>
+            </div>
+
+            <div className="space-y-12">
+              <h3 className="heading-section text-center">Why Partner with Domotiq?</h3>
+              <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
+                {[
+                  { title: "Technology", desc: "Gain access to our full suite of smart products, from high-load 40Amp energy savers to advanced RFID security systems." },
+                  { title: "High Profitability", desc: "Enjoy industry-leading margins and a flexible pricing structure designed to help your business scale quickly." },
+                  { title: "Seamless Compatibility", desc: "Our hardware is designed for easy integration with Windows-based management systems and standard electrical setups." },
+                  { title: "Reliable Engineering", desc: "Offer your clients products built with fire-retardant materials and heavy-duty components capable of handling 220V-240V loads." },
+                  { title: "Marketing & Leads", desc: "Benefit from Domotiq’s brand presence with marketing collateral, technical training, and verified project leads in your region." }
+                ].map((item, idx) => (
+                  <div key={idx} className="bg-secondary/30 p-6 rounded-2xl space-y-4 hover:bg-secondary/50 transition-colors duration-300">
+                    <h4 className="text-lg font-medium leading-tight">{item.title}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="space-y-12">
+              <h3 className="heading-section text-center">Partnership Categories</h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                {[
+                  { title: "System Integrators & Installers", desc: "Tech-savvy professionals who can deploy our RFID locks and smart switches into residential and commercial projects." },
+                  { title: "Architects & Interior Designers", desc: "Design-forward partners looking to integrate \"invisible\" smart technology into their aesthetic layouts." },
+                  { title: "Real Estate Developers", desc: "Builders wanting to add significant market value to their properties with pre-installed smart automation." },
+                  { title: "Regional Distributors", desc: "Businesses ready to stock and supply Domotiq's high-demand hardware to local retailers." }
+                ].map((item, idx) => (
+                  <div key={idx} className="border border-border/50 p-8 rounded-2xl flex flex-col justify-center space-y-4 hover:border-primary/50 transition-colors duration-300">
+                    <h4 className="text-xl font-medium">{item.title}</h4>
+                    <p className="body-small text-muted-foreground">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="text-center pt-8 reveal-on-scroll" style={{ transitionDelay: '400ms' }}>
               <Link
                 to="/contact#contact-info"
                 className="inline-flex items-center gap-6 px-12 py-5 border-2 border-primary text-primary rounded-full font-bold uppercase tracking-widest text-xs hover:bg-primary hover:text-primary-foreground transition-all duration-500 hover:scale-105"
