@@ -204,6 +204,8 @@ const Contact = () => {
                       <option value="Product Inquiry">Product Inquiry</option>
                       <option value="Project Consultation">Project Consultation</option>
                       <option value="Technical Support">Technical Support</option>
+                      <option value="Partner With Us">Partner With Us</option>
+                      <option value="Other">Other</option>
                     </select>
                     <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none opacity-50">
                       <ArrowRight size={18} className="rotate-90" />
