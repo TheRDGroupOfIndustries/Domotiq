@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Check, Download } from 'lucide-react';
+import { ArrowLeft, Check, Download, Fan, Power, Blinds } from 'lucide-react';
 import Layout from '@/components/Layout';
 import { getProductById, products } from '@/data/products';
 import ProductCard from '@/components/ProductCard';
@@ -137,6 +137,61 @@ const ProductDetail = () => {
                   ))}
                 </ul>
               </div>
+
+              {/* Diagram Section for Sparsh Category - Dynamic */}
+              {product.wiring && (
+                <div className="reveal-on-scroll" style={{ transitionDelay: '300ms' }}>
+                  <div className="flex flex-col md:flex-row items-center gap-12 bg-secondary/5 rounded-[2rem] p-8 border border-border/50">
+                    <div className="flex-1 space-y-6">
+                      <div className="space-y-2">
+                        <p className="body-small text-muted-foreground uppercase tracking-widest">Model No</p>
+                        <p className="text-3xl font-light tracking-tight">{product.id.toUpperCase()}</p>
+                      </div>
+                      <div className="space-y-4 pt-4">
+                        {product.wiring.switches.map((sw, idx) => (
+                          <div key={idx} className="flex items-center gap-4">
+                            {sw.type === '1-way' && (
+                              <div className="w-5 h-5 rounded border border-foreground/30 flex items-center justify-center">
+                                <div className="w-3 h-3 bg-transparent" />
+                              </div>
+                            )}
+                            {sw.type === '16a' && (
+                              <div className="w-5 h-5 rounded-full border border-foreground/30 flex items-center justify-center">
+                                <div className="w-2 h-2 rounded-full bg-foreground/50" />
+                              </div>
+                            )}
+                            {sw.type === '2-way' && (
+                              <div className="w-5 h-5 border border-foreground/30 flex items-center justify-center skew-x-[-10deg]">
+                                <div className="w-3 h-3 border border-foreground/30" />
+                              </div>
+                            )}
+                            {sw.type === 'curtain' && (
+                              <Blinds size={20} strokeWidth={1.5} className="text-foreground/70" />
+                            )}
+                            {sw.type === 'master' && (
+                              <Power size={20} strokeWidth={1.5} className="text-foreground/70" />
+                            )}
+                            {sw.type === 'fan' && (
+                              <Fan size={20} strokeWidth={1.5} className="text-foreground/70" />
+                            )}
+                            <p className="text-lg font-light text-muted-foreground">
+                              {sw.label} - {sw.count}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="flex-1 flex justify-center">
+                      <img
+                        src={product.wiring.image}
+                        alt="Wiring Diagram"
+                        className="max-w-full h-auto drop-shadow-xl hover:scale-105 transition-transform duration-500"
+                        style={{ maxHeight: '300px' }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {/* Actions */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
