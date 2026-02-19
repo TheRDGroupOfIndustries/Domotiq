@@ -3,6 +3,7 @@ import { ChevronDown, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { cn } from '@/lib/utils';
+import brochurePdf from '@/assets/Brochure.pdf';
 
 const faqs = [
   {
@@ -133,19 +134,42 @@ const Support = () => {
               <p className="body-small uppercase tracking-[0.4em] text-muted-foreground mb-6">Resources</p>
               <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-10">Downloads</h2>
               <div className="grid gap-6">
-                {['Product Catalogue 2024', 'Installation Guides', 'Technical Specifications', 'Warranty Terms'].map((doc, idx) => (
-                  <button
-                    key={doc}
-                    className="group w-full flex items-center justify-between p-8 border border-border rounded-[2rem] hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-700 ease-smooth reveal-on-scroll"
-                    style={{ transitionDelay: `${500 + idx * 100}ms` }}
-                  >
-                    <span className="text-xl font-light tracking-tight">{doc}</span>
-                    <div className="flex items-center gap-4 opacity-40 group-hover:opacity-100 transition-opacity">
-                      <span className="body-small font-bold text-[10px] tracking-widest uppercase">PDF</span>
-                      <ChevronDown size={20} className="-rotate-90 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </button>
-                ))}
+                {[
+                  { name: 'Product Catalogue 2024', file: brochurePdf },
+                  { name: 'Installation Guides' },
+                  { name: 'Technical Specifications' },
+                  { name: 'Warranty Terms' }
+                ].map((doc, idx) => {
+                  const Content = () => (
+                    <>
+                      <span className="text-xl font-light tracking-tight">{doc.name}</span>
+                      <div className="flex items-center gap-4 opacity-40 group-hover:opacity-100 transition-opacity">
+                        <span className="body-small font-bold text-[10px] tracking-widest uppercase">PDF</span>
+                        <ChevronDown size={20} className="-rotate-90 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </>
+                  );
+
+                  return doc.file ? (
+                    <a
+                      key={doc.name}
+                      href={doc.file}
+                      download="Domotiq_Product_Catalogue_2024.pdf"
+                      className="group w-full flex items-center justify-between p-8 border border-border rounded-[2rem] hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-700 ease-smooth reveal-on-scroll"
+                      style={{ transitionDelay: `${500 + idx * 100}ms` }}
+                    >
+                      <Content />
+                    </a>
+                  ) : (
+                    <button
+                      key={doc.name}
+                      className="group w-full flex items-center justify-between p-8 border border-border rounded-[2rem] hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-700 ease-smooth reveal-on-scroll"
+                      style={{ transitionDelay: `${500 + idx * 100}ms` }}
+                    >
+                      <Content />
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>
