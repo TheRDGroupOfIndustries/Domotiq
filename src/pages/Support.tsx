@@ -167,9 +167,9 @@ const Support = () => {
 
             <div className="grid md:grid-cols-3 gap-12 text-center reveal-on-scroll" style={{ transitionDelay: '300ms' }}>
               {[
-                { icon: Mail, label: 'Email Support', value: 'support@domotiq.com' },
-                { icon: Phone, label: 'Technical Helpline', value: '+91 (800) 555-0199' },
-                { icon: MapPin, label: 'Technical Center', value: 'Varanasi, UP, India' }
+                { icon: Mail, label: 'Email Support', value: 'info.domotiq@gmail.com' },
+                { icon: Phone, label: 'Technical Helpline', value: '+91 6386282989' },
+                { icon: MapPin, label: 'Technical Center', value: 'Dadar East Mumbai, India' }
               ].map((item, idx) => (
                 <div key={item.label} className="space-y-6 group p-10 rounded-[3rem] border border-background/5 hover:border-primary/20 transition-all duration-700" style={{ transitionDelay: `${400 + idx * 150}ms` }}>
                   <div className="w-16 h-16 mx-auto rounded-3xl bg-background/5 flex items-center justify-center transition-all duration-700 group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground">
@@ -185,10 +185,10 @@ const Support = () => {
 
             <div className="mt-24 text-center reveal-on-scroll" style={{ transitionDelay: '800ms' }}>
               <Link
-                to="/contact"
+                to="/contact#contact-info"
                 className="group inline-flex items-center gap-6 px-16 py-6 bg-primary text-primary-foreground rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-primary/90 transition-all duration-500 hover:scale-105"
               >
-                Open Support Ticket
+                Contact Us
                 <ArrowRight size={20} className="transition-transform duration-500 group-hover:translate-x-2" />
               </Link>
             </div>
