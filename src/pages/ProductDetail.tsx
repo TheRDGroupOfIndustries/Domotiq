@@ -148,7 +148,7 @@ const ProductDetail = () => {
                         <p className="body-small text-muted-foreground uppercase tracking-widest">Model No</p>
                         <p className="text-3xl font-light tracking-tight">{product.id.toUpperCase()}</p>
                       </div>
-                      <div className="space-y-4 pt-4">
+                      <div className="space-y-4">
                         {product.wiring.switches.map((sw, idx) => (
                           <div key={idx} className="flex items-center gap-4">
                             {sw.type === '1-way' && (
@@ -186,7 +186,7 @@ const ProductDetail = () => {
                       <img
                         src={product.wiring.image}
                         alt="Wiring Diagram"
-                        className="max-w-full h-auto drop-shadow-xl "
+                        className="max-w-full h-auto drop-shadow-xl hover:scale-105 transition-transform duration-500"
                         style={{ maxHeight: '350px' }}
                       />
                     </div>
