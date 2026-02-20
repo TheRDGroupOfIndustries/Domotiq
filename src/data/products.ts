@@ -40,6 +40,8 @@ import curtainMotor from "@/assets/products/curtain-motor.png"
 import RFID from "@/assets/products/RFID.jpeg"
 import hotelKeyCard from "@/assets/products/Hotel-key-card.jpeg"
 
+import image from "@/assets/products/image.png"
+
 import diagram1 from '@/assets/diagram/diagram1.png';
 import diagram2 from '@/assets/diagram/diagram2.png';
 import diagram3 from '@/assets/diagram/diagram3.png';
@@ -871,6 +873,24 @@ export const products: Product[] = [
       'Extreme Durability: The high-quality PVC construction is waterproof and resistant to demagnetization from mobile phones, ensuring guests are never locked out accidentally.',
       'Full Brand Customization: Transform your key cards into marketing tools by adding your hotel logo, brand colors, QR codes for menus, or local area maps.',
       'Remote Deactivation: If a card is lost or stolen, it can be instantly deactivated via the front desk software without needing to replace the door lock.',
+    ]
+  },
+  {
+    id: 'domotiq-rfid-card-manual-key',
+    name: 'Domotiq RFID Card & Manual Key',
+    category: 'atithi',
+    shortSpec: 'RFID Card | Manual Key',
+    description: 'These cards are designed to work perfectly with your Encoder and Smart Saver Switch for a unified hospitality ecosystem.',
+    image: image,
+    features: [
+      'Dual Unlocking Modes: Access via high-speed RFID Smart Cards or a Hidden Mechanical Key for emergency overrides.',
+      'Superior Durability: Crafted with high-grade Stainless Steel/Zinc Alloy to withstand heavy daily usage and resist corrosion.',
+      'Advanced Mifare Technology : Operates on 13.56MHz frequency, ensuring encrypted communication that is impossible to duplicate.',
+      'Panic Exit System: For guest safety, the internal handle allows an immediate exit by retracting both the latch and deadbolt in a single motion.',
+      'Smart Audit Trail : Track the last 1,000 opening records, providing a detailed log of who entered the room and at what time (Staff vs. Guest).',
+      'Privacy Protection : Features an internal "Do Not Disturb" (DND) deadbolt that prevents external entry when the guest is inside.',
+      'Intelligent Low-Battery Alert : Visual and audio warnings when power is low, ensuring you have plenty of time to replace batteries before they die.',
+      'Seamless PMS Integration : Fully compatible with Hotel Management Softwares for quick card encoding and easy guest check-ins.',
     ]
   },
 ];
